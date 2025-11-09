@@ -1,0 +1,8 @@
+# Environnement virtuel Python
+Backend/venv/
+__pycache__/
+
+# Fichiers temporaires
+*.pyc
+*.log
+.DS_Store
