@@ -95,6 +95,7 @@ def main():
                 "auteur": auteur,
                 "chemin": chemin_fichier,
                 "nombreMots": nb_mots,
+                "downloadCount": livre.get("download_count", 0),
                 "dateAjout": datetime.now()
             }
             livres_collection.insert_one(doc)
