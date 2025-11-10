@@ -3,7 +3,7 @@ import re
 from pymongo import MongoClient
 from tqdm import tqdm
 import spacy
-
+from database import get_db
 # 1-Chargement du modèle spaCy (anglais)
 print("📘 Chargement du modèle spaCy...")
 nlp = spacy.load("en_core_news_md")
@@ -27,9 +27,10 @@ STOPWORDS_EN = {
     "its", "my", "your", "their", "all", "any", "so", "if"
 }
 
-# 3- Connexion MongoDB
-client = MongoClient("mongodb://localhost:27017/")
-db = client["bibliotheque"]
+
+
+# Connexion MongoDB
+db=get_db()
 livres_col = db["livres"]
 index_col = db["index"]
 dossier_livres = "livres"

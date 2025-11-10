@@ -3,10 +3,10 @@ import requests
 from pymongo import MongoClient
 import re
 from datetime import datetime
+from database import get_db
 
-# 1) Connexion à MongoDB
-client = MongoClient('mongodb://localhost:27017/')
-db = client['bibliotheque']
+# Connexion MongoDB
+db=get_db()
 livres_collection = db['livres']
 # 2) Création du dossier pour les livres
 dossier_livres = 'livres'

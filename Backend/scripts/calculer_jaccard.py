@@ -3,10 +3,10 @@ import numpy as np
 from pymongo import MongoClient
 from tqdm import tqdm
 import os
+from database import get_db
 
 # Connexion MongoDB
-client = MongoClient("mongodb://localhost:27017/")
-db = client["bibliotheque"]
+db=get_db()
 index_col = db["index"]
 similarity_col = db["similarity"]
 

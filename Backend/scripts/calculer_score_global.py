@@ -2,10 +2,10 @@
 import time
 from pymongo import MongoClient
 import os
+from database import get_db
 
 # Connexion MongoDB
-client = MongoClient("mongodb://localhost:27017/")
-db = client["bibliotheque"]
+db=get_db()
 centr_col = db["centrality"]
 livres_col = db["livres"]
 

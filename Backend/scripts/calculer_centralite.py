@@ -4,10 +4,10 @@ import networkx as nx
 from pymongo import MongoClient
 from tqdm import tqdm
 import os
+from database import get_db
 
 # Connexion MongoDB
-client = MongoClient("mongodb://localhost:27017/")
-db = client["bibliotheque"]
+db=get_db()
 centrality_col = db["centrality"]
 
 # Créer le dossier data s’il n’existe pas
