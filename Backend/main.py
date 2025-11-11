@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routes import livres
+from routes import livres
 
 app = FastAPI()
 
@@ -19,4 +19,4 @@ app.include_router(livres.router)
 
 @app.get("/")
 def home():
-    return {"Hello!"}
+    return {"message": "Hello!"}

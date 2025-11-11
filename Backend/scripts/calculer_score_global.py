@@ -1,8 +1,7 @@
 
 import time
-from pymongo import MongoClient
 import os
-from database import get_db
+from database import get_db, close_db
 
 # Connexion MongoDB
 db=get_db()
@@ -96,5 +95,4 @@ for lid, score in top10:
     titre = livre.get("title", "Sans titre") if livre else "Inconnu"
     print(f" - {titre[:60]}...  →  score = {score:.4f}")
 
-client.close()
-print("\n🔒 Connexion MongoDB fermée.")
+close_db()

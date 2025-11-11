@@ -1,9 +1,8 @@
 import time
 import numpy as np
-from pymongo import MongoClient
 from tqdm import tqdm
 import os
-from database import get_db
+from database import get_db, close_db
 
 # Connexion MongoDB
 db=get_db()
@@ -76,5 +75,4 @@ for i in range(n):
             count += 1
 print(f"✅ {count} couples sauvegardés dans la collection similarity.")
 
-client.close()
-print("🔒 Connexion MongoDB fermée.")
+close_db()

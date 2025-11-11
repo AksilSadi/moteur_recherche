@@ -1,10 +1,9 @@
 import time
 import numpy as np
 import networkx as nx
-from pymongo import MongoClient
 from tqdm import tqdm
 import os
-from database import get_db
+from database import get_db, close_db
 
 # Connexion MongoDB
 db=get_db()
@@ -97,5 +96,4 @@ print("Top 5 Closeness:", top_close)
 print("Top 5 Betweenness:", top_between)
 print("Top 5 PageRank:", top_pagerank)
 
-client.close()
-print("🔒 Connexion MongoDB fermée.")
+close_db()

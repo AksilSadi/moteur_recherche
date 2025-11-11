@@ -1,9 +1,8 @@
 import os
 import requests
-from pymongo import MongoClient
 import re
 from datetime import datetime
-from database import get_db
+from database import get_db, close_db
 
 # Connexion MongoDB
 db=get_db()
@@ -113,6 +112,7 @@ def main():
         page += 1
 
     print(f"✅ Terminé ! {livres_sauvegardes} livres enregistrés dans MongoDB.")
+    close_db()
 
 
 if __name__ == "__main__":

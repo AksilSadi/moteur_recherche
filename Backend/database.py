@@ -6,3 +6,7 @@ db = client["bibliotheque"]
 
 def get_db():
     return db
+def close_db():
+    """Ferme la connexion MongoDB proprement."""
+    client.close()
+    print("🔒 Connexion MongoDB fermée.")
