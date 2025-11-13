@@ -1,18 +1,54 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import { motion } from 'framer-motion'
-import { Search } from 'lucide-react'
+import BookCard from './components/BookCard'
+import type { Book } from './types';
+import SearchBar from './components/SearchBar'
+import Searched from './components/Searched';
 
 function App() {
   const [query, setQuery] = useState("");
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [page, setPage] = useState(1);
+
+  const handleDetailClick = (bookId: string) => {
+    // Gérer l'affichage des détails du livre
+  };
+
+  const handleSearch = (searchQuery: string) => {
+    setQuery(searchQuery);
+  };
+
+
+  
+
+  //recuperer livre aleatoire
+  useEffect(() => {
+    const fetchRandomBooks = async () => {
+      setLoading(true);
+      try {
+        const response = await fetch(`http://127.0.0.1:8000/livres/?page=${page}&limit=10`);
+        const data = await response.json();
+        setBooks(data.livres);
+        console.log(data.livres);
+      } catch (error) {
+        console.error("Erreur lors de la récupération des livres :", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchRandomBooks();
+  }, [page]);
+
+  
   
 
   return (
     <div className="min-h-screen bg-gray-700 from-slate-900 via-slate-950 to-black text-white">
       {/* HERO SECTION */}
-      <section className="relative text-center py-24 px-6 overflow-hidden">
+      <section className="relative text-center py-24 px-6">
         <motion.h1
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -27,25 +63,31 @@ function App() {
           transition={{ delay: 0.3 }}
           className="text-gray-300 text-lg max-w-2xl mx-auto mb-12"
         >
-          Recherchez parmi des milliers d’œuvres, découvrez les classiques, et laissez-vous guider par la science des graphes.
+          Recherchez parmi des milliers d'œuvres, découvrez les classiques, et laissez-vous guider par la science des graphes.
         </motion.p>
 
         {/* Barre de recherche */}
-        <form  className="relative max-w-xl mx-auto">
-          <Search className="absolute left-3 top-3 text-gray-400" size={22} />
-          <input
-            type="text"
-            placeholder="Rechercher un livre, un auteur, un mot-clé..."
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            className="w-full pl-10 pr-4 py-3 rounded-full bg-slate-800 border border-slate-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
-          />
-        </form>
+        <SearchBar search={handleSearch} />
 
-        {/* Effet décoratif */}
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('/pattern.svg')] opacity-5 bg-cover" />
+        {/* Affichage des livre */}
+        {query===""?<div>
+          {books && books.length > 0 && (
+          <div className="mt-16 flex flex-wrap justify-center gap-6 px-6 py-4">
+            {books.map((book:Book) => (
+              <BookCard
+                key={book.gutendexId}
+                livre={book}
+                onClick={() => { handleDetailClick(book.gutendexId) }}
+              />
+            ))}
+          </div>
+        )}
+        </div>:<Searched term={query} />}
+      
       </section>
 
+
+     {query===''?<section className='w-full'>
       {/* CATEGORIES */}
       <section className="mt-8 px-6 text-center">
         <h2 className="text-2xl font-semibold mb-4">🌈 Explorer par thème</h2>
@@ -62,22 +104,8 @@ function App() {
         </div>
       </section>
 
-      {/* RESULTATS DE RECHERCHE */}
-      {loading && (
-        <div className="text-center text-gray-400 mt-10 animate-pulse">Recherche en cours...</div>
-      )}
-
-      {!loading && books.length > 0 && (
-        <section className="mt-14 px-6">
-          <h2 className="text-2xl font-semibold mb-6">
-            🔍 Résultats pour “{query}”
-          </h2>
-         
-        </section>
-      )}
-
       {/* LIVRES POPULAIRES */}
-      {!loading && books.length === 0 && (
+      {!loading && books && books.length === 0 && (
         <section className="mt-16 px-6">
           <h2 className="text-2xl font-semibold mb-6">📚 Livres populaires</h2>
           
@@ -91,6 +119,8 @@ function App() {
         </p>
         <span className="block mt-4 text-gray-500">— George R. R. Martin</span>
       </section>
+     </section>:null}
+      
 
       {/* FOOTER */}
       <footer className="mt-24 text-center text-gray-500 py-10 border-t border-slate-800">
@@ -98,9 +128,8 @@ function App() {
         <p className="text-sm mt-2">
           Développé par Aksil Sadi - Massin Sadi — M2 STL Sorbonne Université
         </p>
+        
       </footer>
-
-      {/* MODALE DÉTAILS */}
       
     </div>
   );

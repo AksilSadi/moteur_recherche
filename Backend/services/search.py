@@ -31,63 +31,146 @@ def search_in_index(pattern: str, search_type: str = "keyword"):
     if not keywords:
         return []
 
-    book_maps = []
-
-    for keyword in keywords:
-        matching_books = {}
-
-        if search_type == "keyword":
-            entries = index_col.find({"mot": keyword})
-        else:
-            entries = index_col.find({"mot": {"$regex": keyword}})
-
-        for entry in entries:
-            for livre_id, occ in entry["livres"].items():
-                matching_books[livre_id] = matching_books.get(livre_id, 0) + occ
-
-        book_maps.append(matching_books)
-
-    # Union / intersection
-    if "|" in pattern:
-        combined_books = {}
-        for m in book_maps:
-            for lid, occ in m.items():
-                combined_books[lid] = combined_books.get(lid, 0) + occ
+    # 1-Récupère toutes les entrées pour tous les keywords
+    if search_type == "keyword":
+        entries = index_col.find({"mot": {"$in": keywords}})
     else:
-        combined_books = book_maps[0]
-        for m in book_maps[1:]:
-            combined_books = {
-                lid: combined_books[lid] + m[lid]
-                for lid in combined_books if lid in m
-            }
+        # TEXT SEARCH (beaucoup plus rapide que regex)
+        entries = index_col.find({ "$text": { "$search": " ".join(keywords) } })
 
+    # 2-Stocke pour chaque keyword → {keyword: {livre_id: freq}}
+    books_per_keyword = {kw: {} for kw in keywords}
+
+    for entry in entries:
+        mot = entry["mot"]
+        if mot not in books_per_keyword:
+            continue
+
+        for lid, occ in entry["livres"].items():
+            books_per_keyword[mot][lid] = occ
+
+    # 3-UNION ou INTERSECTION selon présence de "|"
+    if "|" in pattern:  # UNION
+        combined_books = {}
+        for d in books_per_keyword.values():
+            for lid, occ in d.items():
+                combined_books[lid] = combined_books.get(lid, 0) + occ
+
+    else:  # INTERSECTION (AND)
+        # Prendre les livres présents dans tous les dicos
+        all_sets = [set(d.keys()) for d in books_per_keyword.values()]
+        intersection_ids = set.intersection(*all_sets) if all_sets else set()
+
+        combined_books = {
+            lid: sum(d.get(lid, 0) for d in books_per_keyword.values())
+            for lid in intersection_ids
+        }
+
+    if not combined_books:
+        return []
+
+    # 4-Charger les infos Mongo en UNE SEULE FOIS
+    livre_ids = [int(l) for l in combined_books.keys()]
+
+    livres = {
+        str(doc["gutendexId"]): doc
+        for doc in livres_col.find({"gutendexId": {"$in": livre_ids}}, {"_id": 0})
+    }
+
+    centralites = {
+        doc["livreId"]: doc["scoreGlobal"]
+        for doc in centr_col.find({"livreId": {"$in": [str(l) for l in livre_ids]}}, {"_id": 0})
+    }
+
+    # 5-Construction finale
     resultats = []
+    for lid, freq in combined_books.items():
+        livre = livres.get(str(lid))
+        if not livre:
+            continue
+        resultats.append({
+            "livreId": lid,
+            "titre": livre["titre"],
+            "auteur": livre.get("auteur", "Inconnu"),
+            "coverUrl": livre.get("coverUrl", ""),
+            "downloadCount": livre.get("downloadCount", 0),
+            "frequence": freq,
+            "scoreGlobal": centralites.get(str(lid), 0)
+        })
 
-    # Tri par scoreGlobal uniquement
-    for livre_id, freq in combined_books.items():
-        livre = livres_col.find_one(
-            {"gutendexId": int(livre_id)},
-            {"_id": 0, "titre": 1, "auteur": 1}
+    # 6-Tri final ultra rapide
+    return sorted(resultats, key=lambda x: x["scoreGlobal"], reverse=True)[:20]
+
+def search_regex_in_index(regex_pattern: str):
+    try:
+        reg = re.compile(regex_pattern)
+    except:
+        return []  # mauvaise regex
+
+    matching_entries = index_col.find({
+        "mot": {"$regex": regex_pattern}
+    })
+
+    combined_books = {}
+
+    for entry in matching_entries:
+        for lid, occ in entry["livres"].items():
+            combined_books[lid] = combined_books.get(lid, 0) + occ
+
+    return combined_books
+
+def format_results(combined_books):
+    """
+    combined_books = { livre_id: fréquence }
+    Formate les résultats en ajoutant :
+    - titre, auteur, coverUrl, downloadCount
+    - scoreGlobal
+    - tri final
+    """
+    if not combined_books:
+        return []
+
+    # Charger les infos Mongo en UNE fois
+    livre_ids = [int(l) for l in combined_books.keys()]
+
+    # Infos livres
+    livres = {
+        str(doc["gutendexId"]): doc
+        for doc in livres_col.find(
+            {"gutendexId": {"$in": livre_ids}},
+            {"_id": 0}
         )
-        centralite = centr_col.find_one(
-            {"livreId": str(livre_id)},
-            {"_id": 0, "scoreGlobal": 1}
+    }
+
+    # Infos centralité
+    centralites = {
+        doc["livreId"]: doc.get("scoreGlobal", 0)
+        for doc in centr_col.find(
+            {"livreId": {"$in": [str(l) for l in livre_ids]}},
+            {"_id": 0}
         )
-        score = centralite["scoreGlobal"] if centralite else 0
+    }
 
-        if livre:
-            resultats.append({
-                "livreId": livre_id,
-                "titre": livre["titre"],
-                "auteur": livre.get("auteur", "Inconnu"),
-                "frequence": freq,
-                "scoreGlobal": score
-            })
+    # Construire résultats
+    resultats = []
+    for lid, freq in combined_books.items():
+        livre = livres.get(str(lid))
+        if not livre:
+            continue
 
-    # Tri final uniquement selon le scoreGlobal décroissant
-    resultats = sorted(resultats, key=lambda x: x["scoreGlobal"], reverse=True)
+        resultats.append({
+            "livreId": lid,
+            "titre": livre["titre"],
+            "auteur": livre.get("auteur", "Inconnu"),
+            "coverUrl": livre.get("coverUrl", ""),
+            "downloadCount": livre.get("downloadCount", 0),
+            "frequence": freq,
+            "scoreGlobal": centralites.get(str(lid), 0)
+        })
 
-    return resultats[:20]  # top 20 meilleurs livres
+    # Tri final
+    return sorted(resultats, key=lambda x: x["scoreGlobal"], reverse=True)[:20]
+
 
 
 # 4 - Recherche Regex ou KMP inchangée
@@ -114,7 +197,9 @@ def search_in_files(pattern: str, search_type: str):
                     resultats.append({
                         "livreId": livre["gutendexId"],
                         "titre": livre["titre"],
-                        "auteur": livre.get("auteur", "Inconnu")
+                        "auteur": livre.get("auteur", "Inconnu"),
+                        "coverUrl": livre.get("coverUrl", ""),
+                        "downloadCount": livre.get("downloadCount", 0)
                     })
 
         except Exception as e:
@@ -127,8 +212,20 @@ def search_in_files(pattern: str, search_type: str):
 # 5- Fonction principale
 def search(pattern: str, search_type: str = "keyword"):
     if search_type == "keyword":
-        return search_in_index(pattern, search_type)
-    elif search_type in ["regex", "kmp"]:
-        return search_in_files(pattern, search_type)
+        return search_in_index(pattern)
+
+    elif search_type == "regex":
+        # 1) REGEX SUR L'INDEX (rapide)
+        result_index = search_regex_in_index(pattern)
+        if result_index:
+            return format_results(result_index)
+
+        # 2) REGEX SUR LES FICHIERS (lent)
+        return search_in_files(pattern)
+
+    elif search_type == "kmp":
+        return search_in_files(pattern, "kmp")
+
     else:
-        raise ValueError(f"Type de recherche non supporté : {search_type}")
+        raise ValueError(f"Type non supporté : {search_type}")
+
