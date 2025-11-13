@@ -1,42 +1,71 @@
 import os
-import requests
 import re
+import requests
 from datetime import datetime
+import sys
+
+# --- Import du module database ---
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from database import get_db, close_db
 
-# Connexion MongoDB
-db=get_db()
-livres_collection = db['livres']
-# 2) Création du dossier pour les livres
-dossier_livres = 'livres'
-if not os.path.exists(dossier_livres):
-    os.makedirs(dossier_livres)
-# 3) Fonctions utilitaires (compter mots, télécharger, etc.)
-def compter_mots(texte):
+# --- Connexion MongoDB ---
+db = get_db()
+livres_collection = db["livres"]
+
+# --- Dossier pour stocker les fichiers texte ---
+DOSSIER_LIVRES = "livres"
+os.makedirs(DOSSIER_LIVRES, exist_ok=True)
+
+
+# --- Fonction : compter les mots d’un texte ---
+def compter_mots(texte: str) -> int:
     """Compte le nombre de mots dans un texte donné."""
-    mots = re.findall(r'\b\w+\b', texte)
-    return len(mots)
-def telecharger_livre(url, chemin_fichier):
-    """Télécharge un livre depuis une URL, le sauvegarde, et renvoie le texte."""
+    return len(re.findall(r"\b\w+\b", texte))
+
+
+# --- Fonction : télécharger un livre (texte brut) ---
+def telecharger_livre(url: str, chemin_fichier: str):
+    """Télécharge un livre depuis une URL et sauvegarde le texte brut localement."""
     try:
-        response = requests.get(url)
-        response.raise_for_status()  # Vérifie que la requête a réussi
-        texte = response.text        # texte en string
-
-        # Sauvegarder en UTF-8
-        with open(chemin_fichier, 'w', encoding='utf-8') as fichier:
-            fichier.write(texte)
-
-        print(f"Téléchargé avec succès : {chemin_fichier}")
+        r = requests.get(url, timeout=10)
+        r.raise_for_status()
+        texte = r.text
+        with open(chemin_fichier, "w", encoding="utf-8") as f:
+            f.write(texte)
+        print(f"📘 Livre téléchargé : {chemin_fichier}")
         return texte
-    except requests.exceptions.RequestException as e:
-        print(f"Erreur lors du téléchargement de {url} : {e}")
+    except Exception as e:
+        print(f"⚠️ Erreur téléchargement {url}: {e}")
         return None
-# 4) Boucle principale
 
+
+# --- Fonction : récupérer l’URL de couverture (sans téléchargement) ---
+def trouver_cover_url(livre):
+    """Construit les URLs possibles pour la couverture Gutenberg et teste la première valide."""
+    formats = livre.get("formats", {})
+    if "image/jpeg" in formats:
+        return formats["image/jpeg"]  # Lien direct fourni par l’API Gutendex
+
+    # Sinon, essaie les formats standards Gutenberg
+    possible_urls = [
+        f"https://www.gutenberg.org/files/{livre['id']}/{livre['id']}-h/images/cover.jpg",
+        f"https://www.gutenberg.org/cache/epub/{livre['id']}/pg{livre['id']}.cover.medium.jpg"
+    ]
+
+    for url in possible_urls:
+        try:
+            resp = requests.head(url, timeout=5)
+            if resp.status_code == 200 and resp.headers.get("content-type", "").startswith("image"):
+                return url
+        except:
+            continue
+    return None
+
+
+# --- Script principal ---
 def main():
-    print("Démarrage du script de téléchargement de livres...")
-    print("Nombre de livres déjà en base :", livres_collection.count_documents({}))
+    print("🚀 Démarrage du téléchargement des livres + URL des images...")
+    print("📚 Livres déjà en base :", livres_collection.count_documents({}))
 
     page = 1
     livres_sauvegardes = 0
@@ -44,37 +73,36 @@ def main():
     min_mots = 10000
 
     while livres_sauvegardes < livres_voulus:
-        print(f"📖 Récupération de la page {page} depuis Gutendex...")
-        url_api = f"https://gutendex.com/books/?page={page}"
-        reponse = requests.get(url_api)
-
-        if reponse.status_code != 200:
-            print(f"⚠️ Erreur API (code {reponse.status_code})")
+        print(f"\n📖 Page {page} — Récupération depuis Gutendex...")
+        response = requests.get(f"https://gutendex.com/books/?page={page}")
+        if response.status_code != 200:
+            print(f"⚠️ Erreur API (code {response.status_code})")
             break
 
-        data = reponse.json()
+        data = response.json()
         livres = data.get("results", [])
 
-        # Parcours de chaque livre de la page
         for livre in livres:
-            # Vérifier si déjà en base
+            # Vérifie s'il est déjà en base
             if livres_collection.find_one({"gutendexId": livre["id"]}):
-                print(f"⏭️ Livre {livre['title']} déjà présent, on saute.")
                 continue
 
-            # Chercher le lien texte
+            # Trouve un lien texte brut
             formats = livre.get("formats", {})
-            lien_texte = None
-            for fmt in ["text/plain; charset=utf-8", "text/plain", "text/plain; charset=us-ascii"]:
-                if fmt in formats:
-                    lien_texte = formats[fmt]
-                    break
+            lien_texte = next(
+                (formats.get(fmt) for fmt in [
+                    "text/plain; charset=utf-8",
+                    "text/plain",
+                    "text/plain; charset=us-ascii"
+                ] if fmt in formats),
+                None
+            )
 
             if not lien_texte:
-                continue  # pas de texte brut, on ignore
+                continue
 
-            # Télécharger et compter les mots
-            chemin_fichier = os.path.join(dossier_livres, f"livre_{livre['id']}.txt")
+            # Téléchargement du texte
+            chemin_fichier = os.path.join(DOSSIER_LIVRES, f"livre_{livre['id']}.txt")
             texte = telecharger_livre(lien_texte, chemin_fichier)
             if not texte:
                 continue
@@ -84,15 +112,19 @@ def main():
                 print(f"📉 Livre trop court ({nb_mots} mots) : {livre['title']}")
                 continue
 
-            # Extraire infos principales
+            # Récupération de la couverture (URL uniquement)
+            cover_url = trouver_cover_url(livre)
+
+            # Informations principales
             auteur = livre["authors"][0]["name"] if livre.get("authors") else "Inconnu"
 
-            # Insérer dans MongoDB
+            # Insertion dans MongoDB
             doc = {
                 "gutendexId": livre["id"],
                 "titre": livre["title"],
                 "auteur": auteur,
                 "chemin": chemin_fichier,
+                "coverUrl": cover_url, 
                 "nombreMots": nb_mots,
                 "downloadCount": livre.get("download_count", 0),
                 "dateAjout": datetime.now()
@@ -100,18 +132,18 @@ def main():
             livres_collection.insert_one(doc)
             livres_sauvegardes += 1
 
-            print(f"✅ Livre enregistré : {livre['title']} ({nb_mots} mots) — Total : {livres_sauvegardes}")
+            print(f"✅ Livre enregistré : {livre['title']} — Total : {livres_sauvegardes}")
 
             if livres_sauvegardes >= livres_voulus:
                 break
 
         if not data.get("next"):
-            print("🚫 Plus de pages disponibles dans l'API.")
+            print("🚫 Plus de pages disponibles.")
             break
 
         page += 1
 
-    print(f"✅ Terminé ! {livres_sauvegardes} livres enregistrés dans MongoDB.")
+    print(f"\n🎯 Terminé : {livres_sauvegardes} livres enregistrés avec coverUrl.")
     close_db()
 
 

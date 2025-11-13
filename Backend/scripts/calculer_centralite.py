@@ -3,8 +3,9 @@ import numpy as np
 import networkx as nx
 from tqdm import tqdm
 import os
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from database import get_db, close_db
-
 # Connexion MongoDB
 db=get_db()
 centrality_col = db["centrality"]
@@ -51,13 +52,22 @@ start_time = time.time()
 print("⚙️ Calcul des centralités... (cela peut être long)")
 
 # Closeness centrality (distance = inverse du poids)
+closness_time=time.time()
 closeness = nx.closeness_centrality(G, distance="distance")
+closeness_elapsed=time.time()-closness_time
+print(f"   - Closeness centrality calculée en {closeness_elapsed:.2f} secondes.")
 
 # Betweenness centrality
+betweenness_time=time.time()
 betweenness = nx.betweenness_centrality(G, weight="distance")
+betweenness_elapsed=time.time()-betweenness_time
+print(f"   - Betweenness centrality calculée en {betweenness_elapsed:.2f} secondes.")
 
 # PageRank (basé sur poids Jaccard)
+pagerank_time=time.time()
 pagerank = nx.pagerank(G, weight="weight")
+pagerank_elapsed=time.time()-pagerank_time
+print(f"   - PageRank calculé en {pagerank_elapsed:.2f} secondes.")
 
 elapsed = time.time() - start_time
 print(f"✅ Centralités calculées en {elapsed:.2f} secondes.")

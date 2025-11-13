@@ -2,8 +2,9 @@ import time
 import numpy as np
 from tqdm import tqdm
 import os
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from database import get_db, close_db
-
 # Connexion MongoDB
 db=get_db()
 index_col = db["index"]
