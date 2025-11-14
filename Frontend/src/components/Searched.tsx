@@ -41,11 +41,11 @@ function Searched({term}:{term:string}) {
                 <div className="flex justify-center items-center h-40">
                     <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
                 </div>
-            ) : searchResults.length === 0 ? (
+            ) : searchResults?.length === 0 ? (
                 <p className="text-white">Aucun résultat trouvé.</p>
             ) : (
                 <ul className="grid grid-cols-4 gap-4">
-                    {searchResults.map((book: Book) => (
+                    {searchResults?.map((book: Book) => (
                         <BookCard
                          key={book.gutendexId}
                          livre={book}

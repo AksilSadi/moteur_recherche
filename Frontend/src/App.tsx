@@ -70,7 +70,8 @@ function App() {
         <SearchBar search={handleSearch} />
 
         {/* Affichage des livre */}
-        {query===""?<div>
+        <div className='w-full'>
+          {query===""?<div>
           {books && books.length > 0 && (
           <div className="mt-16 flex flex-wrap justify-center gap-6 px-6 py-4">
             {books.map((book:Book) => (
@@ -83,26 +84,13 @@ function App() {
           </div>
         )}
         </div>:<Searched term={query} />}
+        </div>
+        
       
       </section>
 
 
      {query===''?<section className='w-full'>
-      {/* CATEGORIES */}
-      <section className="mt-8 px-6 text-center">
-        <h2 className="text-2xl font-semibold mb-4">🌈 Explorer par thème</h2>
-        <div className="flex flex-wrap justify-center gap-3">
-          {["Aventure", "Amour", "Philosophie", "Science", "Classiques"].map((theme) => (
-            <button
-              key={theme}
-              className="bg-slate-800 hover:bg-blue-600 px-4 py-2 rounded-full text-white transition-all"
-              
-            >
-              {theme}
-            </button>
-          ))}
-        </div>
-      </section>
 
       {/* LIVRES POPULAIRES */}
       {!loading && books && books.length === 0 && (
