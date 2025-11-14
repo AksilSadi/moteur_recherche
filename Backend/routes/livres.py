@@ -93,7 +93,8 @@ def get_recommendations(livre_id: str):
                 "livreId": other_id,
                 "titre": livre["titre"],
                 "auteur": livre.get("auteur", "Inconnu"),
-                "image": livre.get("coverUrl", None),
+                "downloadCount": livre.get("downloadCount", 0),
+                "coverUrl": livre.get("coverUrl", None),
                 "similarite": sim,
                 "scoreGlobal": scoreGlobal
             })
@@ -105,8 +106,8 @@ def get_recommendations(livre_id: str):
         reverse=True
     )
 
-    # Garder les 5 meilleurs
-    recommandations = recommandations[:5]
+    # Garder les 8 meilleurs
+    recommandations = recommandations[:8]
 
     return {
         "livre_id": livre_id,

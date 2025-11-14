@@ -5,15 +5,17 @@ import BookCard from './components/BookCard'
 import type { Book } from './types';
 import SearchBar from './components/SearchBar'
 import Searched from './components/Searched';
+import BookDetails from './components/Bookdetails';
 
 function App() {
   const [query, setQuery] = useState("");
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(false);
   const [page, setPage] = useState(1);
+  const [clickedOne, setClickedOne] = useState<Book | null>(null);
 
-  const handleDetailClick = (bookId: string) => {
-    // Gérer l'affichage des détails du livre
+  const handleDetailClick = (book:Book) => {
+    setClickedOne(book);
   };
 
   const handleSearch = (searchQuery: string) => {
@@ -71,14 +73,14 @@ function App() {
 
         {/* Affichage des livre */}
         <div className='w-full'>
-          {query===""?<div>
+          {query===""?clickedOne!=null?<BookDetails clicked={clickedOne}  />:<div>
           {books && books.length > 0 && (
           <div className="mt-16 flex flex-wrap justify-center gap-6 px-6 py-4">
             {books.map((book:Book) => (
               <BookCard
                 key={book.gutendexId}
                 livre={book}
-                onClick={() => { handleDetailClick(book.gutendexId) }}
+                onClick={() => { handleDetailClick(book) }}
               />
             ))}
           </div>
@@ -90,7 +92,7 @@ function App() {
       </section>
 
 
-     {query===''?<section className='w-full'>
+     {(query==='' || clickedOne!=null)?<section className='w-full'>
 
       {/* LIVRES POPULAIRES */}
       {!loading && books && books.length === 0 && (
