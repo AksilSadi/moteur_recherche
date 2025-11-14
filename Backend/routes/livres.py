@@ -1,6 +1,9 @@
 from fastapi import APIRouter, Query
 from database import get_db
 from services.search import search
+from services.trie_builder import load_or_build_trie
+
+TRIE_INSTANCE = load_or_build_trie()
 
 router = APIRouter(prefix="/livres", tags=["Livres"])
 db = get_db()
@@ -109,3 +112,9 @@ def get_recommendations(livre_id: str):
         "livre_id": livre_id,
         "recommendations": recommandations
     }
+@router.get("/autocomplete")
+def autocomplete(prefix: str):
+    if not prefix or len(prefix) < 2:
+        return []
+
+    return TRIE_INSTANCE.autocomplete(prefix.lower())
