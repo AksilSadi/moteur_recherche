@@ -19,7 +19,10 @@ class TrieNode:
         node.is_word = data["is_word"]
         node.score = data["score"]
         node.word = data["word"]
-        node.children = {ch: TrieNode.from_dict(nd) for ch, nd in data["children"].items()}
+        node.children = {
+            ch: TrieNode.from_dict(nd)
+            for ch, nd in data["children"].items()
+        }
         return node
 
 
@@ -37,6 +40,24 @@ class Trie:
         node.is_word = True
         node.word = word
         node.score = score
+
+    def _collect(self, node, results):
+        if node.is_word:
+            results.append((node.word, node.score))
+        for child in node.children.values():
+            self._collect(child, results)
+
+    def autocomplete(self, prefix: str):
+        node = self.root
+        for ch in prefix:
+            if ch not in node.children:
+                return []
+            node = node.children[ch]
+
+        results = []
+        self._collect(node, results)
+        results.sort(key=lambda x: x[1], reverse=True)
+        return [word for word, score in results[:20]]
 
     def to_dict(self):
         return self.root.to_dict()

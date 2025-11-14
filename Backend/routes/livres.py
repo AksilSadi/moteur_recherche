@@ -45,7 +45,7 @@ def rechercher(
     return {"query": q, "type": type, "resultats": resultats}
 
 # 2. Détails d’un livre par son ID
-@router.get("/{livre_id}")
+@router.get("/id/{livre_id}")
 def get_livre(livre_id: str):
     """
     Récupère les détails d’un livre par son ID.
