@@ -67,7 +67,7 @@ def get_recommendations(livre_id: str):
     livres_col = db["livres"]
     centr_col = db["centrality"]
 
-    # Chercher toutes les similarités qui impliquent ce livre
+    # 1) Charger toutes les similarités d’un coup
     docs = list(similarity_col.find({
         "$or": [{"livre1": livre_id}, {"livre2": livre_id}]
     }))
@@ -75,44 +75,56 @@ def get_recommendations(livre_id: str):
     if not docs:
         return {"error": "Aucune similarité trouvée pour ce livre"}
 
+    # 2) Extraire tous les other_id
+    other_ids = [
+        d["livre2"] if d["livre1"] == livre_id else d["livre1"]
+        for d in docs
+    ]
+
+    # 3) Charger TOUS les livres en 1 requête
+    livres = {
+        str(doc["gutendexId"]): doc
+        for doc in livres_col.find(
+            {"gutendexId": {"$in": [int(x) for x in other_ids]}},
+            {"_id": 0}
+        )
+    }
+
+    # 4) Charger TOUTES les centralités en 1 requête
+    centralites = {
+        doc["livreId"]: doc.get("scoreGlobal", 0)
+        for doc in centr_col.find(
+            {"livreId": {"$in": other_ids}},
+            {"_id": 0}
+        )
+    }
+
+    # 5) Construction directe des recommandations
     recommandations = []
+    for d, other_id in zip(docs, other_ids):
+        livre = livres.get(str(other_id))
+        if not livre:
+            continue
 
-    for d in docs:
-        # Trouver l'autre livre dans la paire
-        other_id = d["livre2"] if d["livre1"] == livre_id else d["livre1"]
-        sim = d.get("jaccard", 0)
+        recommandations.append({
+            "livreId": other_id,
+            "titre": livre["titre"],
+            "auteur": livre.get("auteur", "Inconnu"),
+            "downloadCount": livre.get("downloadCount", 0),
+            "coverUrl": livre.get("coverUrl", None),
+            "similarite": d.get("jaccard", 0),
+            "scoreGlobal": centralites.get(other_id, 0)
+        })
 
-        # Récupération du score global
-        centrality = centr_col.find_one({"livreId": str(other_id)}, {"scoreGlobal": 1})
-        scoreGlobal = centrality["scoreGlobal"] if centrality else 0
+    # 6) Trier
+    recommandations.sort(key=lambda x: (x["similarite"], x["scoreGlobal"]), reverse=True)
 
-        # Récupération du livre
-        livre = livres_col.find_one({"gutendexId": int(other_id)}, {"_id": 0})
-        if livre:
-            recommandations.append({
-                "livreId": other_id,
-                "titre": livre["titre"],
-                "auteur": livre.get("auteur", "Inconnu"),
-                "downloadCount": livre.get("downloadCount", 0),
-                "coverUrl": livre.get("coverUrl", None),
-                "similarite": sim,
-                "scoreGlobal": scoreGlobal
-            })
-
-    # Trier : 1) similarité, 2) scoreGlobal
-    recommandations = sorted(
-        recommandations,
-        key=lambda x: (x["similarite"], x["scoreGlobal"]),
-        reverse=True
-    )
-
-    # Garder les 8 meilleurs
-    recommandations = recommandations[:8]
-
+    # 7) Retourner les 8 meilleurs
     return {
         "livre_id": livre_id,
-        "recommendations": recommandations
+        "recommendations": recommandations[:8]
     }
+
 @router.get("/autocomplete")
 def autocomplete(prefix: str):
     if not prefix or len(prefix) < 2:
