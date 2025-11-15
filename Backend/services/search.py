@@ -1,6 +1,10 @@
 import re
 import os
 from database import get_db
+from nltk.stem import PorterStemmer
+
+# --- Initialisation du stemmer ---
+stemmer = PorterStemmer()
 
 # --- Connexion MongoDB ---
 db = get_db()
@@ -9,73 +13,70 @@ livres_col = db["livres"]
 centr_col = db["centrality"]
 
 
-# --------------------------------------------------------
-# 1) Découper la requête utilisateur
-# --------------------------------------------------------
+# 1-Découpe + Stemming
 def split_pattern(pattern: str, search_type: str):
+    """Découpe la requête et renvoie les STEMS pour cohérence avec autocomplétion"""
     if search_type == "regex":
-        return [pattern]
-    return [w.lower() for w in re.split(r"[^\w]+", pattern) if len(w) > 3]
+        return [stemmer.stem(pattern.lower())]
+
+    words = [w.lower() for w in re.split(r"[^\w]+", pattern) if len(w) > 2]
+    stems = [stemmer.stem(w) for w in words]
+    return stems
 
 
-# --------------------------------------------------------
-# 2) Recherche par mot-clé via INDEX MongoDB
-# --------------------------------------------------------
-def search_in_index(pattern: str, search_type="keyword"):
-    keywords = split_pattern(pattern, search_type)
-    if not keywords:
+# 2- Recherche dans l’INDEX MongoDB
+def search_in_index(pattern: str, search_type: str = "keyword"):
+    stems = split_pattern(pattern, search_type)
+    if not stems:
         return []
 
-    # Keyword search
+    # Recherche directe via index (super rapide)
     if search_type == "keyword":
-        entries = index_col.find({"mot": {"$in": keywords}})
+        entries = index_col.find({"mot": {"$in": stems}})
     else:
-        # Full text search (Mongo TEXT index)
-        entries = index_col.find({"$text": {"$search": " ".join(keywords)}})
+        # Full text search basé sur les stems
+        entries = index_col.find({"$text": {"$search": " ".join(stems)}})
 
-    books_per_keyword = {kw: {} for kw in keywords}
+    books_per_stem = {stem: {} for stem in stems}
 
     for entry in entries:
         mot = entry["mot"]
-
-        if mot not in books_per_keyword:
+        if mot not in books_per_stem:
             continue
-
         for lid, occ in entry["livres"].items():
-            books_per_keyword[mot][lid] = occ
+            books_per_stem[mot][lid] = occ
 
-    # UNION si pattern contient "|", sinon INTERSECTION
+    # UNION si | présent
     if "|" in pattern:
         combined_books = {}
-        for d in books_per_keyword.values():
+        for d in books_per_stem.values():
             for lid, occ in d.items():
                 combined_books[lid] = combined_books.get(lid, 0) + occ
 
+    # Sinon INTERSECTION
     else:
-        # intersection
-        all_sets = [set(d.keys()) for d in books_per_keyword.values()]
-        intersection_ids = set.intersection(*all_sets) if all_sets else set()
+        sets = [set(d.keys()) for d in books_per_stem.values()]
+        intersection = set.intersection(*sets) if sets else set()
 
         combined_books = {
-            lid: sum(d.get(lid, 0) for d in books_per_keyword.values())
-            for lid in intersection_ids
+            lid: sum(d.get(lid, 0) for d in books_per_stem.values())
+            for lid in intersection
         }
 
     return format_results(combined_books)
 
 
-# --------------------------------------------------------
-# 3) Regex sur INDEX MongoDB
-# --------------------------------------------------------
+# 3-REGEX rapide via INDEX
 def search_regex_in_index(regex_pattern: str):
+    """Regex appliqué au STEM uniquement pour cohérence avec autocomplétion"""
     try:
-        re.compile(regex_pattern)
+        reg = re.compile(regex_pattern)
     except:
         return {}
 
     matching_entries = index_col.find({"mot": {"$regex": regex_pattern}})
-
     combined_books = {}
+
     for entry in matching_entries:
         for lid, occ in entry["livres"].items():
             combined_books[lid] = combined_books.get(lid, 0) + occ
@@ -83,25 +84,27 @@ def search_regex_in_index(regex_pattern: str):
     return combined_books
 
 
-# --------------------------------------------------------
-# 4) Formatage final + chargement MongoDB
-# --------------------------------------------------------
+# 4- Formatage final + chargements groupés
 def format_results(combined_books):
     if not combined_books:
         return []
 
     livre_ids = [int(l) for l in combined_books.keys()]
 
-    # Charger les livres d’un coup
+    # Charger livres d'un coup
     livres = {
         str(doc["gutendexId"]): doc
-        for doc in livres_col.find({"gutendexId": {"$in": livre_ids}}, {"_id": 0})
+        for doc in livres_col.find(
+            {"gutendexId": {"$in": livre_ids}}, {"_id": 0}
+        )
     }
 
-    # Charger centralité d’un coup
+    # Charger centralités d'un coup
     centralites = {
         doc["livreId"]: doc.get("scoreGlobal", 0)
-        for doc in centr_col.find({"livreId": {"$in": [str(l) for l in livre_ids]}}, {"_id": 0})
+        for doc in centr_col.find(
+            {"livreId": {"$in": [str(l) for l in livre_ids]}}
+        )
     }
 
     resultats = []
@@ -117,22 +120,20 @@ def format_results(combined_books):
             "coverUrl": livre.get("coverUrl", ""),
             "downloadCount": livre.get("downloadCount", 0),
             "frequence": freq,
-            "scoreGlobal": centralites.get(str(lid), 0)
+            "scoreGlobal": centralites.get(str(lid), 0),
         })
 
-    # Tri final
+    # Tri final : scoreGlobal
     return sorted(resultats, key=lambda x: x["scoreGlobal"], reverse=True)[:20]
 
 
-# --------------------------------------------------------
-# 5) Recherche REGEX sur les fichiers (fallback lent)
-# --------------------------------------------------------
-def search_in_files(pattern: str):
+# 5-REGEX lente (fichiers) uniquement en fallback
+def search_in_files(regex_pattern: str):
     resultats = []
     livres = list(livres_col.find())
 
     try:
-        reg = re.compile(pattern)
+        reg = re.compile(regex_pattern)
     except:
         return []
 
@@ -150,32 +151,32 @@ def search_in_files(pattern: str):
                         "titre": livre["titre"],
                         "auteur": livre.get("auteur", "Inconnu"),
                         "coverUrl": livre.get("coverUrl", ""),
-                        "downloadCount": livre.get("downloadCount", 0)
+                        "downloadCount": livre.get("downloadCount", 0),
                     })
-
-        except Exception as e:
-            print(f"⚠️ Erreur lecture {chemin}: {e}")
+        except:
+            continue
 
     return resultats
 
 
-# --------------------------------------------------------
-# 6) Fonction principale
-# --------------------------------------------------------
+# 6- Fonction principale
 def search(pattern: str, search_type: str = "keyword"):
-    # --- Recherche par mot-clé ---
+
+    # 🔍 RECHERCHE MOT-CLÉ (stem-based)
     if search_type == "keyword":
         return search_in_index(pattern)
 
-    # --- Recherche par RegEx ---
+    # 🔍 RECHERCHE REGEX
     elif search_type == "regex":
-        # 1) Test rapide via INDEX
-        index_matches = search_regex_in_index(pattern)
+        stem = stemmer.stem(pattern.lower())
+
+        # 1) regex rapide via index
+        index_matches = search_regex_in_index(stem)
         if index_matches:
             return format_results(index_matches)
 
-        # 2) Sinon recherche lente dans les fichiers
-        return search_in_files(pattern)
+        # 2) fallback REGEX sur fichiers
+        return search_in_files(stem)
 
     else:
         raise ValueError(f"Type non supporté : {search_type}")

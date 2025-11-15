@@ -33,6 +33,9 @@ function BookDetails({clicked}:{clicked:Book}) {
   }
 
   return (
+    <>
+    {clickedOne?
+            <BookDetails clicked={clickedOne} />:
     <div>
     <div className="w-full flex flex-col relative h-[400px] rounded-lg overflow-hidden mt-8">
             <img
@@ -75,8 +78,7 @@ function BookDetails({clicked}:{clicked:Book}) {
 
 
     <div>
-      {clickedOne?
-            <BookDetails clicked={clickedOne} />:
+      
     <div className="w-full flex flex-col mt-8">
     <p className='text-white font-bold text-2xl'>Recommendation</p>
     <div className='flex mt-4 flex-wrap'>
@@ -87,7 +89,7 @@ function BookDetails({clicked}:{clicked:Book}) {
             ):
             (
             <div className="mt-16 flex flex-wrap justify-center gap-6 px-6 py-4">
-             {recommendations.map((book, index) => {  
+             {recommendations?recommendations.map((book, index) => {  
                if (book.gutendexId !== clicked.gutendexId) {
                 return (
                       <BookCard
@@ -96,15 +98,16 @@ function BookDetails({clicked}:{clicked:Book}) {
                        />
                       );
                }
-               })}
+               }):<p className='text-white'>Aucune recommendation trouvée.</p>}
               </div>
               )
                 }
     </div>
     </div>
-            }
     </div>
-    </div>
+    </div>}
+    </>
+    
   );
 }
 
