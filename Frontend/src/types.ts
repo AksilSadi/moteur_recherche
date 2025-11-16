@@ -15,6 +15,9 @@ type Book = {
     bookshelves?: string[];
     mediaType?: string | null;
     gutenbergUrl?: string;
+    similarite?: number ,
+    scoreGlobal?: number,
+    top3?: Book[]
 };
 
 export type { Book };

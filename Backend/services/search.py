@@ -3,10 +3,10 @@ import os
 from database import get_db
 from nltk.stem import PorterStemmer
 
-# --- Initialisation du stemmer ---
+# Initialisation du stemmer
 stemmer = PorterStemmer()
 
-# --- Connexion MongoDB ---
+# Connexion MongoDB
 db = get_db()
 index_col = db["index"]
 livres_col = db["livres"]
@@ -114,17 +114,25 @@ def format_results(combined_books):
             continue
 
         resultats.append({
-            "livreId": lid,
+            "gutendexId": lid,
             "titre": livre["titre"],
             "auteur": livre.get("auteur", "Inconnu"),
             "coverUrl": livre.get("coverUrl", ""),
             "downloadCount": livre.get("downloadCount", 0),
+            "birthYear": livre.get("birthYear", None),
+            "deathYear": livre.get("deathYear", None),
+            "subjects": livre.get("subjects", []),
+            "languages": livre.get("languages", []),
+            "rights": livre.get("rights", None),
+            "bookshelves": livre.get("bookshelves", []),
+            "mediaType": livre.get("mediaType", None),
+            "gutenbergUrl": livre.get("gutenbergUrl", None),
             "frequence": freq,
             "scoreGlobal": centralites.get(str(lid), 0),
         })
 
     # Tri final : scoreGlobal
-    return sorted(resultats, key=lambda x: x["scoreGlobal"], reverse=True)[:20]
+    return sorted(resultats, key=lambda x: x["scoreGlobal"], reverse=True)
 
 
 # 5-REGEX lente (fichiers) uniquement en fallback

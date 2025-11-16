@@ -9,31 +9,41 @@ import BookDetails from './components/Bookdetails';
 
 function App() {
   const [query, setQuery] = useState("");
-  const [books, setBooks] = useState([]);
+  const [books, setBooks] = useState<Book[]>([]);
   const [loading, setLoading] = useState(false);
+
+  // Pagination pour la page d'accueil
   const [page, setPage] = useState(1);
+  const limit = 10;
+  const [total, setTotal] = useState(0);
+  const totalPages = Math.max(1, Math.ceil(total / limit));
+
   const [clickedOne, setClickedOne] = useState<Book | null>(null);
 
-  const handleDetailClick = (book:Book) => {
+  const handleDetailClick = (book: Book) => {
     setClickedOne(book);
   };
 
   const handleSearch = (searchQuery: string) => {
     setQuery(searchQuery);
+    setClickedOne(null); // reset détail si nouvelle recherche
   };
 
 
-  
-
-  //recuperer livre aleatoire
+  // Récupération des livres de la page d’accueil
   useEffect(() => {
-    const fetchRandomBooks = async () => {
+    if (query !== "") return; // NE PAS charger les livres si on est en mode recherche
+
+    const fetchBooks = async () => {
       setLoading(true);
       try {
-        const response = await fetch(`http://127.0.0.1:8000/livres/?page=${page}&limit=10`);
+        const response = await fetch(
+          `http://127.0.0.1:8000/livres/?page=${page}&limit=${limit}`
+        );
         const data = await response.json();
+
         setBooks(data.livres);
-        console.log(data.livres);
+        setTotal(data.total);
       } catch (error) {
         console.error("Erreur lors de la récupération des livres :", error);
       } finally {
@@ -41,15 +51,58 @@ function App() {
       }
     };
 
-    fetchRandomBooks();
-  }, [page]);
+    fetchBooks();
+  }, [page, query]);
 
-  
-  
+
+  // Pagination composant UI
+  const Pagination = () => (
+    <div className="flex justify-center mt-6 space-x-2">
+
+      <button
+        onClick={() => page > 1 && setPage(page - 1)}
+        disabled={page === 1}
+        className={`px-3 py-1 rounded ${
+          page === 1 ? "bg-gray-600 cursor-not-allowed" : "bg-gray-800 hover:bg-gray-700"
+        } text-white`}
+      >
+        Précédent
+      </button>
+
+      {/* Numéros dynamiques */}
+      {Array.from({ length: totalPages }, (_, i) => i + 1)
+        .slice(Math.max(0, page - 3), page + 2)
+        .map((p) => (
+          <button
+            key={p}
+            onClick={() => setPage(p)}
+            className={`px-3 py-1 rounded text-white ${
+              p === page ? "bg-blue-600" : "bg-gray-800 hover:bg-gray-700"
+            }`}
+          >
+            {p}
+          </button>
+        ))}
+
+
+      <button
+        onClick={() => page < totalPages && setPage(page + 1)}
+        disabled={page === totalPages}
+        className={`px-3 py-1 rounded ${
+          page === totalPages ? "bg-gray-600 cursor-not-allowed" : "bg-gray-800 hover:bg-gray-700"
+        } text-white`}
+      >
+        Suivant
+      </button>
+    </div>
+  );
+
+
 
   return (
-    <div className="min-h-screen bg-gray-700 from-slate-900 via-slate-950 to-black text-white">
-      {/* HERO SECTION */}
+    <div className="min-h-screen bg-gray-700 text-white">
+
+      {/* HERO */}
       <section className="relative text-center py-24 px-6">
         <motion.h1
           initial={{ opacity: 0, y: -30 }}
@@ -59,70 +112,57 @@ function App() {
         >
           Explorez la bibliothèque du futur 📚
         </motion.h1>
+
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
           className="text-gray-300 text-lg max-w-2xl mx-auto mb-12"
         >
-          Recherchez parmi des milliers d'œuvres, découvrez les classiques, et laissez-vous guider par la science des graphes.
+          Recherchez parmi des milliers d'œuvres…
         </motion.p>
 
-        {/* Barre de recherche */}
         <SearchBar search={handleSearch} />
 
-        {/* Affichage des livre */}
-        <div className='w-full'>
-          {query===""?clickedOne!=null?<BookDetails clicked={clickedOne}  />:<div>
-          {books && books.length > 0 && (
-          <div className="mt-16 flex flex-wrap justify-center gap-6 px-6 py-4">
-            {books.map((book:Book) => (
-              <BookCard
-                key={book.gutendexId}
-                livre={book}
-                onClick={() => { handleDetailClick(book) }}
-              />
-            ))}
-          </div>
+
+        {query !== "" ? (
+          <Searched term={query} />
+        ) : clickedOne ? (
+          <BookDetails clicked={clickedOne} />
+        ) : (
+          <>
+            {/* =============================
+                LISTE DES LIVRES AVEC PAGINATION
+            ============================== */}
+            <div className="mt-16 flex flex-wrap justify-center gap-6 px-6 py-4">
+              {loading ? (
+                <p>Chargement…</p>
+              ) : (
+                books.map((book: Book) => (
+                  <BookCard
+                    key={book.gutendexId}
+                    livre={book}
+                    onClick={() => handleDetailClick(book)}
+                  />
+                ))
+              )}
+            </div>
+
+            {/* Pagination */}
+            <Pagination />
+          </>
         )}
-        </div>:<Searched term={query} />}
-        </div>
-        
-      
       </section>
 
-
-     {(query==='' || clickedOne!=null)?<section className='w-full'>
-
-      {/* LIVRES POPULAIRES */}
-      {!loading && books && books.length === 0 && (
-        <section className="mt-16 px-6">
-          <h2 className="text-2xl font-semibold mb-6">📚 Livres populaires</h2>
-          
-        </section>
-      )}
-
-      {/* CITATION */}
-      <section className="mt-24 mx-6 bg-slate-800 py-10 px-6 rounded-xl text-center shadow-xl">
-        <p className="italic text-gray-300 text-lg max-w-2xl mx-auto">
-          “A reader lives a thousand lives before he dies. The man who never reads lives only one.”
-        </p>
-        <span className="block mt-4 text-gray-500">— George R. R. Martin</span>
-      </section>
-     </section>:null}
-      
 
       {/* FOOTER */}
       <footer className="mt-24 text-center text-gray-500 py-10 border-t border-slate-800">
-        <p>✨ Moteur de recherche littéraire — Projet DAAR © 2025</p>
-        <p className="text-sm mt-2">
-          Développé par Aksil Sadi - Massin Sadi — M2 STL Sorbonne Université
-        </p>
-        
+        <p> Moteur de recherche littéraire - Projet DAAR © 2025</p>
+        <p className="text-sm mt-2">Développé par Massin & Aksil - M2 STL</p>
       </footer>
-      
+
     </div>
   );
-};
+}
 
-export default App
+export default App;

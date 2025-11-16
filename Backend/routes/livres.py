@@ -39,10 +39,35 @@ def get_livres(
 @router.get("/search")
 def rechercher(
     q: str = Query(..., min_length=2),
-    type: str = Query("keyword", enum=["keyword", "regex", "kmp"])
+    type: str = Query("keyword", enum=["keyword", "regex"]),
+    page: int = Query(1, ge=1),
+    limit: int = Query(8, ge=1, le=50)
 ):
-    resultats = search(q, type)
-    return {"query": q, "type": type, "resultats": resultats}
+
+    # Tous les résultats triés par scoreGlobal
+    tous_les_resultats = search(q, type)
+
+    total = len(tous_les_resultats)
+
+    # Top 3 global pour suggestions
+    top3 = tous_les_resultats[:3]
+
+    # Pagination
+    start = (page - 1) * limit
+    end = start + limit
+    page_items = tous_les_resultats[start:end]
+
+    return {
+        "query": q,
+        "type": type,
+        "page": page,
+        "limit": limit,
+        "total": total,
+        "resultats": page_items,
+        "top3": top3
+    }
+
+
 
 # 2. Détails d’un livre par son ID
 @router.get("/id/{livre_id}")
@@ -107,11 +132,19 @@ def get_recommendations(livre_id: str):
             continue
 
         recommandations.append({
-            "livreId": other_id,
+            "gutendexId": other_id,
             "titre": livre["titre"],
             "auteur": livre.get("auteur", "Inconnu"),
             "downloadCount": livre.get("downloadCount", 0),
             "coverUrl": livre.get("coverUrl", None),
+            "birthYear": livre.get("birthYear", None),
+            "deathYear": livre.get("deathYear", None),
+            "subjects": livre.get("subjects", []),
+            "languages": livre.get("languages", []),
+            "rights": livre.get("rights", None),
+            "bookshelves": livre.get("bookshelves", []),
+            "mediaType": livre.get("mediaType", None),
+            "gutenbergUrl": livre.get("gutenbergUrl", None),
             "similarite": d.get("jaccard", 0),
             "scoreGlobal": centralites.get(other_id, 0)
         })

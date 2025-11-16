@@ -129,32 +129,6 @@ function BookDetails({ clicked }: { clicked: Book }) {
         )}
 
       </div>
-
-      <div className="mt-10 px-10">
-        <h3 className="text-white font-bold text-2xl mb-4">Recommandations</h3>
-
-        {loading ? (
-          <div className="flex justify-center items-center h-40">
-            <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-          </div>
-        ) : (
-          <div className="flex flex-wrap justify-center gap-6">
-            {recommendations?.length > 0 ? (
-              recommendations?.map((book) =>
-                book.gutendexId !== clicked.gutendexId ? (
-                  <BookCard
-                    key={book.gutendexId}
-                    livre={book}
-                    onClick={() => handleDetailClick(book)}
-                  />
-                ) : null
-              )
-            ) : (
-              <p className="text-gray-300">Aucune recommandation trouvée.</p>
-            )}
-          </div>
-        )}
-      </div>
     </div>
   );
 }
