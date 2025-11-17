@@ -9,6 +9,7 @@ import BookDetails from './components/Bookdetails';
 
 function App() {
   const [query, setQuery] = useState("");
+  const [type, setType] = useState<"keyword" | "regex">("keyword");
   const [books, setBooks] = useState<Book[]>([]);
   const [loading, setLoading] = useState(false);
 
@@ -24,8 +25,9 @@ function App() {
     setClickedOne(book);
   };
 
-  const handleSearch = (searchQuery: string) => {
+  const handleSearch = (searchQuery: string,type:"keyword" | "regex") => {
     setQuery(searchQuery);
+    setType(type);
     setClickedOne(null); // reset détail si nouvelle recherche
   };
 
@@ -57,52 +59,62 @@ function App() {
 
   // Pagination composant UI
   const Pagination = () => (
-    <div className="flex justify-center mt-6 space-x-2">
+  <div className="flex justify-center mt-6 space-x-2">
+    <button
+      onClick={() => {
+        if (page > 1) {
+          setPage(page - 1);
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      }}
+      disabled={page === 1}
+      className={`px-3 py-1 rounded ${
+        page === 1 ? "bg-gray-600 cursor-not-allowed" : "bg-gray-800 hover:bg-gray-700"
+      } text-white`}
+    >
+      Précédent
+    </button>
 
-      <button
-        onClick={() => page > 1 && setPage(page - 1)}
-        disabled={page === 1}
-        className={`px-3 py-1 rounded ${
-          page === 1 ? "bg-gray-600 cursor-not-allowed" : "bg-gray-800 hover:bg-gray-700"
-        } text-white`}
-      >
-        Précédent
-      </button>
+    {Array.from({ length: totalPages }, (_, i) => i + 1)
+      .slice(Math.max(0, page - 3), page + 2)
+      .map((p) => (
+        <button
+          key={p}
+          onClick={() => {
+            setPage(p);
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          className={`px-3 py-1 rounded text-white ${
+            p === page ? "bg-blue-600" : "bg-gray-800 hover:bg-gray-700"
+          }`}
+        >
+          {p}
+        </button>
+      ))}
 
-      {/* Numéros dynamiques */}
-      {Array.from({ length: totalPages }, (_, i) => i + 1)
-        .slice(Math.max(0, page - 3), page + 2)
-        .map((p) => (
-          <button
-            key={p}
-            onClick={() => setPage(p)}
-            className={`px-3 py-1 rounded text-white ${
-              p === page ? "bg-blue-600" : "bg-gray-800 hover:bg-gray-700"
-            }`}
-          >
-            {p}
-          </button>
-        ))}
+    <button
+      onClick={() => {
+        if (page < totalPages) {
+          setPage(page + 1);
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      }}
+      disabled={page === totalPages}
+      className={`px-3 py-1 rounded ${
+        page === totalPages ? "bg-gray-600 cursor-not-allowed" : "bg-gray-800 hover:bg-gray-700"
+      } text-white`}
+    >
+      Suivant
+    </button>
+  </div>
+);
 
-
-      <button
-        onClick={() => page < totalPages && setPage(page + 1)}
-        disabled={page === totalPages}
-        className={`px-3 py-1 rounded ${
-          page === totalPages ? "bg-gray-600 cursor-not-allowed" : "bg-gray-800 hover:bg-gray-700"
-        } text-white`}
-      >
-        Suivant
-      </button>
-    </div>
-  );
 
 
 
   return (
     <div className="min-h-screen bg-gray-700 text-white">
 
-      {/* HERO */}
       <section className="relative text-center py-24 px-6">
         <motion.h1
           initial={{ opacity: 0, y: -30 }}
@@ -126,15 +138,13 @@ function App() {
 
 
         {query !== "" ? (
-          <Searched term={query} />
+          <Searched term={query} type={type} />
         ) : clickedOne ? (
           <BookDetails clicked={clickedOne} />
         ) : (
           <>
-            {/* =============================
-                LISTE DES LIVRES AVEC PAGINATION
-            ============================== */}
-            <div className="mt-16 flex flex-wrap justify-center gap-6 px-6 py-4">
+          <p className='mt-16 font-bold text-2xl'>Tous les livres</p>
+            <div className="mt-2 flex flex-wrap justify-center gap-6 px-6 py-4">
               {loading ? (
                 <p>Chargement…</p>
               ) : (
@@ -148,7 +158,6 @@ function App() {
               )}
             </div>
 
-            {/* Pagination */}
             <Pagination />
           </>
         )}

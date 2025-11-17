@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import type { Book } from "../types";
 import BookCard from "./BookCard";
+import BookDetails from "./Bookdetails";
 
-function Searched({ term }: { term: string }) {
+function Searched({ term,type }: { term: string ,type:"keyword" | "regex"}) {
   const [searchResults, setSearchResults] = useState<Book[]>([]);
   const [loading, setLoading] = useState(false);
 
@@ -21,7 +22,6 @@ function Searched({ term }: { term: string }) {
     setClickedOne(book);
   };
 
-  // ===== FETCH SEARCH RESULTS =====
 useEffect(() => {
   if (!term) {
     setSearchResults([]);
@@ -36,7 +36,7 @@ useEffect(() => {
       const res = await fetch(
         `http://127.0.0.1:8000/livres/search?q=${encodeURIComponent(
           term
-        )}&type=keyword&page=${page}&limit=${limit}`
+        )}&type=${type}&page=${page}&limit=${limit}`
       );
       const data = await res.json();
 
@@ -54,12 +54,11 @@ useEffect(() => {
 
   const t = setTimeout(fetchBooks, 400);
   return () => clearTimeout(t);
-}, [term, page]);
+}, [term, page, type]);
 
 
-// ===== FETCH RECOMMENDATIONS =====
+// fech suggestions based on top3Global
 useEffect(() => {
-  // Patch : sécurité totale
   if (!term || !Array.isArray(top3Global) || top3Global.length === 0) {
     setSuggestions([]);
     return;
@@ -109,7 +108,12 @@ useEffect(() => {
     <div className="flex justify-center mt-6 space-x-2">
 
       <button
-        onClick={() => page > 1 && setPage(page - 1)}
+        onClick={() => {
+        if (page > 1) {
+          setPage(page - 1);
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      }}
         disabled={page === 1}
         className={`px-3 py-1 rounded ${
           page === 1 ? "bg-gray-600" : "bg-gray-800 hover:bg-gray-700"
@@ -123,7 +127,10 @@ useEffect(() => {
         .map((p) => (
           <button
             key={p}
-            onClick={() => setPage(p)}
+            onClick={() => {
+            setPage(p);
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
             className={`px-3 py-1 rounded text-white ${
               p === page ? "bg-blue-600" : "bg-gray-800 hover:bg-gray-700"
             }`}
@@ -133,7 +140,12 @@ useEffect(() => {
         ))}
 
       <button
-        onClick={() => page < totalPages && setPage(page + 1)}
+        onClick={() => {
+        if (page < totalPages) {
+          setPage(page + 1);
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      }}
         disabled={page === totalPages}
         className={`px-3 py-1 rounded ${
           page === totalPages ? "bg-gray-600" : "bg-gray-800 hover:bg-gray-700"
@@ -145,6 +157,10 @@ useEffect(() => {
   );
 
   return (
+    <>
+    {clickedOne ? (
+      <BookDetails clicked={clickedOne} />
+    ) : (
     <div className="w-full px-5 py-5">
       <p className="text-white text-xl mb-4">
         Résultats de recherche pour "{term}":
@@ -193,7 +209,9 @@ useEffect(() => {
           )}
         </div>
       )}
-    </div>
+    </div>)}
+    </>
+    
   );
 }
 

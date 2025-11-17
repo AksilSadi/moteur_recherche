@@ -1,41 +1,8 @@
 import type { Book } from '../types';
-import { useEffect, useState } from 'react';
-import BookCard from './BookCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faLink } from '@fortawesome/free-solid-svg-icons';
 
 function BookDetails({ clicked }: { clicked: Book }) {
-  const [recommendations, setRecommendations] = useState<Book[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [clickedOne, setClickedOne] = useState<Book | null>(null);
-
-  // Charger recommandations
-  useEffect(() => {
-    const fetchSimilarBooks = async () => {
-      setLoading(true);
-      try {
-        const response = await fetch(
-          `http://127.0.0.1:8000/livres/${clicked.gutendexId}/recommendations`
-        );
-        const data = await response.json();
-        setRecommendations(data.recommendations);
-      } catch (error) {
-        console.error("Erreur de récupération des recommandations :", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchSimilarBooks();
-  }, [clicked.gutendexId]);
-
-  const handleDetailClick = (book: Book) => {
-    setClickedOne(book);
-  };
-
-  if (clickedOne) {
-    return <BookDetails clicked={clickedOne} />;
-  }
 
   return (
     <div className="w-full mt-10 text-white">
