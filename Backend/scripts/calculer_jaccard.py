@@ -82,7 +82,7 @@ print(f"✅ Fichier texte Jaccard créé ({n}x{n}).")
 # Étape 4 — Sauvegarde dans MongoDB
 print("📤 Sauvegarde des similarités non nulles dans MongoDB...")
 similarity_col.delete_many({})
-seuil = 0.01
+seuil = 0.4
 count = 0
 
 for i in range(n):

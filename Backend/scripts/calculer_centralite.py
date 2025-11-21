@@ -53,7 +53,7 @@ G = nx.Graph()
 for lid in livre_ids:
     G.add_node(lid)
 
-seuil = 0.01
+seuil = 0.4
 for i in range(n):
     for j in range(i + 1, n):
         poids = S[i, j]

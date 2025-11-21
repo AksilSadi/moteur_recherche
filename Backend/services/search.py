@@ -138,7 +138,14 @@ def format_results(combined_books):
 # 5-REGEX lente (fichiers) uniquement en fallback
 def search_in_files(regex_pattern: str):
     resultats = []
-    livres = list(livres_col.find())
+
+    # Charger tous les livres EN UNE FOIS
+    livres = list(livres_col.find({}, {"_id": 0}))
+    # Charger toutes les centralités EN UNE FOIS
+    centralites = {
+        doc["livreId"]: doc.get("scoreGlobal", 0)
+        for doc in centr_col.find({}, {"_id": 0})
+    }
 
     try:
         reg = re.compile(regex_pattern)
@@ -153,18 +160,37 @@ def search_in_files(regex_pattern: str):
         try:
             with open(chemin, "r", encoding="utf-8") as f:
                 contenu = f.read().lower()
+
+                # Test regex sur le contenu du fichier
                 if reg.search(contenu):
+
+                    lid = str(livre["gutendexId"])
+
                     resultats.append({
-                        "livreId": livre["gutendexId"],
+                        "gutendexId": livre["gutendexId"],
                         "titre": livre["titre"],
                         "auteur": livre.get("auteur", "Inconnu"),
                         "coverUrl": livre.get("coverUrl", ""),
                         "downloadCount": livre.get("downloadCount", 0),
+                        "birthYear": livre.get("birthYear"),
+                        "deathYear": livre.get("deathYear"),
+                        "subjects": livre.get("subjects", []),
+                        "languages": livre.get("languages", []),
+                        "rights": livre.get("rights"),
+                        "bookshelves": livre.get("bookshelves", []),
+                        "mediaType": livre.get("mediaType"),
+                        "gutenbergUrl": livre.get("gutenbergUrl"),
+                        "chemin": livre.get("chemin"),
+                        "scoreGlobal": centralites.get(lid, 0),  # ⭐ important
                     })
-        except:
+
+        except Exception as e:
             continue
 
+    resultats.sort(key=lambda x: x["scoreGlobal"], reverse=True)
+
     return resultats
+
 
 
 # 6- Fonction principale

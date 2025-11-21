@@ -15,6 +15,7 @@ Author: Baron George Gordon Byron Byron
 Editor: Ernest Hartley Coleridge
 
 Release date: December 22, 2006 [eBook #20158]
+                Most recently updated: November 14, 2025
 
 Language: English
 
@@ -27,25 +28,16 @@ Credits: Produced by Jonathan Ingram, David Cortesi and the Online
 
 
 
-Produced by Jonathan Ingram, David Cortesi and the Online
-Distributed Proofreading Team at http://www.pgdp.net
-
-
-
-
-
 TRANSCRIBER'S NOTES
 
-This etext contains only characters from the Latin-1 set. The original
-work contained a few phrases or lines of Greek text. These are
-represented here as Beta-code transliterations in brackets, for example
-[Greek: Oi~moi].
+This etext contains some multi-byte characters in UTF-8 format. The
+original work contained a few phrases or lines of Greek text. These are
+shown here as UTF characters followed by a Beta-code transliteration,
+for example: Οῖμοι [Greek: Oi~moi].
 
-The original text used a few other characters not found in the Latin-1
-set. These have been represented using bracket notation, as follows:
-[=e], [=i], [=N], [=S] represent those letters with a macron (bar)
-above; [)i] represents and i with a breve (curved line). In a few places
-superscript letters are shown by carets, as in May 27^th^.
+The original text also contains two characters not supported by UTF. In
+note [463], [=N] and [=S] represent letters N and S with a bar above.
+In a few places superscript letters are shown by carets: May 27^th^.
 
 An important feature of this edition is its copious footnotes. Footnotes
 indexed with letters (e.g. [c], [bf]) show variant forms of Byron's text
@@ -56,11 +48,11 @@ not in brackets is by Byron himself.
 
 In the original, footnotes were printed at the foot of the page on which
 they were referenced, and their indices started over on each page. In
-this etext, footnotes have been collected at the ends of each section,
-and have been consecutively numbered throughout. Within each block of
-footnotes are numbers in braces: {321}. These represent the page number
-on which following notes originally appeared. To find a note that was
-originally printed on page 27, search for {27}.
+this etext, footnotes have been collected at the ends of each major
+section, and have been consecutively numbered throughout. Within each
+block of footnotes are numbers in braces: {321}. These represent the
+page number on which following notes originally appeared. To find a note
+that was originally printed on page 27, search for {27}.
 
 In the work "Francesca di Rimini" the original printed lines of the
 Italian on facing pages opposite the matching lines of Byron's
@@ -141,7 +133,7 @@ a history and almost a literature of its own.
 The whole of this volume was written on foreign soil, in Switzerland or
 Italy, and, putting aside _The Dream_, _The Monody on the Death of
 Sheridan_, _The Irish Avatar_, and _The Blues_, the places, the persons
-and events, the _materiel_ of the volume as a whole, to say nothing of
+and events, the _matériel_ of the volume as a whole, to say nothing of
 the style and metre of the poems, are derived from the history and the
 literature of Switzerland and Southern Europe. An unwilling, at times a
 vindictive exile, he did more than any other poet or writer of his age
@@ -186,7 +178,7 @@ It is with the hope of supplying this modicum of book-learning that the
 Introductions and notes in this and other volumes have been compiled.
 
 I desire to acknowledge, with thanks, the courteous response of Mons. J.
-Capre, Commandant of the Castle of Chillon, to a letter of inquiry with
+Capré, Commandant of the Castle of Chillon, to a letter of inquiry with
 regard to the "Souterrains de Chillon."
 
 I have to express my gratitude to Sir Henry Irving, to Mr. Joseph
@@ -202,7 +194,7 @@ Courtenay, and other correspondents, for information and assistance in
 points of difficulty.
 
 I have consulted and derived valuable information from the following
-works: _The Prisoner of Chillon_, etc., by the late Professor Koelbing;
+works: _The Prisoner of Chillon_, etc., by the late Professor Kölbing;
 _Mazeppa_, by Dr. Englaender; _Marino Faliero avanti il Dogado_ and _La
 Congiura_ (published in the _Nuovo Archivio Veneto_), by Signor Vittorio
 Lazzarino; and _Selections from the Poetry of Lord Byron_, by Dr. F. I.
@@ -398,7 +390,7 @@ Eclogue the Second                                                580
 
 The _Prisoner of Chillon_, says Moore (_Life_, p. 320), was written at
 Ouchy, near Lausanne, where Byron and Shelley "were detained two days in
-a small inn [Hotel de l'Ancre, now d'Angleterre] by the weather."
+a small inn [Hôtel de l'Ancre, now d'Angleterre] by the weather."
 Byron's letter to Murray, dated June 27 (but? 28), 1816, does not
 precisely tally with Shelley's journal contained in a letter to Peacock,
 July 12, 1816 (_Prose Works of P. B. Shelley_, 1880, ii. 171, _sq._);
@@ -429,20 +421,20 @@ common property. Be that as it may, Senebier's prose is in some respects
 as unhistorical as Byron's verse, and stands in need of some corrections
 and additions.
 
-Francois Bonivard (there is no contemporary authority for "Bonnivard")
+François Bonivard (there is no contemporary authority for "Bonnivard")
 was born in 1493. In early youth (1510) he became by inheritance Prior
 of St. Victor, a monastery outside the walls of Geneva, and on reaching
-manhood (1514) he accepted the office and the benefice, "la dignite
-ecclesiastique de Prieur et de la Seigneurie temporelle de St. Victor."
+manhood (1514) he accepted the office and the benefice, "la dignité
+ecclésiastique de Prieur et de la Seigneurie temporelle de St. Victor."
 A lover of independence, a child of the later Renaissance, in a word, a
 Genevese, he threw in his lot with a band of ardent reformers and
 patriots, who were conspiring to shake off the yoke of Duke Charles III.
 of Savoy, and convert the city into a republic. Here is his own
-testimony: "Des que j'eus commence de lire l'histoire des nations, je me
-sentis entraine par un gout prononce pour les Republiques dont j'epousai
-toujours les interets." Hence, in a great measure, the unrelenting
+testimony: "Dès que j'eus commencé de lire l'histoire des nations, je me
+sentis entrainé par un goût prononcé pour les Républiques dont j'épousai
+toujours les intérêts." Hence, in a great measure, the unrelenting
 enmity of the duke, who not only ousted him from his priory, but caused
-him to be shut up for two years at Grolee, Gex, and Belley, and again,
+him to be shut up for two years at Grolée, Gex, and Belley, and again,
 after he had been liberated on a second occasion, ordered him, a safe
 conduct notwithstanding, to be seized and confined in the Castle of
 Chillon. Here he remained from 1530 to February 1, 1536, when he was
@@ -472,23 +464,23 @@ truth and freedom, being taken back into favour and forgiven. There was
 a deal of human nature in Bonivard, with the result that, at times,
 conduct fell short of pretension and principle. Estimates of his
 character differ widely. From the standpoint of Catholic orthodoxy,
-"C'etait un fort mauvais sujet et un plus mauvais pretre;" and even his
-captivity, infamous as it was, "ne peut rendre Bonivard interessant"
-(_Notices Genealogiques sur les Famillies Genevoises_, par J. A.
+"C'était un fort mauvais sujet et un plus mauvais prêtre;" and even his
+captivity, infamous as it was, "ne peut rendre Bonivard intéressant"
+(_Notices Généalogiques sur les Famillies Genevoises_, par J. A.
 Galiffe, 1836, iii. 67, sq.); whilst an advocate and champion, the
-author of the _Preface_ to _Les Chroniques de Geneve_ par Francois de
+author of the _Preface_ to _Les Chroniques de Genève_ par François de
 Bonnivard, 1831, tom. i. pt. i. p. xli., avows that "aucun homme n'a
-fait preuve d'un plus beau caractere, d'un plus parfait desinteressement
+fait preuve d'un plus beau caractère, d'un plus parfait désintéressement
 que l'illustre Prieur de St. Victor." Like other great men, he may have
-been guilty of "quelques egaremens du coeur, quelques concessions
-passageres aux devices des sens," but "Peu importe a la posterite les
-irregularites de leur vie privee" (p. xlviii.).
+been guilty of "quelques égaremens du coeur, quelques concessions
+passagères aux dévices des sens," but "Peu importe à la postérité les
+irrégularités de leur vie privée" (p. xlviii.).
 
 But whatever may be the final verdict with regard to the morals, there
 can be no question as to the intellectual powers of the "Prisoner of
 Chillon." The publication of various MS. tracts, e.g. _Advis et Devis de
-l'ancienne et nouvelle Police de Geneve_, 1865; _Advis et Devis des
-Lengnes_, etc., 1865, which were edited by the late J. J. Chaponniere,
+l'ancienne et nouvelle Police de Genève_, 1865; _Advis et Devis des
+Lengnes_, etc., 1865, which were edited by the late J. J. Chaponnière,
 and, after his death, by M. Gustave Revilliod, has placed his reputation
 as historian, satirist, philosopher, beyond doubt or cavil. One
 quotation must suffice. He is contrasting the Protestants with the
@@ -501,11 +493,11 @@ le laissons cruciffie et nud en l'arbre de la croix, et jouons a beaux
 dez au pied dicelle croix, pour scavoir qui haura sa robe."
 
 For Bonivard's account of his second imprisonment, see _Les Chroniques
-de Geneve_, tom. ii. part ii. pp. 571-577; see, too, _Notice sur
-Francois Bonivard_, ...par Le Docteur J. J. Chaponniere, Memoires et
-Documents Publies, par La Societe d'Histoire, etc., de Geneve, 1845, iv.
+de Genève_, tom. ii. part ii. pp. 571-577; see, too, _Notice sur
+François Bonivard_, ...par Le Docteur J. J. Chaponnière, Mémoires et
+Documents Publiés, par La Société d'Histoire, etc., de Genève, 1845, iv.
 137-245; _Chillon Etude Historique_, par L. Vulliemin, Lausanne, 1851;
-_Revue des Deux Mondes_, Seconde Periode, vol. 82, Aout, 1869, pp.
+_Revue des Deux Mondes_, Seconde Période, vol. 82, Août, 1869, pp.
 682-709; "True Story of the Prisoner of Chillon," _Nineteenth Century_,
 May, 1900, No. 279, pp. 821-829, by A. van Amstel (Johannes Christiaan
 Neuman).
@@ -525,7 +517,7 @@ prove, that the entire poem was a forgery, and belonged to the same
 category as _The Right Honourable Lord Byron's Pilgrimage to the Holy
 Land, etc._
 
-For extracts from these and other reviews, see Koelbing, _Prisoner of
+For extracts from these and other reviews, see Kölbing, _Prisoner of
 Chillon, and Other Poems_, Weimar, 1896, excursus i. pp. 3-55.
 
 
@@ -561,80 +553,80 @@ some account of his life I have been furnished, by the kindness of a
 citizen of that republic, which is still proud of the memory of a man
 worthy of the best age of ancient freedom:--
 
-"Francois De Bonnivard, fils de Louis De Bonnivard, originaire de
-Seyssel et Seigneur de Lunes, naquit en 1496. Il fit ses etudes a Turin:
-en 1510 Jean Aime de Bonnivard, son oncle, lui resigna le Prieure de St.
-Victor, qui aboutissoit aux murs de Geneve, et qui formait un benefice
-considerable....
+"François De Bonnivard, fils de Louis De Bonnivard, originaire de
+Seyssel et Seigneur de Lunes, naquit en 1496. Il fit ses études à Turin:
+en 1510 Jean Aimé de Bonnivard, son oncle, lui résigna le Prieuré de St.
+Victor, qui aboutissoit aux murs de Genève, et qui formait un bénéfice
+considérable....
 
-"Ce grand homme--(Bonnivard merite ce litre par la force de son ame, la
+"Ce grand homme--(Bonnivard mérite ce litre par la force de son âme, la
 droiture de son coeur, la noblesse de ses intentions, la sagesse de ses
-conseils, le courage de ses demarches, l'etendue de ses connaissances,
-et la vivacite de son esprit),--ce grand homme, qui excitera
-l'admiration de tous ceux qu'une vertu heroique peut encore emouvoir,
+conseils, le courage de ses démarches, l'étendue de ses connaissances,
+et la vivacité de son esprit),--ce grand homme, qui excitera
+l'admiration de tous ceux qu'une vertu héroïque peut encore émouvoir,
 inspirera encore la plus vive reconnaissance dans les coeurs des
-Genevois qui aiment Geneve. Bonnivard en fut toujours un des plus fermes
-appuis: pour assurer la liberte de notre Republique, il ne craignit pas
-de perdre souvent la sienne; il oublia son repos; il meprisa ses
-richesses; il ne negligea rien pour affermir le bonheur d'une patrie
-qu'il honora de son choix: des ce moment il la cherit comme le plus zele
-de ses citoyens; il la servit avec l'intrepidite d'un heros, et il
-ecrivit son Histoire avec la naivete d'un philosophe et la chaleur d'un
+Genevois qui aiment Genève. Bonnivard en fut toujours un des plus fermes
+appuis: pour assurer la liberté de notre République, il ne craignit pas
+de perdre souvent la sienne; il oublia son repos; il méprisa ses
+richesses; il ne négligea rien pour affermir le bonheur d'une patrie
+qu'il honora de son choix: dès ce moment il la chérit comme le plus zélé
+de ses citoyens; il la servit avec l'intrépidité d'un héros, et il
+écrivit son Histoire avec la naïveté d'un philosophe et la chaleur d'un
 patriote.
 
-"Il dit dans le commencement de son Histoire de Geneve, que, _des qu'il
-eut commence de lire l'histoire des nations, il se sentit entraine par
-son gout pour les Republiques, dont il epousa toujours les interets:_
-c'est ce gout pour la liberte qui lui fit sans doute adopter Geneve pour
+"Il dit dans le commencement de son Histoire de Genève, que, _dès qu'il
+eut commencé de lire l'histoire des nations, il se sentit entraîné par
+son goût pour les Républiques, dont il épousa toujours les intérêts:_
+c'est ce goût pour la liberté qui lui fit sans doute adopter Genève pour
 sa patrie....
 
-"Bonnivard, encore jeune, s'annonca hautement comme le defenseur de
-Geneve contre le Duc de Savoye et l'Eveque....
+"Bonnivard, encore jeune, s'annonça hautement comme le défenseur de
+Genève contre le Duc de Savoye et l'Evêque....
 
 "En 1519, Bonnivard devient le martyr de sa patrie: Le Duc de Savoye
-etant entre dans Geneve avec cinq cent hommes, Bonnivard craint le
-ressentiment du Duc; il voulut se retirer a Fribourg pour en eviter les
+étant entré dans Genève avec cinq cent hommes, Bonnivard craint le
+ressentiment du Duc; il voulut se retirer à Fribourg pour en éviter les
 suites; mais il fut trahi par deux hommes qui l'accompagnaient, et
-conduit par ordre du Prince a Grolee, ou il resta prisonnier pendant
-deux ans. Bonnivard etait malheureux dans ses voyages: comme ses
-malheurs n'avaient point ralenti son zele pour Geneve, il etait toujours
-un ennemi redoutable pour ceux qui la menacaient, et par consequent il
-devait etre expose a leurs coups. Il fut rencontre en 1530 sur le Jura
-par des voleurs, qui le depouillerent, et qui le mirent encore entre les
-mains du Duc de Savoye: ce Prince le fit enfermer dans le Chateau de
-Chillon, ou il resta sans etre interroge jusques en 1536; il fut alors
-delivre par les Bernois, qui s'emparerent du Pays-de-Vaud.
+conduit par ordre du Prince à Grolée, où il resta prisonnier pendant
+deux ans. Bonnivard était malheureux dans ses voyages: comme ses
+malheurs n'avaient point ralenti son zèle pour Genève, il était toujours
+un ennemi redoutable pour ceux qui la menaçaient, et par conséquent il
+devait être exposé à leurs coups. Il fut rencontré en 1530 sur le Jura
+par des voleurs, qui le dépouillèrent, et qui le mirent encore entre les
+mains du Duc de Savoye: ce Prince le fit enfermer dans le Château de
+Chillon, où il resta sans être interrogé jusques en 1536; il fut alors
+delivré par les Bernois, qui s'emparèrent du Pays-de-Vaud.
 
-"Bonnivard, en sortant de sa captivite, eut le plaisir de trouver Geneve
-libre et reformee: la Republique s'empressa de lui temoigner sa
-reconnaissance, et de le dedommager des maux qu'il avoit soufferts; elle
-le recut Bourgeois de la ville au mois de Juin, 1536; elle lui donna la
-maison habitee autrefois par le Vicaire-General, et elle lui assigna une
-pension de deux cent ecus d'or tant qu'il sejournerait a Geneve. Il fut
+"Bonnivard, en sortant de sa captivité, eut le plaisir de trouver Genève
+libre et réformée: la République s'empressa de lui témoigner sa
+reconnaissance, et de le dédommager des maux qu'il avoit soufferts; elle
+le reçut Bourgeois de la ville au mois de Juin, 1536; elle lui donna la
+maison habitée autrefois par le Vicaire-Général, et elle lui assigna une
+pension de deux cent écus d'or tant qu'il séjournerait à Genève. Il fut
 admis dans le Conseil des Deux-Cent en 1537.
 
-"Bonnivard n'a pas fini d'etre utile: apres avoir travaille a rendre
-Geneve libre, il reussit a la rendre tolerante. Bonnivard engagea le
-Conseil a accorder [aux ecclesiastiques et aux paysans] un tems
-suffisant pour examiner les propositions qu'on leur faisait; il reussit
-par sa douceur: on preche toujours le Christianisme avec succes quand on
-le preche avec charite....
+"Bonnivard n'a pas fini d'être utile: après avoir travaillé à rendre
+Genève libre, il réussit à la rendre tolérante. Bonnivard engagea le
+Conseil à accorder [aux ecclésiastiques et aux paysans] un tems
+suffisant pour examiner les propositions qu'on leur faisait; il réussit
+par sa douceur: on prêche toujours le Christianisme avec succès quand on
+le prêche avec charité....
 
-"Bonnivard fut savant: ses manuscrits, qui sont dans la bibliotheque
+"Bonnivard fut savant: ses manuscrits, qui sont dans la bibliothèque
 publique, prouvent qu'il avait bien lu les auteurs classiques Latins, et
-qu'il avait approfondi la theologie et l'histoire. Ce grand homme aimait
+qu'il avait approfondi la théologie et l'histoire. Ce grand homme aimait
 les sciences, et il croyait qu'elles pouvaient faire la gloire de
-Geneve; aussi il ne negligea rien pour les fixer dans cette ville
-naissante; en 1551 il donna sa bibliotheque au public; elle fut le
-commencement de notre bibliotheque publique; et ces livres sont en
-partie les rares et belles editions du quinzieme siecle qu'on voit dans
-notre collection. Enfin, pendant la meme annee, ce bon patriote institua
-la Republique son heritiere, a condition qu'elle employerait ses biens a
-entretenir le college dont on projettait la fondation.
+Genève; aussi il ne négligea rien pour les fixer dans cette ville
+naissante; en 1551 il donna sa bibliothèque au public; elle fut le
+commencement de notre bibliothèque publique; et ces livres sont en
+partie les rares et belles éditions du quinzième siècle qu'on voit dans
+notre collection. Enfin, pendant la même année, ce bon patriote institua
+la République son héritière, à condition qu'elle employerait ses biens à
+entretenir le collège dont on projettait la fondation.
 
 "Il parait que Bonnivard mourut en 1570; mais on ne peut l'assurer,
-parcequ'il y a une lacune dans le Necrologe depuis le mois de Juillet,
-1570, jusques en 1571."--[_Histoire Litteraire de Geneve_, par Jean
+parcequ'il y a une lacune dans le Nécrologe depuis le mois de Juillet,
+1570, jusques en 1571."--[_Histoire Littéraire de Genève_, par Jean
 Senebier (1741-1809), 1786, i. 131-137.]
 
 
@@ -953,7 +945,7 @@ Senebier (1741-1809), 1786, i. 131-137.]
       Or broke its cage to perch on mine,                              280
     But knowing well captivity,
       Sweet bird! I could not wish for thine!
-    Or if it were, in winged guise,
+    Or if it were, in wingéd guise,
     A visitant from Paradise;
     For--Heaven forgive that thought! the while
     Which made me both to weep and smile--
@@ -1082,7 +1074,7 @@ FOOTNOTES:
 
 [1] {7}[In the first draft, the sonnet opens thus--
 
-    "Beloved Goddess of the chainless mind!
+    "Belovéd Goddess of the chainless mind!
       Brightest in dungeons, Liberty! thou art,
       Thy palace is within the Freeman's heart,
     Whose soul the love of thee alone can bind;
@@ -1152,9 +1144,9 @@ variety of radiating light which the sunbeam shed at different hours of
 the day.... In the morning this light is of luminous and transparent
 shining, which the curves of the vaults send back all along the hall.
 Victor Hugo (_Le Rhin_, ... Hachette, 1876, I. iii. pp. 123-131)
-describes this ... 'Le phenomene de la grotto d'azur s'accomplit dans le
-souterrain de Chillon, et le lac de Geneve n'y reussit pas moins bien
-que la Mediterranee.' During the afternoon the hall assumes a much
+describes this ... 'Le phénomène de la grotto d'azur s'accomplit dans le
+souterrain de Chillon, et le lac de Genève n'y réussit pas moins bien
+que la Méditerranée.' During the afternoon the hall assumes a much
 deeper and warmer colouring, and the blue transparency of the morning
 disappears; but at eventide, after the sun has set behind the Jura, the
 scene changes to the deep glow of fire ..."--_Guide to the Castle of
@@ -1166,7 +1158,7 @@ Chillon_, by A. Naef, architect, 1896, pp, 35, 36.]
 
                                              _Def. Trans_., Part I. sc. I.
 
-Koelbing notes six other allusions in Byron's works to the
+Kölbing notes six other allusions in Byron's works to the
 "will-o'-the-wisp," but omits the line in the "Incantation" (_Manfred_,
 act i. sc. I, line 195)--
 
@@ -1227,7 +1219,7 @@ and instead of it being characterized by regard only of the invariable,
 we find its whole power to consist in the clear expression of what is
 singular and particular!"]
 
-[12] The Chateau de Chillon is situated between Clarens and Villeneuve,
+[12] The Château de Chillon is situated between Clarens and Villeneuve,
 which last is at one extremity of the Lake of Geneva. On its left are
 the entrances of the Rhone, and opposite are the heights of Meillerie
 and the range of Alps above Boveret and St. Gingo. Near it, on a hill
@@ -1240,22 +1232,22 @@ the cells are seven pillars, or, rather, eight, one being half merged in
 the wall; in some of these are rings for the fetters and the fettered:
 in the pavement the steps of Bonnivard have left their traces. He was
 confined here several years. It is by this castle that Rousseau has
-fixed the catastrophe of his Heloise, in the rescue of one of her
+fixed the catastrophe of his Héloïse, in the rescue of one of her
 children by Julie from the water; the shock of which, and the illness
-produced by the immersion, is the cause of her death. The chateau is
+produced by the immersion, is the cause of her death. The château is
 large, and seen along the lake for a great distance. The walls are
 white.
 
-["Le chateau de Chillon ... est situe dans le lac sur un rocher qui
-forme une presqu'isle, et autour du quel j'ai vu sonder a plus de cent
-cinquante brasses qui font pres de huit cents pieds, sans trouver le
-fond. On a creuse dans ce rocher des caves et des cuisines au-dessous du
+["Le château de Chillon ... est situé dans le lac sur un rocher qui
+forme une presqu'isle, et autour du quel j'ai vu sonder à plus de cent
+cinquante brasses qui font près de huit cents pieds, sans trouver le
+fond. On a creusé dans ce rocher des caves et des cuisines au-dessous du
 niveau de l'eau, qu'on y introduit, quand on veut, par des robinets.
-C'est-la que fut detenu six ans prisonnier Francois Bonnivard ... homme
-d'un merite rare, d'une droiture et d'une fermete a toute epreuve, ami
-de la liberte, quoique Savoyard, et tolerant quoique pretre," etc. (_La
-Nouvelle Heloise_, par J. J. Rousseau, partie vi. Lettre 8, note (1);
-_Oeuvres completes_, 1836, ii. 356, note 1).
+C'est-là que fut détenu six ans prisonnier François Bonnivard ... homme
+d'un mérite rare, d'une droiture et d'une fermeté à toute épreuve, ami
+de la liberté, quoique Savoyard, et tolérant quoique prêtre," etc. (_La
+Nouvelle Héloïse_, par J. J. Rousseau, partie vi. Lettre 8, note (1);
+_Oeuvres complètes_, 1836, ii. 356, note 1).
 
 With Byron's description of Chillon, compare that of Shelley, contained
 in a letter to Peacock, dated July 12, 1816 (_Prose Works of P. B.
@@ -1263,7 +1255,7 @@ Shelley_, 1880, ii. 171, sq.). The belief or tradition that Bonivard's
 prison is "below the surface of the lake," for which Shelley as well as
 Rousseau is responsible, but which Byron only records in verse, may be
 traced to a statement attributed to Bonivard himself, who says
-(_Memoires, etc._, 1843, iv. 268) that the commandant thrust him "en
+(_Mémoires, etc._, 1843, iv. 268) that the commandant thrust him "en
 unes croctes desquelles le fond estoit plus bas que le lac sur lequel
 Chillon estoit citue." As a matter of fact, "the level [of _les
 souterrains_] is now three metres higher than the level of the water,
@@ -1301,10 +1293,10 @@ fragment of a Novel by Byron, Letters,_ 1899, iii. Appendix IX. p.
                _Christabel_, by S. T. Coleridge, part ii. lines 412, 413.]
 
 [17] [It is said that his parents handed him over to the care of his
-uncle, Jean-Aime Bonivard, when he was still an infant, and it is denied
+uncle, Jean-Aimé Bonivard, when he was still an infant, and it is denied
 that his father was "literally put to death."]
 
-[18] {21}[Koelbing quotes parallel uses of the same expression in
+[18] {21}[Kölbing quotes parallel uses of the same expression in
 _Werner_, act iv. sc. 1; Churchill's _The Times_, line 341, etc.; but
 does not give the original--
 
@@ -1548,7 +1540,7 @@ or the peace of mind and happiness of others.
 
 For an elaborate description of Annesley Hall and Park, written with a
 view to illustrate _The Dream_, see "A Byronian Ramble," Part II., the
-_Athenaeum_, August 30, 1834. See, too, an interesting quotation from Sir
+_Athenæum_, August 30, 1834. See, too, an interesting quotation from Sir
 Richard Phillips' unfinished _Personal Tour through the United Kingdom_,
 published in the _Mirror_, 1828, vol. xii. p. 286; _Abbotsford and
 Newstead Abbey_, by Washington Irving, 1835, p. 191, _seq._; _The House
@@ -1612,7 +1604,7 @@ and Grave of Byron_, 1855; and an article in _Lippincott's Magazine_,
     The Maid was on the eve of Womanhood;
     The Boy had fewer summers, but his heart
     Had far outgrown his years, and to his eye
-    There was but one beloved face on earth,
+    There was but one belovéd face on earth,
     And that was shining on him: he had looked
     Upon it till it could not pass away;                                50
     He had no breath, no being, but in hers;
@@ -1812,7 +1804,7 @@ _July_, 1816.
     Of this their desolation; and all hearts
     Were chilled into a selfish prayer for light:
     And they did live by watchfires--and the thrones,                   10
-    The palaces of crowned kings--the huts,
+    The palaces of crownéd kings--the huts,
     The habitations of all things which dwell,
     Were burnt for beacons; cities were consumed,
     And men were gathered round their blazing homes
@@ -1827,7 +1819,7 @@ _July_, 1816.
     Wore an unearthly aspect, as by fits
     The flashes fell upon them; some lay down
     And hid their eyes and wept; and some did rest
-    Their chins upon their clenched hands, and smiled;
+    Their chins upon their clenchéd hands, and smiled;
     And others hurried to and fro, and fed
     Their funeral piles with fuel, and looked up
     With mad disquietude on the dull sky,
@@ -1941,7 +1933,6 @@ _July_, 1816.
     The Glory and the Nothing of a Name.
 
                                                             Diodati, 1816.
-
                      [First published, _Prisoner of Chillon_, etc., 1816.]
 
 
@@ -1973,7 +1964,7 @@ _July_, 1816.
       Which torture where they cannot kill;
     And the inexorable Heaven,[66]
     And the deaf tyranny of Fate,
-    The ruling principle of Hate,                                       20
+    The ruling principle of Hate,                                      20
     Which for its pleasure doth create[67]
     The things it may annihilate,
     Refused thee even the boon to die:[68]
@@ -1983,7 +1974,7 @@ _July_, 1816.
     Was but the menace which flung back
     On him the torments of thy rack;
     The fate thou didst so well foresee,[69]
-    But would not to appease him tell;                                  30
+    But would not to appease him tell;                                 30
     And in thy Silence was his Sentence,
     And in his Soul a vain repentance,
     And evil dread so ill dissembled,
@@ -2081,7 +2072,7 @@ _July_, 1816.
 
                           SONNET TO LAKE LEMAN.
 
-    Rousseau--Voltaire--our Gibbon--and De Stael--
+    Rousseau--Voltaire--our Gibbon--and De Staël--
       Leman![75] these names are worthy of thy shore,
       Thy shore of names like these! wert thou no more,
     Their memory thy remembrance would recall:
@@ -2497,7 +2488,7 @@ image of the lover's steed was suggested by the Nottingham race-ground
 ... nine miles off, and ... lying in a hollow, and totally hidden from
 view.... Mary Chaworth, in fact, was looking for her lover's steed along
 the road as it winds up the common from Hucknall."-"A Byronian Ramble,"
-_Athenaeum_, No. 357, August 30, 1834.]
+_Athenæum_, No. 357, August 30, 1834.]
 
 [44] {36}[Moore (_Life_, p. 28) regards "the antique oratory," as a
 poetical equivalent for Annesley Hall; but _vide ante_, the Introduction
@@ -2658,7 +2649,7 @@ Another and a less easily detected source of inspiration has been traced
 (see an article on Campbell's _Last Man_, in the _London Magazine and
 Review_, 1825, New Series, i. 588, seq.) to a forgotten but once popular
 novel entitled _The Last Man, or Omegarus and Syderia, a Romance in
-Futurity_ (two vols. 1806). Koelbing (_Prisoner of Chillon_, etc., pp.
+Futurity_ (two vols. 1806). Kölbing (_Prisoner of Chillon_, etc., pp.
 136-140) adduces numerous quotations in support of this contention. The
 following may serve as samples: "As soon as the earth had lost with the
 moon her guardian star, her decay became more rapid.... Some, in their
@@ -2697,7 +2688,7 @@ in frightful numbers.... Their blood stained the soft verdure of the
 trees, and their scattered bleeding limbs covered the fields and the
 roofs of the labourers' cottages" (i. 68). But such "conveyings" are
 honourable to the purloiner. See, too, the story of the battle between
-the Vulture-cavalry and the Sky-gnats, in Lucian's _Verae Historiae_, i.
+the Vulture-cavalry and the Sky-gnats, in Lucian's _Veræ Historiæ_, i.
 16.]
 
 [57] {44}
@@ -2823,7 +2814,7 @@ lump of clay."]
 
 [64] [Byron was a lover and worshipper of Prometheus as a boy. His first
 English exercise at Harrow was a paraphrase of a chorus of the
-_Prometheus Vinctus_ of AEschylus, line 528, _sq._ (see _Poetical Works_,
+_Prometheus Vinctus_ of Æschylus, line 528, _sq._ (see _Poetical Works_,
 1898, i. 14). Referring to a criticism on _Manfred_ (_Edinburgh Review_,
 vol xxviii. p. 431) he writes (October 12, 1817, _Letters_, 1900, iv.
 174): "The _Prometheus_, if not exactly in my plan, has always been so
@@ -2838,27 +2829,27 @@ Avatar_, stanza xii. line 2, etc.]
 
 [65] {49}[Compare--
 
-    [Greek: Toiau~t' e)pey/rou tou~ philanthro/pou tro/pou]
+    Τοιαῦτ' ἐπηύρου τοῦ φιλανθρώπου τρόπου
 
                                                          _P. V._, line 28.
 
 Compare, too--
 
-    [Greek: Thneto\us d' e)n oi)/.kto| prothe/menos, tou/tou tychei~n]
-    [Greek: Ou)k e)xio/then au)to\]
+    Θνητὸυς δ' ἐν οἴ.κtῳ προθέμενος, τούτου τυχεῖν
+    Οὐκ ἠξιώθην αὐτὸς
 
                                                    Ibid., lines 241, 242.]
 
 [66] [Compare--
 
-    [Greek: Dio\s ga\r dysparai/tetoi phre/nes.]
+    Διὸς γὰρ δυσπαραίτητοι φρένες.
 
                                                            Ibid., line 34.
 
 Compare, too--
 
-                      [Greek: ...gigno/skonth' o(/ti]
-    [Greek: To\ te~s a)na/nkes e)st' a)de/riton sthe/nos]
+                 ...γιγνώσκονθ' ὅτι
+    Τὸ τῆς ἀνάγκης ἐστ' ἀδήριτον σθένος
 
                                                          Ibid., line 105.]
 
@@ -2877,20 +2868,20 @@ Compare, too--
 
 [68] [Compare--
 
-    [Greek: O)/to| thanei~n me/n e)stin ou) peprome/non]
+    Ὄτῳ θανεῖν μέν ἐστιν οὐ πεπρωμένον
 
                                                        _P. V._, line 754.]
 
 [69][Compare--
 
-    [Greek: ...pa/nta prou)xepi/stamai]
-    [Greek: Skethro~s ta/ me/llonta]
+    ...πάντα προὐξεπίσταμαι
+    Σκεθρῶς τά μέλλοντα
 
                                                    Ibid., lines 101, 102.]
 
 [70] [Compare--
 
-    [Greek: Thnetoi~s d' a)e/gon au)to\s eu(ro/men po/nous.]
+    Θνητοῖς δ' ἀήγων αὐτὸς εὑρόμην πόνους.
 
                                                          Ibid., line 269.]
 
@@ -2901,7 +2892,7 @@ Compare, too--
 
                _Manfred_, act i. sc. 2, lines 39, 40, _vide post_, p. 95.]
 
-[m]----_and equal to all woes_.--[Editions 1832, etc.]
+[m] ----_and equal to all woes_.--[Editions 1832, etc.]
 
 [72] [The edition of 1832 and subsequent issues read "and equal." It is
 clear that the earlier reading, "an equal," is correct. The spirit
@@ -2933,14 +2924,14 @@ into the abyss to bring back the answer.]
 
 [75] {53}Geneva, Ferney, Copet, Lausanne. [For Rousseau, see _Poetical
 Works_, 1899, ii. 277, note 1, 300, 301, note 18; for Voltaire and
-Gibbon, _vide ibid._, pp. 306, 307, note 22; and for De Stael, see
+Gibbon, _vide ibid._, pp. 306, 307, note 22; and for De Staël, see
 _Letters_, 1898, ii. 223, note 1. Byron, writing to Moore, January 2,
 1821, declares, on the authority of Monk Lewis, "who was too great a
-bore ever to lie," that Madame de Stael alleged this sonnet, "in which
+bore ever to lie," that Madame de Staël alleged this sonnet, "in which
 she was named with Voltaire, Rousseau, etc.," as a reason for changing
 her opinion about him--"she could not help it through decency"
 (_Letters_, 1901, v. 213). It is difficult to believe that Madame de
-Stael was ashamed of her companions, or was sincere in disclaiming the
+Staël was ashamed of her companions, or was sincere in disclaiming the
 compliment, though, as might have been expected, the sonnet excited some
 disapprobation in England. A writer in the _Gentleman's Magazine_
 (February, 1818, vol. 88, p. 122) relieved his feelings by a "Retort
@@ -2949,7 +2940,7 @@ Addressed to the Thames"--
     "Restor'd to my dear native Thames' bank,
     My soul disgusted spurns a Byron's lay,--
            *       *       *       *       *
-    Leman may idly boast her Stael, Rousseau,
+    Leman may idly boast her Staël, Rousseau,
     Gibbon, Voltaire, whom Truth and Justice shun--
            *       *       *       *       *
     Whilst meekly shines midst Fulham's bowers the sun
@@ -3190,7 +3181,7 @@ Compare, too--
 [91] {63}["These verses," says John Wright (ed. 1832, x. 207), "of which
 the opening lines (1-6) are given in Moore's _Notices_, etc. (1830, ii.
 36), were written immediately after the failure of the negotiation ...
-[i.e. the intervention] of Madame de Stael, who had persuaded Byron 'to
+[i.e. the intervention] of Madame de Staël, who had persuaded Byron 'to
 write a letter to a friend in England, declaring himself still willing
 to be reconciled to Lady Byron' (_Life_, p. 321), but were not intended
 for the public eye." The verses were written in September, and it is
@@ -3198,7 +3189,7 @@ evident that since the composition of _The Dream_ in July, another
 "change had come over" his spirit, and that the mild and courteous
 depreciation of his wife as "a gentle bride," etc., had given place to
 passionate reproach and bitter reviling. The failure of Madame de
-Stael's negotiations must have been to some extent anticipated, and it
+Staël's negotiations must have been to some extent anticipated, and it
 is more reasonable to suppose that it was a rumour or report of the "one
 serious calumny" of Shelley's letter of September 29, 1816, which
 provoked him to fury, and drove him into the open maledictions of _The
@@ -3544,7 +3535,7 @@ one of them I ever wished to hear at greater length."--_Detached
 Thoughts_, 1821, _Letters_, 1901, v. 413.]
 
 [103] ["In society I have met Sheridan frequently: he was superb!... I
-have seen him cut up Whitbread, quiz Madame de Stael, annihilate Colman,
+have seen him cut up Whitbread, quiz Madame de Staël, annihilate Colman,
 and do little less by some others ... of good fame and abilities.... I
 have met him in all places and parties, ... and always found him very
 convivial and delightful."--_Ibid_., pp. 413, 414.]
@@ -3565,7 +3556,7 @@ Series I. xi. 472) that this fine metaphor may be traced to Ariosto's
 _Orlando Furioso_. The subject is Zerbino, the son of the King of
 Scotland--
 
-    "Non e vu si bello in tante altre persone:
+    "Non è vu si bello in tante altre persone:
     Natura il fece e poi ruppe la stampa."
 
                                       Canto X. stanza lxxxiv. lines 5, 6.]
@@ -3617,7 +3608,7 @@ by Tschaikowsky, 1885; first heard in London, autumn, 1898.]
 
 
 Byron passed four months and three weeks in Switzerland. He arrived at
-the Hotel d'Angleterre at Secheron, on Saturday, May 25, and he left the
+the Hôtel d'Angleterre at Sécheron, on Saturday, May 25, and he left the
 Campagne Diodati for Italy on Sunday, October 6, 1816. Within that
 period he wrote the greater part of the Third Canto of _Childe Harold_,
 he began and finished the _Prisoner of Chillon_, its seven attendant
@@ -3689,9 +3680,9 @@ found in the Journal which I sent to Mrs. Leigh ... when I went over
 first the Dent, etc., ... shortly before I left Switzerland. I have the
 whole scene of _Manfred_ before me."
 
-Again, three years later he writes (_a propos_ of Goethe's review of
+Again, three years later he writes (_à propos_ of Goethe's review of
 _Manfred_, which first appeared in print in his paper _Kunst und
-Alterthum_, June, 1820, and is republished in Goethe's _Saemmtliche
+Alterthum_, June, 1820, and is republished in Goethe's _Sämmtliche
 Werke_ ... Stuttgart, 1874, xiii. 640-642; see _Letters_, 1901, v.
 Appendix II. "Goethe and Byron," pp. 503-521): "His _Faust_ I never
 read, for I don't know German; but Matthew Monk Lewis (_sic_), in 1816,
@@ -3710,7 +3701,7 @@ granted that Byron knew nothing about the "Faust-legend," or the
 _Faustus_, or the selections from the play in Lamb's _Specimens, etc._
 (see Medwin's _Conversations, etc._, pp. 208, 209, and a hitherto
 unpublished Preface to _Werner_, vol. v.), and it is highly improbable
-that he knew anything of Calderon's _El Magico Prodigioso_, which
+that he knew anything of Calderon's _El Mágico Prodigioso_, which
 Shelley translated in 1822, or of "the beggarly elements" of the legend
 in Hroswitha's _Lapsus et Conversio Theophrasti Vice-domini_. But
 Byron's _Manfred_ is "in the succession" of scholars who have reached
@@ -3734,7 +3725,7 @@ for his hypochondriac humour. He has made use of the impelling
 principles in his own way, for his own purposes, so that no one of them
 remains the same; and it is particularly on this account that I cannot
 enough admire his genius." Afterwards (see record of a conversation with
-Herman Fuerst von Pueckler, September 14, 1826, _Letters_, v. 511) Goethe
+Herman Fürst von Pückler, September 14, 1826, _Letters_, v. 511) Goethe
 somewhat modified his views, but even then it interested him to trace
 the unconscious transformation which Byron had made of his
 Mephistopheles. It is, perhaps, enough to say that the link between
@@ -3758,9 +3749,9 @@ the time-spirit, but a personal outcry: "De profundis clamavi!"
 No doubt, apart from this main purport and essence of his song, his
 sensitive spirit responded to other and fainter influences. There are
 "points of resemblance," as Jeffrey pointed out and Byron proudly
-admitted, between _Manfred_ and the _Prometheus_ of AEschylus. Plainly,
+admitted, between _Manfred_ and the _Prometheus_ of Æschylus. Plainly,
 here and there, "the tone and pitch of the composition," and "the victim
-in the more solemn parts," are AEschylean. Again, with regard to the
+in the more solemn parts," are Æschylean. Again, with regard to the
 supernatural, there was the stimulus of the conversation of the Shelleys
 and of Lewis, brimful of magic and ghost-lore; and lastly, there was the
 glamour of _Christabel_, "the wild and original" poem which had taken
@@ -3769,7 +3760,7 @@ wonder that the fuel kindled and burst into a flame.
 
 For the text of Goethe's review of _Manfred_, and Hoppner's translation
 of that review, and an account of Goethe's relation with Byron, drawn
-from Professor A. Brandl's _Goethes Verhaeltniss zu Byron
+from Professor A. Brandl's _Goethes Verhältniss zu Byron
 (Goethe-Jahrbuch, Zwanzigster Band_, 1899), and other sources, see
 _Letters_, 1901, v. Appendix II. pp. 503-521.
 
@@ -3780,7 +3771,7 @@ _Monthly Review_, July, 1817, Enlarged Series, vol. 83, pp. 300-307;
 _Dublin University Magazine_, April, 1874, vol. 83, pp. 502-508, etc.
 
 
-                             DRAMATIS PERSONAE.
+                             DRAMATIS PERSONÆ.
 
 
                                 Manfred.
@@ -4027,7 +4018,7 @@ _Dublin University Magazine_, April, 1874, vol. 83, pp. 502-508, etc.
     Bethink ere thou dismiss us; ask again;
     Kingdom, and sway, and strength, and length of days--
 
-    _Man_. Accursed! what have I to do with days?
+    _Man_. Accurséd! what have I to do with days?
     They are too long already.--Hence--begone!                         170
 
     _Spirit_. Yet pause: being here, our will would do thee service;
@@ -4219,7 +4210,7 @@ _Dublin University Magazine_, April, 1874, vol. 83, pp. 502-508, etc.
     _Man_. (_not perceiving the other_). To be thus--
     Grey-haired with anguish, like these blasted pines,
     Wrecks of a single winter, barkless, branchless,[123]
-    A blighted trunk upon a cursed root,
+    A blighted trunk upon a curséd root,
     Which but supplies a feeling to Decay--
     And to be thus, eternally but thus,                                 70
     Having been otherwise! Now furrowed o'er
@@ -4616,7 +4607,7 @@ _Dublin University Magazine_, April, 1874, vol. 83, pp. 502-508, etc.
     Is mortal here: I dwell in my despair--
     And live--and live for ever.[az]
 
-    _Witch_.                        It may be                         150
+    _Witch_.                     It may be                            150
     That I can aid thee.
 
     _Man_.               To do this thy power
@@ -4844,7 +4835,7 @@ _Dublin University Magazine_, April, 1874, vol. 83, pp. 502-508, etc.
     _Third Spirit_. Bow down and worship, slave!--What, know'st thou not
     Thine and our Sovereign?--Tremble, and obey!
 
-    _All the Spirits_. Prostrate thyself, and thy condemned clay,
+    _All the Spirits_. Prostrate thyself, and thy condemnéd clay,
     Child of the Earth! or dread the worst.
 
     _Man_.                                   I know it;
@@ -4971,7 +4962,7 @@ _Dublin University Magazine_, April, 1874, vol. 83, pp. 502-508, etc.
     And we are baffled also.
 
     _Man_.                  Hear me, hear me--
-    Astarte! my beloved! speak to me:
+    Astarte! my belovéd! speak to me:
     I have so much endured--so much endure--
     Look on me! the grave hath not changed thee more
     Than I am changed for thee. Thou lovedst me                        120
@@ -4980,7 +4971,7 @@ _Dublin University Magazine_, April, 1874, vol. 83, pp. 502-508, etc.
     The deadliest sin to love as we have loved.
     Say that thou loath'st me not--that I do bear
     This punishment for both--that thou wilt be
-    One of the blessed--and that I shall die;
+    One of the blesséd--and that I shall die;
     For hitherto all hateful things conspire
     To bind me in existence--in a life
     Which makes me shrink from Immortality--
@@ -5131,7 +5122,7 @@ _Dublin University Magazine_, April, 1874, vol. 83, pp. 502-508, etc.
 
     _Man_. And what are they who do avouch these things?
 
-    _Abbot_. My pious brethren--the scared peasantry--
+    _Abbot_. My pious brethren--the scaréd peasantry--
     Even thy own vassals--who do look on thee
     With most unquiet eyes. Thy life's in peril!
 
@@ -5416,7 +5407,7 @@ _Dublin University Magazine_, April, 1874, vol. 83, pp. 502-508, etc.
     The forfeit of my fault, if fault there be--
     But I must see him.
 
-    _Her_.             Thou hast seen him once
+    _Her_.              Thou hast seen him once
     his eve already.
 
     _Abbot_.          Herman! I command thee,[bf]
@@ -5455,20 +5446,20 @@ _Dublin University Magazine_, April, 1874, vol. 83, pp. 502-508, etc.
     Waved dark in the blue midnight, and the stars
     Shone through the rents of ruin; from afar
     The watch-dog bayed beyond the Tiber; and
-    More near from out the Caesars' palace came
+    More near from out the Cæsars' palace came
     The owl's long cry, and, interruptedly,[167]
     Of distant sentinels the fitful song
     Begun and died upon the gentle wind.[168]
     Some cypresses beyond the time-worn breach                          20
     Appeared to skirt the horizon, yet they stood
-    Within a bowshot. Where the Caesar's dwelt,
+    Within a bowshot. Where the Cæsars dwelt,
     And dwell the tuneless birds of night, amidst
     A grove which springs through levelled battlements,
     And twines its roots with the imperial hearths,
     Ivy usurps the laurel's place of growth;
     But the gladiators' bloody Circus stands,
     A noble wreck in ruinous perfection,
-    While Caesar's chambers, and the Augustan halls,
+    While Cæsar's chambers, and the Augustan halls,
     Grovel on earth in indistinct decay.--                              30
     And thou didst shine, thou rolling Moon, upon
     All this, and cast a wide and tender light,
@@ -5494,7 +5485,7 @@ _Dublin University Magazine_, April, 1874, vol. 83, pp. 502-508, etc.
     But yet let not my humble zeal offend
     By its abruptness--all it hath of ill
     Recoils on me; its good in the effect
-    May light upon your head--could I say _heart_--                     50
+    May light upon your head--could I say _heart_--                      50
     Could I touch _that_, with words or prayers, I should
     Recall a noble spirit which hath wandered,
     But is not yet all lost.
@@ -5736,9 +5727,10 @@ the agreement.--_Life_, p. 375, note.]
 
 [119] {94}[Compare--
 
-    [Greek: o~) di~os ai)the\r, k.t.l.]
+    ὦ δῖος αἰθὴρ, κ.τ.λ.
+    [Greek: ô~) di~os ai)thê\r, k.t.l.]
 
-                             AEschylus, _Prometheus Vinctus,_ lines 88-91.]
+                             Æschylus, _Prometheus Vinctus,_ lines 88-91.]
 
 [120] {95}[Compare Hamlet's speech to Rosencrantz and Guildenstern
 (_Hamlet,_ act ii. sc. 2, lines 286, _sq._).]
@@ -5891,7 +5883,7 @@ done before, called up another Amoretto like the first, save that his
 long-flowing locks now seemed black, now shot with sunny gleams.
 Whereupon both the Amoretti nestled and clung round Iamblichus as if
 they had been his own children ... after this his disciples asked him no
-more questions."--Eunapii Sardiani _Vitae Philosophorum et Sophistarum_
+more questions."--Eunapii Sardiani _Vitæ Philosophorum et Sophistarum_
 (28, 29), _Philostratorum_, etc., _Opera_, Paris, 1829, p. 459, lines
 20-50.]
 
@@ -5908,7 +5900,7 @@ _Letters,_ 1899, iii. 333).]
 
 [138] The story of Pausanias, king of Sparta, (who commanded the Greeks
 at the battle of Platea, and afterwards perished for an attempt to
-betray the Lacedaemonians), and Cleonice, is told in Plutarch's life of
+betray the Lacedæmonians), and Cleonice, is told in Plutarch's life of
 Cimon; and in the Laconics of Pausanias the sophist in his description
 of Greece.
 
@@ -5940,7 +5932,7 @@ that it was a custom in the pagan as well as in the Hebrew theology to
 conjure up the spirits of the dead, and that the witch of Endor was not
 the only witch in the world."--Langhorne's _Plutarch_, 1838, p. 339.
 
-The same story is told in the _Periegesis Graecae_, lib. iii. cap. xvii.,
+The same story is told in the _Periegesis Græcæ_, lib. iii. cap. xvii.,
 but Pausanias adds, "This was the deed from the guilt of which Pausanias
 could never fly, though he employed all-various purifications, received
 the deprecations of Jupiter Phyxius, and went to Phigalea to the
@@ -5990,7 +5982,7 @@ Napoleon will "live to fight another day."]
 
 [143] {111}[Byron may have had in his mind Thomas Lord Cochrane
 (1775-1860), "who had done brilliant service in his successive
-commands--the _Speedy_, _Pallas_, _Imperieuse_, and the flotilla of
+commands--the _Speedy_, _Pallas_, _Impérieuse_, and the flotilla of
 fire-ships at Basque Roads in 1809." In his Diary, March 10, 1814, he
 speaks of him as "the stock-jobbing hoaxer" (_Letters_, 1898, ii. 396,
 note 1).]
@@ -6023,10 +6015,10 @@ Compare, too--
                         _Childe Harold_, Canto II. stanza vii. lines 1, 2,
                                          _Poetical Works_, 1899, ii. 103.]
 
-[147] {115}[Astarte is the classical form (_vide_ Cicero, _De Natura
-Deorum_, iii. 23, and Lucian, _De Syria Dea_, iv.) of Milton's
+[147] {115}[Astarte is the classical form (_vide_ Cicero, _De Naturâ
+Deorum_, iii. 23, and Lucian, _De Syriâ Deâ_, iv.) of Milton's
 
-            "Mooned Ashtaroth,
+            "Moonéd Ashtaroth,
     Heaven's queen and mother both."
 
 Cicero says that she was married to Adonis, alluding, no doubt, to the
@@ -6053,7 +6045,7 @@ Tammuz or Adonis.]
 
 [150] {119}[On September 22, 1816 (_Letters_, 1899, iii. 357, note 2),
 Byron rode from Neuhaus, at the Interlaken end of Lake Thun, to the
-Staubbach. On the way between Matten and Muellinen, not far from the
+Staubbach. On the way between Matten and Müllinen, not far from the
 village of Wilderswyl, he passed the baronial Castle of Unspunnen, the
 traditional castle of Manfred. It is "but a square tower, with flanking
 round turrets, rising picturesquely above the surrounding brushwood." On
@@ -6082,10 +6074,10 @@ p. 370).]
 
 [152] {120}[Byron may have had in his mind a sentence in a letter of C.
 Cassius to Cicero (_Epist.,_ xv. 19), in which he says, "It is difficult
-to persuade men that goodness is desirable for its own sake ([Greek: to\
-kalo\n di) au)to\ ai(reto\n]); and yet it is true, and may be proved,
-that pleasure and calm are won by virtue, justice, in a word by goodness
-([Greek: to~| kalo~|])."]
+to persuade men that goodness is desirable for its own sake (τὸ καλὸν δἰ
+αὐτὸ αἱρετὸν [Greek: to\ kalo\n di) au)to\ ai(reto\n]); and yet it is
+true, and may be proved, that pleasure and calm are won by virtue,
+justice, in a word by goodness (τῷ καλῷ [Greek: tô~| kalô~|])."]
 
 [153] St. Maurice is in the Rhone valley, some sixteen miles from
 Villeneuve. The abbey (now occupied by Augustinian monks) was founded in
@@ -6162,7 +6154,7 @@ the scene as given in the first MS. is as follows:--
 
       ASHTAROTH _disappears with the_ ABBOT, _singing as follows:_--
 
-    A prodigal son, and a maid undone,[Sec.]
+    A prodigal son, and a maid undone,[§]
       And a widow re-wedded within the year;
     And a worldly monk, and a pregnant nun,
       Are things which every day appear.
@@ -6186,7 +6178,7 @@ gibbet, which in Germany and Switzerland is permanent, and made of
 stone." [Compare _Werner,_ act ii. sc. 2. Compare, too, Anster's
 _Faust,_ 1883, p. 306.]
 
-[Sec.]
+[§]
     _A prodigal son--and a pregnant nun, nun,_
          _And a widow re-wedded within the year--_
     _And a calf at grass--and a priest at mass._
@@ -6201,7 +6193,7 @@ Suet. Tranq_., lib. vi. cap. xlix.]
 [bd]
 
            / _not loss of life, but_ \
-_To shun_ <                           > _public death_--[MS. M]
+_To shun_ <                           > _public death_--[MS. M.]
            \   _the torments of a_   /
 
 [157] [A reminiscence of the clouds of spray from the Fall of the
@@ -6320,7 +6312,7 @@ Unspunnen.]
     _Manuel_. Close them.--My old hand quivers.--He departs--
     Whither? I dread to think--but he is gone!
 
-                             End of Act Third, and of the poem."]
+                         End of Act Third, and of the poem."]
 
 [bf] {131}_Sirrah! I command thee_.--[MS.]
 
@@ -6603,7 +6595,7 @@ Hugo were beheaded, according to the annal of Gibbon.[174]
     Where I did lay me down within the shade
     Of waving trees, and dreamed uncounted hours,
     Though I was chid for wandering; and the Wise
-    Shook their white aged heads o'er me, and said
+    Shook their white agéd heads o'er me, and said
     Of such materials wretched men were made,
     And such a truant boy would end in woe,                            160
     And that the only lesson was a blow;[185]--
@@ -6619,6 +6611,7 @@ Hugo were beheaded, according to the annal of Gibbon.[174]
     And then I lost my being, all to be
     Absorbed in thine;--the world was past away;--
     _Thou_ didst annihilate the earth to me!
+
 
                         VII.
 
@@ -6768,7 +6761,7 @@ all the horrors of a solitary sordid cell, and was under the care of a
 gaoler whose chief virtue, although he was a poet and a man of letters,
 was a cruel obedience to the commands of his prince.... His name was
 Agostino Mosti.... Tasso says of him, in a letter to his sister, 'ed usa
-meco ogni sorte di rigore ed inumanita.'"--Hobhouse, _Historical
+meco ogni sorte di rigore ed inumanità.'"--Hobhouse, _Historical
 Illustrations, etc_., 1818, pp. 20, 21, note 1.
 
 Tasso, in a letter to Angelo Grillo, dated June 16, 1584 (Letter 288,
@@ -6802,12 +6795,12 @@ either his wits or his liberty.]
 [184] {148}[Compare the following lines from the canzone entitled, "La
 Prima di Tre Sorelle Scritte a Madaroa Leonora d'Este ... 1567:"--
 
-    "E certo il primo di che'l bel sereno
+    "E certo il primo dì che'l bel sereno
       Delia tua fronte agli occhi miei s'offerse
       E vidi armato spaziarvi Amore,
       Se non che riverenza allor converse,
       E Meraviglia in fredda selce il seno,
-      Ivi peria con doppia morte il core;
+      Ivi pería con doppia morte il core;
       Ma parte degli strali, e dell' ardore
       Sentii pur anco entro 'l gelato marmo."]
 
@@ -6979,7 +6972,7 @@ Croker, Frere, etc., that "he could write cheerfully," and "would repel
 the charge of monotony and mannerism."
 
 Eckermann, mindful of Goethe's hint that Byron had too much _empeiria_
-(an excess of _mondanite_--a _this_-worldliness), found it hard to read
+(an excess of _mondanité_--a _this_-worldliness), found it hard to read
 _Beppo_ after _Macbeth_. "I felt," he says, "the predominance of a
 nefarious, empirical world, with which the mind which introduced it to
 us has in a certain measure associated itself" (_Conversations of
@@ -6991,7 +6984,7 @@ _Blackwood's Edinburgh Magazine_, 1822, xi. 162-165.
 
     "The story that's in it
     May be told in a minute;
-    But _par parenthese_ chatting,
+    But _par parenthèse_ chatting,
     On this thing and that thing,
     Keeps the shuttlecock flying,
     And attention from dying."
@@ -7432,7 +7425,7 @@ Review_, N.S., June, 1818, vol. ix. pp. 555-557.
     However, I still think, with all due deference
       To the fair _single_ part of the creation,
     That married ladies should preserve the preference
-      In _tete a tete_ or general conversation--
+      In _tête à tête_ or general conversation--
     And this I say without peculiar reference
       To England, France, or any other nation--
     Because they know the world, and are at ease,
@@ -7954,7 +7947,7 @@ Review_, N.S., June, 1818, vol. ix. pp. 555-557.
       To make her curtsey thought it right and fitting;
     The Count was at her elbow with her shawl,
       And they the room were on the point of quitting,
-    When lo! those cursed Gondoliers had got
+    When lo! those curséd Gondoliers had got
     Just in the very place where they _should not._
 
                         LXXXVI.
@@ -8267,13 +8260,13 @@ H. Layard, 1891, part ii. p. 553.]
 Barbarelli, b. 1478) was never married. He died of the plague, A.D.
 1511.]
 
-[202] {164} "Quae septem dici, sex tanien esse solent."--Ovid.,
+[202] {164} "Quæ septem dici, sex tanien esse solent."--Ovid.,
 [_Fastorum_, lib. iv. line 170.]
 
 [202A] [Carlo Goldoni (1707-1793). His play, _Belisarius_, was
 first performed November 24, 1734; _Le Bourru Bienfaisant_, November 4,
-1771. _La Bottega del Caffe_, _La Locandiera, etc_., still hold the
-stage. His _Memoires_ were published in 1787.]
+1771. _La Bottega del Caffé_, _La Locandiera, etc_., still hold the
+stage. His _Mémoires_ were published in 1787.]
 
 [202B]
                            ["Look to't:
@@ -8310,7 +8303,7 @@ Exchange; and I have often walked there as on classic ground.... 'I
 Sopportichi,' says Sansovino, writing in 1580 [_Venetia_, 1581, p. 134],
 'sono ogni giorno frequentati da i mercatanti Fiorentini, Genovesi,
 Milanesi, Spagnuoli, Turchi, e d'altre nationi diverse del mondo, i
-quali vi concorrono in tanta copia, che questa piazza e annoverata fra
+quali vi concorrono in tanta copia, che questa piazza è annoverata fra
 le prime dell' universo.' It was there that the Christian held discourse
 with the Jew; and Shylock refers to it when he says--
 
@@ -8331,8 +8324,8 @@ Ugo Foscolo, in his article in the _Quarterly Review_, April, 1819, vol.
 xxi. pp. 486-556, quotes these lines in illustration of a stanza from
 Forteguerri's _Ricciardetto_, iv. 2--
 
-    Quando si giugne ad una certa eta,
-    Ch'io non voglio descrivervi qual e," etc.]
+    Quando si giugne ad una certa età,
+    Ch'io non voglio descrivervi qual è," etc.]
 
 [206] {167}[A clean bill of health after quarantine. Howell spells the
 word "pratic," and Milton "pratticke."]
@@ -8359,10 +8352,10 @@ called his performance '_seccatura_' (a devilish good word, by the way),
 and all Milan was in controversy about him."--Letter to Moore, November
 6, 1816, _Letters_, 1899, iii. 384.]
 
-[210] {170}[The saying, "Il n'y a point de heros pour son valet de
-chambre," is attributed to Marechal (Nicholas) Catinat (1637-1712). His
-biographer speaks of presenting "_le heros en deshabille_." (See his
-_Memoires_, 1819, ii. 118.)]
+[210] {170}[The saying, "Il n'y a point de héros pour son valet de
+chambre," is attributed to Maréchal (Nicholas) Catinat (1637-1712). His
+biographer speaks of presenting "_le héros en déshabillé_." (See his
+_Mémoires_, 1819, ii. 118.)]
 
 [211] {171}[The origin of the word is obscure. According to the _Vocab.
 della Crusca_, "cicisbeo" is an inversion of "bel cece," beautiful chick
@@ -8398,9 +8391,9 @@ Dict._, art. "Bread.")]
 
 [217] {174}[For the received accounts of the cause of Raphael's death,
 see his Lives. "Fidem matrimonii quidem dederat nepti cuidam Cardinal.
-Bibiani, sed partim Cardinalatus spe lactatus partim pro seculi locique
-more, Romae enim plerumque vixit, vagis amoribus delectatus, morbo hinc
-contracto, obiit A.C. 1520, aetat. 37."--Art. "Raphael," _apud_ Hofmann,
+Bibiani, sed partim Cardinalatûs spe lactatus partim pro seculi locique
+more, Romæ enim plerumque vixit, vagis amoribus delectatus, morbo hinc
+contracto, obiit A.C. 1520, ætat. 37."--Art. "Raphael," _apud_ Hofmann,
 _Lexicon Universale_. It would seem that Raphael was betrothed to Maria,
 daughter of Antonio Divizio da Bibiena, the nephew of Cardinal Bibiena
 (see his letter to his uncle Simone di Battista di Ciarla da Urbino,
@@ -8414,7 +8407,7 @@ ancient Rome" (_Raphael of Urbino_, by J. D. Passavant, 1872, pp. 140,
 [218] [Compare the lines enclosed in a letter to Murray, dated November
 25, 1816--
 
-    "In this beloved marble view,
+    "In this belovéd marble view,
       Above the works and thoughts of man,
     What Nature _could_ but _would not_ do,
       And Beauty and Canova can."]
@@ -8457,7 +8450,7 @@ poems. Though now become familiar and rather trite, their day may not be
 long.
 
                        ' ... Cadentque
-    Quae nunc sunt in honore vocabula.'"
+    Quæ nunc sunt in honore vocabula.'"
 
 --Translation of Forteguerri's _Ricciardetto_, by Lord Glenbervie, 1822
 (note to stanza v.).
@@ -8724,7 +8717,7 @@ excellent wrangler at Cambridge." Compare--
     And moving, as a sick man in his sleep,
     Three paces, and then faltering:--better be
     Where the extinguished Spartans still are free,
-    In their proud charnel of Thermopylae,
+    In their proud charnel of Thermopylæ,
     Than stagnate in our marsh,--or o'er the deep
     Fly, and one current to the ocean add,
     One spirit to the souls our fathers had,
@@ -8838,17 +8831,17 @@ own mansion!
 With regard to the sequel or issue of this episode, history is silent,
 but when the curtain rises again (A.D. 1674) Mazeppa is discovered in
 the character of writer-general or foreign secretary to Peter
-Doroshenko, hetman or president of the Western Ukraine, on the hither
-side of the Dnieper. From the service of Doroshenko, who came to an
+Doroshénko, hetman or president of the Western Ukraine, on the hither
+side of the Dniéper. From the service of Doroshénko, who came to an
 untimely end, he passed by a series of accidents into the employ of his
-rival, Samoilovitch, hetman of the Eastern Ukraine, and, as his
+rival, Samoïlovitch, hetman of the Eastern Ukraine, and, as his
 secretary or envoy, continued to attract the notice and to conciliate
 the good will of the (regent) Tzarina Sophia and her eminent _boyard_,
 Prince Basil Golitsyn. A time came (1687) when it served the interests
-of Russia to degrade Samoilovitch, and raise Mazeppa to the post of
+of Russia to degrade Samoïlovitch, and raise Mazeppa to the post of
 hetman, and thenceforward, for twenty years and more, he held something
 like a regal sway over the whole of the Ukraine (a fertile "no-man's
-land," watered by the Dnieper and its tributaries), openly the loyal and
+land," watered by the Dniéper and its tributaries), openly the loyal and
 zealous ally of his neighbour and suzerain, Peter the Great.
 
 How far this allegiance was genuine, or whether a secret preference for
@@ -8858,7 +8851,7 @@ remain doubtful, but it is certain that the immediate cause of a final
 reversal of the allegiance and a break with the Tsar was a second and
 still more fateful _affaire du coeur_. The hetman was upwards of sixty
 years of age, but, even so, he fell in love with his god-daughter,
-Matrena, who, in spite of difference of age and ecclesiastical kinship,
+Matréna, who, in spite of difference of age and ecclesiastical kinship,
 not only returned his love, but, to escape the upbraidings and
 persecution of her mother, took refuge under his roof. Mazeppa sent the
 girl back to her home, but, as his love-letters testify, continued to
@@ -8866,7 +8859,7 @@ woo her with the tenderest and most passionate solicitings; and,
 although she finally yielded to _force majeure_ and married another
 suitor, her parents nursed their revenge, and endeavoured to embroil the
 hetman with the Tsar. For a time their machinations failed, and
-Matrena's father, Kotchubey, together with his friend Iskra, were
+Matréna's father, Kotchúbey, together with his friend Iskra, were
 executed with the Tsar's assent and approbation. Before long, however,
 Mazeppa, who had been for some time past in secret correspondence with
 the Swedes, signalized his defection from Peter by offering his services
@@ -8875,7 +8868,7 @@ who was meditating the invasion of Russia.
 
 "Pultowa's day," July 8, 1709, was the last of Mazeppa's power and
 influence, and in the following year (March 31, 1710), "he died of old
-age, perhaps of a broken heart," at Varnitza, a village near Bender, on
+age, perhaps of a broken heart," at Várnitza, a village near Bender, on
 the Dniester, whither he had accompanied the vanquished and fugitive
 Charles.
 
@@ -8885,8 +8878,8 @@ deeds of daring, his intrigues and his treachery, have been and still
 are sung by the wandering minstrels of the Ukraine. His story has passed
 into literature. His ride forms the subject of an _Orientale_ (1829) by
 Victor Hugo, who treats Byron's theme symbolically; and the romance of
-his old age, his love for his god-daughter Matrena, with its tragical
-issue, the judicial murder of Kotchubey and Iskra, are celebrated by the
+his old age, his love for his god-daughter Matréna, with its tragical
+issue, the judicial murder of Kotchúbey and Iskra, are celebrated by the
 "Russian Byron" Pushkin, in his poem _Poltava_. He forms the subject of
 a novel, _Iwan Wizigin_, by Bulgarin, 1830, and of tragedies by I.
 Slowacki, 1840, and Rudolph von Gottschall. From literature Mazeppa has
@@ -8897,7 +8890,7 @@ Amphitheatre, Westminster Bridge, on Easter Monday, 1831; and revived at
 Astley's Theatre, when Adah Isaacs Menken appeared as "Mazeppa," October
 3, 1864. (_Peter the Great_, by Eugene Schuyler, 1884, ii. 115, _seq_.;
 _Le Fils de Pierre Le Grand, Mazeppa, etc_., by Viscount E. Melchior de
-Voguee, Paris, 1884; _Peter the Great_, by Oscar Browning, 1899, pp.
+Vogüé, Paris, 1884; _Peter the Great_, by Oscar Browning, 1899, pp.
 219-229.)
 
 Of the composition of Mazeppa we know nothing, except that on September
@@ -8917,33 +8910,33 @@ pp. 147-156.
                               ADVERTISEMENT.
 
 
-"Celui qui remplissait alors cette place etait un gentilhomme Polonais,
-nomine Mazeppa, ne dans le palatinat de Podolie: il avait ete eleve page
-de Jean Casimir, et avait pris a sa cour quelque teinture des
+"Celui qui remplissait alors cette place était un gentilhomme Polonais,
+nominé Mazeppa, né dans le palatinat de Podolie: il avait été élevé page
+de Jean Casimir, et avait pris à sa cour quelque teinture des
 belles-lettres. Une intrigue qu'il eut dans sa jeunesse avec la femme
-d'un gentilhomme Polonais ayant ete decouverte, le mari le fit lier tout
-nu sur un cheval farouche, et le laissa aller en cet etat. Le cheval,
-qui etait du pays de l'Ukraine, y retourna, et y porta Mazeppa,
+d'un gentilhomme Polonais ayant été découverte, le mari le fit lier tout
+nu sur un cheval farouche, et le laissa aller en cet état. Le cheval,
+qui était du pays de l'Ukraine, y retourna, et y porta Mazeppa,
 demi-mort de fatigue et de faim. Quelques paysans le secoururent: il
 resta longtems parmi eux, et se signala dans plusieurs courses contre
-les Tartares. La superiorite de ses lumieres lui donna une grande
-consideration parmi les Cosaques: sa reputation s'augmentant de jour en
-jour, obligea le Czar a le faire Prince de l'Ukraine."--Voltaire, _Hist.
+les Tartares. La supériorité de ses lumières lui donna une grande
+considération parmi les Cosaques: sa réputation s'augmentant de jour en
+jour, obligea le Czar à le faire Prince de l'Ukraine."--Voltaire, _Hist.
 de Charles XII_., 1772, p. 205.
 
-"Le roi, fuyant et poursuivi, eut son cheval tue sous lui; le Colonel
-Gieta, blesse, et perdant tout son sang, lui donna le sien. Ainsi on
-remit deux fois a cheval, dans la fuite,[br] ce conquerant qui n'avait
+"Le roi, fuyant et poursuivi, eut son cheval tué sous lui; le Colonel
+Gieta, blessé, et perdant tout son sang, lui donna le sien. Ainsi on
+remit deux fois à cheval, dans la fuite,[br] ce conquérant qui n'avait
 pu y monter pendant la bataille."--p. 222.
 
 "Le roi alla par un autre chemin avec quelques cavaliers. Le carrosse,
-ou il etait, rompit dans la marche; on le remit a cheval. Pour comble de
-disgrace, il s'egara pendant la nuit dans un bois; la, son courage ne
-pouvant plus suppleer, a ses forces epuisees, les douleurs de sa
-blessure devenues plus insupportables par la fatigue, son cheval etant
-tombe de lassitude, il se coucha quelques heures au pied d'un arbre, en
-danger d'etre surpris a tout moment par les vainqueurs, qui le
-cherchaient de tous cotes."--p. 224.
+où il était, rompit dans la marche; on le remit à cheval. Pour comble de
+disgrâce, il s'égara pendant la nuit dans un bois; là, son courage ne
+pouvant plus suppléer, à ses forces épuisées, les douleurs de sa
+blessure devenues plus insupportables par la fatigue, son cheval étant
+tombé de lassitude, il se coucha quelques heures au pied d'un arbre, en
+danger d'être surpris à tout moment par les vainqueurs, qui le
+cherchaient de tous côtés."--p. 224.
 
 
 
@@ -9093,7 +9086,7 @@ cherchaient de tous cotes."--p. 224.
     Aye 'twas,--when Casimir was king[254]--
     John Casimir,--I was his page
     Six summers, in my earlier age:[255]                               130
-    A learned monarch, faith! was he,
+    A learnéd monarch, faith! was he,
     And most unlike your Majesty;
     He made no wars, and did not gain
     New realms to lose them back again;
@@ -9303,7 +9296,7 @@ cherchaient de tous cotes."--p. 224.
     Surprised and seized us both.
     The Count was something more than wroth--
     I was unarmed; but if in steel,
-    All cap-a-pie from head to heel,
+    All cap-à-pie from head to heel,
     What 'gainst their numbers could I do?                             330
     'Twas near his castle, far away
       From city or from succour near,
@@ -9887,8 +9880,8 @@ FOOTNOTES:
 
 [br] {205}_la suite_.--[MS. and First Edition.]
 
-[248] {207}[The Battle of Poltava on the Vorskla took place July 8,
-1709. "The Swedish troops (under Rehnskjoeld) numbered only 12,500
+[248] {207}[The Battle of Poltáva on the Vórskla took place July 8,
+1709. "The Swedish troops (under Rehnskjöld) numbered only 12,500
 men.... The Russian army was four times as numerous.... The Swedes
 seemed at first to get the advantage, ... but everywhere the were
 overpowered and surrounded--beaten in detail; and though for two hours
@@ -9915,8 +9908,8 @@ reached their former camp."--_Charles XII._, by Oscar Browning, 1899,
 pp. 213, 220, 224, sq. For an account of his flight southwards into
 Turkish territory, _vide post_, p. 233, note 1. The bivouack "under a
 savage tree" must have taken place on the night of the battle, at the
-first halt, between Poltava and the junction of the Vorskla and
-Dnieper.]
+first halt, between Poltáva and the junction of the Vórskla and
+Dniéper.]
 
 [251] {208}[Compare--
 
@@ -9928,22 +9921,22 @@ Dnieper.]
 Mazeppa, see Barrow's _Memoir of the Life of Peter the Great_, 1832, pp.
 181-202.]
 
-[253] {211}[The Dnieper.]
+[253] {211}[The Dniéper.]
 
 [254] [John Casimir (1609-1672), Jesuit, cardinal, and king, was a
 Little-Polander, not to say a pro-Cossack, and suffered in consequence.
 At the time of his proclamation as King of Poland, November, 1649,
 Poland was threatened by an incursion of Cossacks. The immediate cause
-was, or was supposed to be, the ill treatment which [Bogdan Khmelnitzky]
+was, or was supposed to be, the ill treatment which [Bogdán Khmelnítzky]
 a Lithuanian had received at the hands of the Polish governor,
 Czaplinski. The governor, it was alleged, had carried off, ravished, and
-put to death Khmelnitzky's wife, and, not content with this outrage, had
+put to death Khmelnítzky's wife, and, not content with this outrage, had
 set fire to the house of the Cossack, "in which perished his infant son
 in his cradle." Others affirmed that the Cossack had begun the strife by
 causing the governor "to be publicly and ignominiously whipped," and
 that it was the Cossack's mill and not his house which he burnt. Be that
 as it may, Casimir, on being exhorted to take the field, declined, on
-the ground that the Poles "ought not to have set fire to Khmelnitzky's
+the ground that the Poles "ought not to have set fire to Khmelnítzky's
 house." It is probably to this unpatriotic determination to look at both
 sides of the question that he earned the character of being an unwarlike
 prince. As a matter of fact, he fought and was victorious against the
@@ -9987,7 +9980,7 @@ blue eyes." (See Letters to Moore, November 17, 1816; and to Murray, May
 Athens" was called Theresa. Dr. D. Englaender, in his exhaustive
 monologue, _Lord Byron's Mazeppa_, pp. 48, sq., insists on the identity
 of the Theresa of the poem with the Countess Guiccioli, but from this
-contention the late Professor Koelbing (see _Englische Studien_, 1898,
+contention the late Professor Kölbing (see _Englische Studien_, 1898,
 vol. xxiv. pp 448-458) dissents.]
 
 [bs] {214}_Until it proves a joy to die_.--[MS. erased.]
@@ -10023,9 +10016,9 @@ prefatory note, _Works_ of W. Wordsworth, 1889, p. 86.]
 probable that Byron derived his general conception of the scenery of the
 Ukraine from passages in Voltaire's _Charles XII._, e.g.: "Depuis Grodno
 jusqu'au Borysthene, en tirant vers l'orient ce sont des marais, des
-deserts, des forets immenses" (_Oeuvres_, 1829, xxiv. 170). The
+déserts, des forêts immenses" (_Oeuvres_, 1829, xxiv. 170). The
 exquisite beauty of the virgin steppes, the long rich grass, the
-wild-flowers, the "diviner air," to which the Viscount de Voguee
+wild-flowers, the "diviner air," to which the Viscount de Vogüé
 testifies so eloquently in his _Mazeppa_, were not in the "mind's eye"
 of the poet or the historian.]
 
@@ -10129,14 +10122,14 @@ lines further on. Compare--
 
            _Don Juan_, Canto II. stanza cl. line 5 to stanza cli. line 4.]
 
-[275] {233}["By noon the battle (of Poltava) was over.... Charles had
+[275] {233}["By noon the battle (of Poltáva) was over.... Charles had
 been induced to return to the camp and rally the remainder of the army.
 In spite of his wounded foot, he had to ride, lying on the neck of his
-horse.... The retreat (down the Vorskla to the Dnieper) began towards
+horse.... The retreat (down the Vórskla to the Dniéper) began towards
 evening.... On the afternoon of July 11 the Swedes arrived at the little
-town of Perevolotchna, at the mouth of the Vorskla, where there was a
-ferry across the Dnieper ... the king, Mazeppa, and about 1000 men
-crossed the Dnieper.... The king, with the Russian cavalry in hot
+town of Perevolótchna, at the mouth of the Vórskla, where there was a
+ferry across the Dniéper ... the king, Mazeppa, and about 1000 men
+crossed the Dniéper.... The king, with the Russian cavalry in hot
 pursuit, rode as fast as he could to the Bug, where half his escourt was
 captured, and he barely escaped. Thence he went to Bender, on the
 Dniester, and for five years remained the guest of Turkey."--_Peter the
@@ -10284,6 +10277,7 @@ and in the _Eclectic Review_, June 21, New Series, vol. xv. pp.
 
                                DEDICATION.
 
+
     Lady! if for the cold and cloudy clime
       Where I was born, but where I would not die,
       Of the great Poet-Sire of Italy
@@ -10377,7 +10371,7 @@ must take my leave of both.
       Of Souls in hopeless bale; and from that place
       Of lesser torment, whence men may arise
     Pure from the fire to join the Angelic race;                        10
-      Midst whom my own bright Beatric[=e][286] blessed
+      Midst whom my own bright Beatricē[286] blessed
       My spirit with her light; and to the base
     Of the Eternal Triad! first, last, best,[287]
       Mysterious, three, sole, infinite, great God!
@@ -10451,7 +10445,7 @@ must take my leave of both.
     Forsooth is over, and repealed her doom;
       No,--she denied me what was mine--my roof,
       And shall not have what is not hers--my tomb.
-    Too long her armed wrath hath kept aloof
+    Too long her arméd wrath hath kept aloof
       The breast which would have bled for her, the heart
       That beat, the mind that was temptation proof,
     The man who fought, toiled, travelled, and each part
@@ -10465,12 +10459,12 @@ must take my leave of both.
       My pardon greater, her injustice less,
     Though late repented; yet--yet for her sake
       I feel some fonder yearnings, and for thine,
-      My own Beatric, I would hardly take
+      My own Beatricē, I would hardly take
     Vengeance upon the land which once was mine,                       100
       And still is hallowed by thy dust's return,
       Which would protect the murderess like a shrine,
     And save ten thousand foes by thy sole urn.
-      Though, like old Marius from Minturnae's marsh
+      Though, like old Marius from Minturnæ's marsh
       And Carthage ruins, my lone breast may burn
     At times with evil feelings hot and harsh,[293]
       And sometimes the last pangs of a vile foe
@@ -10483,7 +10477,7 @@ must take my leave of both.
       Who sleeps to dream of blood, and waking glows
     With the oft-baffled, slakeless thirst of change,
       When we shall mount again, and they that trod
-      Be trampled on, while Death and Ate range
+      Be trampled on, while Death and Até range
     O'er humbled heads and severed necks----Great God!
       Take these thoughts from me--to thy hands I yield
       My many wrongs, and thine Almighty rod                           120
@@ -10512,7 +10506,7 @@ must take my leave of both.
       I am not of this people, nor this age,
       And yet my harpings will unfold a tale
     Which shall preserve these times when not a page
-      Of their perturbed annals could attract
+      Of their perturbéd annals could attract
       An eye to gaze upon their civil rage,[by]
     Did not my verse embalm full many an act
       Worthless as they who wrought it: 'tis the doom
@@ -10664,7 +10658,7 @@ must take my leave of both.
       Sons of the conquerors who overthrew
       Those who overthrew proud Xerxes, where yet lie
     The dead whose tomb Oblivion never knew,
-      Are the Alps weaker than Thermopylae?
+      Are the Alps weaker than Thermopylæ?
       Their passes more alluring to the view
     Of an invader? is it they, or ye,
       That to each host the mountain-gate unbar,
@@ -10873,7 +10867,7 @@ must take my leave of both.
       Succumbs to long infection, and despair,
       And vulture Passions flying close behind,
     Await the moment to assail and tear;[315]
-      And when, at length, the winged wanderers stoop,
+      And when, at length, the wingéd wanderers stoop,
       Then is the Prey-birds' triumph, then they share
     The spoil, o'erpowered at length by one fell swoop.
       Yet some have been untouched who learned to bear,
@@ -11086,7 +11080,7 @@ events, ... ending with [the reign of] Alexandra the Great." Byron had
 probably read a translation of the _Cassandra_ by Philip Yorke, Viscount
 Royston (born 1784, wrecked in the _Agatha_ off Memel, April 7, 1808),
 which was issued at Cambridge in 1806. The _Alexandra_ forms part of the
-_Bibliotheca Teubneriana_ (ed. G. Kinkel, Lipsiae, 1880). For the
+_Bibliotheca Teubneriana_ (ed. G. Kinkel, Lipsiæ, 1880). For the
 prophecy of Nereus, _vide_ Hor., _Odes_, lib. i. c. xv.]
 
 [281] {244}[In the notes to his _Essay on Epic Poetry_, 1782 (Epistle
@@ -11167,10 +11161,10 @@ Beatrice, sounding all the syllables.
 
 [288]
 
-    "Che sol per le belle opre
+    "Ché sol per le belle opre
     Che sono in cielo, il sole e l'altre stelle,
     Dentro da lor _si crede il Paradiso:_
-    Cosi se guardi fiso
+    Così se guardi fiso
     Pensar ben dei, che ogni terren piacere.
     [Si trova in lei, ma tu nol puoi vedere."]
 
@@ -11190,7 +11184,7 @@ supplied by the Rev. Philip H. Wicksteed).]
 returned to the selfsame point almost, as concerns its own revolution,
 when first the glorious Lady of my mind was made manifest to mine eyes;
 even she who was called Beatrice by many who knew not wherefore."--_La
-Vita Nuova,_ Sec. 2 (Translation by D. G. Rossetti, _Dante and his Circle,_
+Vita Nuova,_ § 2 (Translation by D. G. Rossetti, _Dante and his Circle,_
 1892, p. 30).
 
 "In reference to the meaning of the name, '_she who confers blessing_,'
@@ -11201,12 +11195,12 @@ Alighieri."--_Note_ by D. G. Rossetti, ibid., p. 30.]
 
 [290] {249}
 
-    "L'Esilio che m' e dato onor mi tegno
+    "L'Esilio che m' è dato onor mi tegno
            *       *       *       *       *
-    Cader tra' buoni e pur di lode degno."
+    Cader tra' buoni è pur di lode degno."
 
              _Sonnet of Dante_ [Canzone xx. lines 76-80, _Opere_
-                                  di Dante 1897, p. 171]
+                                di Dante, 1897, p. 171]
 
 in which he represents Right, Generosity, and Temperance as banished
 from among men, and seeking refuge from Love, who inhabits his bosom.
@@ -11246,12 +11240,12 @@ to Rome at the head of his army, and Marius was compelled to take
 flight, he "stripped himself, plunged into the bog (_Paludes
 Minturnenses_, near the mouth of the Liris), amidst thick water and
 mud.... They hauled him out naked and covered with dirt, and carried him
-to Minturnae." Afterwards, when he sailed for Carthage, he had no sooner
+to Minturnæ." Afterwards, when he sailed for Carthage, he had no sooner
 landed than he was ordered by the governor (Sextilius) to quit Africa.
 On his once more gaining the ascendancy and re-entering Rome (B.C. 87),
 he justified the massacre of Sulla's adherents in a blood-thirsty
 oration. Past ignominy and present triumph seem to have turned his head
-("ut erat inter iram toleratae fortunae, et laetitiam emendatae, parum
+("ut erat inter iram toleratæ fortunæ, et lætitiam emendatæ, parum
 compos animi").--Plut., "Marius," _apud_ Langhorne, 1838, p. 304; Livii
 _Epit_., lxxx. 28.]
 
@@ -11264,9 +11258,9 @@ principal adversary of the Ghibellines. She is--described as being
 esse legimus,_" according to Giannozzo Manetti. But Lionardo Aretino is
 scandalised with Boccace, in his life of Dante, for saying that literary
 men should not marry. "Qui il Boccaccio non ha pazienza, e dice, le
-mogli esser contrarie agli studj; e non si ricorda che Socrate, il piu
+mogli esser contrarie agli studj; e non si ricorda che Socrate, il più
 nobile filosofo che mai fusse, ebbe moglie e figliuoli e ufici nella
-Repubblica nella sua Citta; e Aristotile che, etc., etc., ebbe due
+Repubblica nella sua Città; e Aristotile che, etc., etc., ebbe due
 moglie in varj tempi, ed ebbe figliuoli, e ricchezze assai.--E Marco
 Tullio--e Catone--e Varrone--e Seneca--ebbero moglie," etc., etc. [_Le
 Vite di Dante, etc._, Firenze, 1677, pp. 22, 23]. It is odd that honest
@@ -11276,22 +11270,22 @@ Socrates' Xantippe, by no means contributed to their husbands'
 happiness, whatever they might do to their philosophy--Cato gave away
 his wife--of Varro's we know nothing--and of Seneca's, only that she was
 disposed to die with him, but recovered and lived several years
-afterwards. But says Leonardo, "L'uomo e _animale civile_, secondo piace
+afterwards. But says Leonardo, "L'uomo è _animale civile_, secondo piace
 a tutti i filosofi." And thence concludes that the greatest proof of the
 _animal's civism_ is "la prima congiunzione, dalla quale multiplicata
-nasce la Citta."
+nasce la Città."
 
 [There is nothing in the _Divina Commedia_, or elsewhere in his
 writings, to justify the common belief that Dante was unhappily married,
 unless silence may be taken to imply dislike and alienation. It has been
 supposed that he alludes to his wife, Gemma Donati, in the _Vita Nuova_,
-Sec. 36, "as a young and very beautiful lady, who was gazing upon me from a
+§ 36, "as a young and very beautiful lady, who was gazing upon me from a
 window, with a gaze full of pity," "who remembered me many times of my
 own most noble lady," whom he consented to serve "more because of her
 gentle goodness than from any choice" of his own (_Convito_, ii. 2. 7),
 but there are difficulties in the way of accepting this theory. There
 is, however, not the slightest reason for believing that the words which
-he put into the mouth of Jacopo Rusticucci, "La fiera moglie piu
+he put into the mouth of Jacopo Rusticucci, "La fiera moglie più
 ch'altro, mi nuoce" ["and truly, my savage wife, more than aught else,
 doth harm me"] (_Inferno_, xvi. 45), were winged with any personal
 reminiscence or animosity. But with Byron (see his letter to Lady Byron,
@@ -11352,7 +11346,7 @@ Buonaparte, Gentiluomo Samminiatese, che vi si trovo' presente." An
 edition of it was printed at Cologne, in 1756, to which is prefixed a
 genealogy of the Buonaparte family.
 
-The "traitor Prince" was Charles IV., Connetable de Bourbon, Comte de
+The "traitor Prince" was Charles IV., Connétable de Bourbon, Comte de
 Montpensier, born 1490, who was killed at the capture of Rome, May 6,
 1527. "His death, far from restraining the ardour of the assailants [the
 Imperial troops, consisting of Germans and Spanish foot], increased it;
@@ -11414,13 +11408,13 @@ Milan November 19, 1521, fought at Lodi, etc., was wounded at the battle
 of Padua, February 24, 1525. He was the husband of Vittoria Colonna, and
 when he was in captivity at Ravenna wrote some verses in her honour.
 
-Francois Eugene (1663-1736), Prince of Savoy-Carignan, defeated the
+François Eugene (1663-1736), Prince of Savoy-Carignan, defeated the
 French at Turin, 1706, and (with Marlborough) at Malplaquet, 1709; the
 Turks at Peterwardein, 1716, etc.
 
 Raimondo Montecuccoli, a Modenese (1608-1680), defeated the Turks at St.
 Gothard in 1664, and in 1675-6 commanded on the Rhine, and
-out-generalled Turenne and the Prince de Conde]
+out-generalled Turenne and the Prince de Condé]
 
 [302] Columbus, Americus Vespusius, Sebastian Cabot.
 
@@ -11462,10 +11456,10 @@ reading.]
 Cornelia [daughter of Metellus Scipio, and widow of P. Crassus] on
 entering the boat in which he was slain. [The verse, or verses, are said
 to be by Sophocles, and are quoted by Plutarch, in his Life of Pompey,
-c. 78, _Vitae_, 1814, vii. 159. They run thus--
+c. 78, _Vitæ_, 1814, vii. 159. They run thus--
 
-    [Greek: O(/stis ga\r o(s ty/rannon e)mporeu/etai,]
-    [Greek: Kei/nou e)sti\ dou~los, ka)\n e)leu/theros me|.]
+    Ὅστις γὰρ ὡς τύραννον ἐμπορεύεται,
+    Κείνου ἐστὶ δοῦλος, κἂν ἐλεύθερος μῃ.
 
     ("Seek'st thou a tyrant's door? then farewell, freedom!
     Though _free_ as air before.")
@@ -11475,8 +11469,8 @@ c. 78, _Vitae_, 1814, vii. 159. They run thus--
 
 [306] The verse and sentiment are taken from Homer.
 
-    [Greek: [E(/misy ga/r t' a)rete~s a)poai/nytai eu)ry/opa Zeu/s]
-    [Greek: 'Ane/ros, eu~(t' a(/n min kata\ dou/lion e~)mare(/le|sin.]
+    [Ἥμισυ γάρ τ' ἀρετῆς ἀποαίνυται εὐρύοπα Ζεύς
+    ᾿Ανέρος, εὗτ᾿ ἅν μιν κατὰ δούλιον ἦμαρἕλῃσιν.
 
                                                _Odyssey_, xvii. 322, 323.]
 
@@ -11611,17 +11605,17 @@ Pietro-in-Vincoli.]
 
           "_Di Giovanni Battista Zappi_.
 
-    "Chi e costui, che in si gran pietra scolto,
-        Siede gigante, e le piu illustri, e conte
+    "Chi é costui, che in si gran pietra scolto,
+        Siede gigante, e le più illustri, e conte
         Opre dell' arte avanza, e ha vive, e pronte
         Le labbra si, che le parole ascolto?
-    Quest' e Mose; ben me 'l diceva il folto
+    Quest' è Mosè; ben me 'l diceva il folto
         Onor del mento, e 'l doppio raggio in fronte;
-        Quest' e Mose, quando scendea dal monte,
+        Quest' è Mosè, quando scendea dal monte,
         E gran parte del Nume avea nel volto.
     Tal' era allor, che le sonanti, e vaste
         Acque ei sospese, a se d' intorno; e tale
-        Quando il Mar chiuse, e ne fe tomba altrui.
+        Quando il Mar chiuse, e ne fè tomba altrui.
     E voi, sue turbe, un rio vitello alzaste?
         Alzata aveste immago a questa eguale!
         Ch' era men fallo i' adorar costui."
@@ -11673,7 +11667,7 @@ large folio, with Landino's commentary; and upon the broad margin of the
 leaves he designed with a pen and ink, all the interesting subjects.
 This book was possessed by Antonio Montanti, a sculptor and architect in
 Florence, who, being appointed architect to St. Peter's, removed to
-Rome, and shipped his ... effects at Leghorn for Civita Vecchia, among
+Rome, and shipped his ... effects at Leghorn for Cività Vecchia, among
 which was this edition of Dante. In the voyage the vessel foundered at
 sea, and it was unfortunately lost in the wreck."]
 
@@ -11730,7 +11724,7 @@ created of everything which I did, or which I had to do."--_Il Convito_,
 book i. chap. iii., translated by Leigh Hunt, _Stories from the Italian
 Poets_, 1846, i. 22, 23.]
 
-[328] {275} What is Horizon's quantity? Hor[=i]zon, or Hor[)i]zon? adopt
+[328] {275} What is Horizon's quantity? Horīzon, or Horĭzon? adopt
 accordingly.--[B.]
 
 [cn]--_and the Horizon for bars_.--[MS. Alternative reading.]
@@ -11749,7 +11743,7 @@ decretum_,' refers to the successive efforts of the Florentines to
 recover his remains, and raise a monument to their great
 countryman."--_Handbook, Central Italy_, p. 32.]
 
-[330] "E scrisse piu volte non solamente a' particolari Cittadini del
+[330] "E scrisse più volte non solamente a' particolari Cittadini del
 Reggimento, ma ancora al Popolo; e intra l' altre un' Epistola assai
 lunga che incomincia: '_Popule mee_ (sic), _quid feci tibi?_"--_Le vite
 di Dante, etc._, _scritte da Lionardo Aretino_, 1672, p. 47.
@@ -11982,7 +11976,7 @@ in England which have been already mentioned.
       Weeps with her sister, who remembers and
     Deplores the ancient woes which both befel,
       And makes the nymphs enamoured, to the hand
-    Of Phaeton, by Phoebus loved so well,
+    Of Phaëton, by Phoebus loved so well,
       His car (but tempered by his sire's command)
     Was given, and on the horizon's verge just now
     Appeared, so that Tithonus scratched his brow:
@@ -12912,9 +12906,9 @@ Francia_, 1872, p. 51), and the appeal to the authority of Leonardo
 Aretino, must not be taken _au pied de la lettre_. At the same time, the
 opinion attributed to Leonardo is in accordance with contemporary
 sentiment and phraseology. Compare "Horum res gestas si qui auctores
-digni celebrassent, quam magnae, quam admirabiles, quam veteribus illis
+digni celebrassent, quam magnæ, quam admirabiles, quam veteribus illis
 similes viderentur."--B. Accolti Aretini (_ob._ 1466) _Dialogus de
-Praestantia Virorum sui AEvi_. P. Villani, _Liber de Florentiae Famosis
+Præstantiâ Virorum sui Ævi_. P. Villani, _Liber de Florentiæ Famosis
 Civibus_, 1847, p. 112. From information kindly supplied by Professor V.
 Rossi, of the University of Pavia.]
 
@@ -12964,8 +12958,8 @@ not been thought necessary to reprint the whole of the Canto.
     "In principio era il Verbo appresso a Dio;
       Ed era Iddio il Verbo, e 'l Verbo lui:
       Quest' era nel principio, al parer mio;
-      E nulla si puo far sanza costui:
-      Pero, giusto Signor benigno e pio,
+      E nulla si può far sanza costui:
+      Però, giusto Signor benigno e pio,
       Mandami solo un de gli angeli tui,
       Che m'accompagni, e rechimi a memoria
       Una famosa antica e degna storia.
@@ -12976,7 +12970,7 @@ not been thought necessary to reprint the whole of the Canto.
       Di quel Signor, che ti dette le chiave
       Del cielo e dell' abisso, e d' ogni cosa,
       Quel di che Gabriel tuo ti disse Ave!
-      Perche tu se' de' tuo' servi pietosa,
+      Perchè tu se' de' tuo' servi pietosa,
       Con dolce rime, e stil grato e soave,
       Ajuta i versi miei benignamente,
       E'nsino al fine allumina la mente.
@@ -13010,7 +13004,7 @@ Philomela, on the plea of her sister's death. Procne discovered the
 plot, killed her babe, and served up his flesh in a dish for her
 husband's dinner. The sisters fled, and when Tereus pursued them with an
 axe they besought the gods to change them into birds. Thereupon Procne
-became a swallow, and Philomela a nightingale. So Hyginus, _Fabulae_,
+became a swallow, and Philomela a nightingale. So Hyginus, _Fabulæ_,
 xlv.; but there are other versions of Philomela's woes.]
 
 [337] [In the first edition of the _Morgante Maggiore_ (Firenze, 1482
@@ -13050,7 +13044,7 @@ is admirably sustained throughout."--_Renaissance in Italy_, 1881, iv.
 
 [342]
 
-    ["Cosi per Carlo Magno e per Orlando,
+    ["Così per Carlo Magno e per Orlando,
        Due ne segui lo mio attento sguardo,
        Com' occhio segue suo falcon volando."
 
@@ -13058,7 +13052,7 @@ is admirably sustained throughout."--_Renaissance in Italy_, 1881, iv.
 
 [343] {296}["Macon" is another form of "Mahomet." Compare--
 
-    "O Macon! break in twain the steeled lance."
+    "O Macon! break in twain the steeléd lance."
 
 Fairfax's Tasso, _Gerusalemme Liberata_, book ix. stanza xxx. line i.]
 
@@ -13141,7 +13135,7 @@ _Edinburgh Reviews_ were loud in its praises (_Memoir of H. F. Cary_,
 1847, ii. 28). Byron seems to have thought that a fragment of the
 _Inferno_, "versed like the original," would challenge comparison with
 Cary's rendering in blank verse, and would lend an additional interest
-to the "Pulci Translations, and the Dante Imitation." _Dis aliter
+to the "Pulci Translations, and the Dante Imitation." _Dîs aliter
 visum_, and Byron's translation of the episode of _Francesca of Rimini_,
 remained unpublished till it appeared in the pages of _The Letters and
 Journals of Lord Byron_, 1830, ii. 309-311. (For separate translations
@@ -13202,7 +13196,7 @@ see _Literary Souvenir_, 1830, pp. 285-287.)
       To be thus kissed by such devoted lover,[cs]
       He, who from me can be divided ne'er,
     Kissed my mouth, trembling in the act all over:                     40
-      Accursed was the book and he who wrote![356]
+      Accurséd was the book and he who wrote![356]
       That day no further leaf we did uncover.'
     While thus one Spirit told us of their lot,
       The other wept, so that with Pity's thralls
@@ -13236,10 +13230,10 @@ see _Literary Souvenir_, 1830, pp. 285-287.)
       Queste parole da lor ci fur porte.
     Da che io intesi quelle anime offense
       Chinai 'l viso, e tanto il tenni basso,
-      Finche il Poeta mi disse: 'Che pense?'
+      Finchè il Poeta mi disse: 'Che pense?'
     Quando risposi, cominciai: 'O lasso!
       Quanti dolci pensier, quanto disio
-      Meno costoro al doloroso passo!'
+      Menò costoro al doloroso passo!'
     Poi mi rivolsi a loro, e parla' io,
       E cominciai: 'Francesca, i tuoi martiri                           20
       A lagrimar mi fanno tristo e pio.
@@ -13248,24 +13242,24 @@ see _Literary Souvenir_, 1830, pp. 285-287.)
       Che conoscesti i dubbiosi desiri?'
     Ed ella a me: 'Nessun maggior dolore
       Che ricordarsi del tempo felice
-      Nella miseria; e cio sa il tuo dottore.
+      Nella miseria; e ciò sa il tuo dottore.
     Ma se a conoscer la prima radice
       Del nostro amor tu hai cotanto affetto
-      Faro come colui che piange e dice.                                30
+      Farò come colui che piange e dice.                                30
     Noi leggevamo un giorno per diletto
       Di Lancelotto, come Amor lo strinse:
       Soli eravamo, e senza alcun sospetto.
-    Per piu fiate gli occhi ci sospinse
+    Per più fiate gli occhi ci sospinse
       Quella lettura, e scolorocci il viso:
       Ma solo un punto fu quel che ci vinse.
     Quando leggemmo il disiato riso
       Esser baciato da cotanto amante,
       Questi, che mai da me non fia diviso,
-    La bocca mi bacio tutto tremante:                                   40
+    La bocca mi baciò tutto tremante:                                   40
       Galeotto fu il libro, e chi lo scrisse--
-      Quel giorno piu non vi leggemmo avante
+      Quel giorno più non vi leggemmo avante
     Mentre che l'uno spirto questo disse,
-      L'altro piangeva si che di pietade
+      L'altro piangeva sì che di pietade
       Io venni meno cos com' io morisse;
     E caddi, come corpo morto cade.
 
@@ -13285,23 +13279,23 @@ arrive, and imagined she beheld her future husband. That mistake was the
 commencement of her passion." A day came when the lovers were surprised
 together, and Gianciotto slew both his brother and his wife.]
 
-[349] ["On arrive a Ravenne en longeant une foret de pins qui a sept
-lieues de long, et qui me semblait un immense bois funebre servant
-d'avenue au sepulcre commun de ces deux grandes puissances. A peine y
-a-t-il place pour d'autres souvenirs a cote de leur memoire. Cependant
-d'autres noms poetiques sont attaches a la Pineta de Ravenne. Naguere
-lord Byron y evoquait les fantastiques recits empruntes par Dryden a
-Boccace, et lui-meme est maintenant une figure du passe, errante dans ce
-lieu melancolique. Je songeais, en le traversant, que le chantre du
-desespoir avait chevauche sur cette plage lugubre, foulee avant lui par
-le pas grave et lent du poete de _l'Enfer_....
+[349] ["On arrive à Ravenne en longeant une forèt de pins qui a sept
+lieues de long, et qui me semblait un immense bois funèbre servant
+d'avenue au sépulcre commun de ces deux grandes puissances. A peine y
+a-t-il place pour d'autres souvenirs à côté de leur mémoire. Cependant
+d'autres noms poétiques sont attachés à la Pineta de Ravenne. Naguère
+lord Byron y évoquait les fantastiques récits empruntés par Dryden à
+Boccace, et lui-même est maintenant une figure du passé, errante dans ce
+lieu mélancolique. Je songeais, en le traversant, que le chantre du
+désespoir avait chevauché sur cette plage lugubre, foulée avant lui par
+le pas grave et lent du poëte de _l'Enfer_....
 
 "Il suffit de jeter les yeux sur une carte pour reconnaitre l'exactitude
-topographique de cette derniere expression. En effet, dans toute la
-partie superieure de son cours, le Po recoit une foule d'affluents qui
-convergent vers son lit; ce sont le Tesin, l'Adda, l'Olio, le Mincio, la
-Trebbia, la Bormida, le Taro...."--_La Grece, Rome, et Dante_ ("Voyage
-Dantesque"), par M. J. J. Ampere, 1850, pp. 311-313.]
+topographique de cette dernière expression. En effet, dans toute la
+partie supérieure de son cours, le Po reçoit une foule d'affluents qui
+convergent vers son lit; ce sont le Tésin, l'Adda, l'Olio, le Mincio, la
+Trebbia, la Bormida, le Taro...."--_La Grèce, Rome, et Dante_ ("Voyage
+Dantesque"), par M. J. J. Ampère, 1850, pp. 311-313.]
 
 [350] [The meaning is that she was despoiled of her beauty by death, and
 that the manner of her death excites her indignation still. "Among Lord
@@ -13329,7 +13323,7 @@ Byron_, 1832, xii. 5, note 2.]
 is rarely other than for the desire of the man."--S. T. Coleridge,
 _Table Talk_, July 23, 1827.]
 
-[352] [Caina is the first belt of Cocytus, that is, circle ix. of the
+[352] [Caïna is the first belt of Cocytus, that is, circle ix. of the
 Inferno, in which fratricides and betrayers of their kindred are
 immersed up to the neck.]
 
@@ -13341,7 +13335,7 @@ immersed up to the neck.]
     _In misery, and this thy teacher knows_.--[MS.]
 
 [354] [The sentiment is derived from Boethius: "_In omni adversitate
-fortunae infelicissimum genus est infortunii, fuisse felicem_."--_De
+fortunæ infelicissimum genus est infortunii, fuisse felicem_."--_De
 Consolat. Philos. Lib. II. Prosa_ 4. The earlier commentators (_e.g._
 Venturi and Biagioli), relying on a passage in the _Convito_ (ii. 16),
 assume that the "teacher" (line 27) is the author of the sentence, but
@@ -13352,12 +13346,12 @@ bitter experience of having "known better days." Compare--
     "For of fortunes sharp adversitee
     The worst kinde of infortune is this,
     A man to have ben in prosperitee,
-    And it remembren whan it passed is."
+    And it remembren whan it passéd is."
 
               _Troilus and Criseyde_, Bk. III. stanza ccxxxiii. lines 1-4.
 
-    "E perche rimembrare il ben perduto
-      Fa piu meschino lo stato presente."
+    "E perché rimembrare il ben perduto
+      Fa più meschino lo stato presente."
 
                    Fortiguerra's _Ricciardetto_, Canto XI. stanza lxxxiii.
 
@@ -13371,13 +13365,13 @@ Compare, too--
 will do even as one who relates while weeping_.)
 
 [355] [Byron affixed the following note to line 126 of the Italian: "In
-some of the editions it is 'diro,' in others 'faro;'--an essential
+some of the editions it is 'dirò,' in others 'faro;'--an essential
 difference between 'saying' and 'doing' which I know not how to
 decide--Ask Foscolo--the damned editions drive me mad." In _La Divina
 Commedia_, Firenze, 1892, and the _Opere de Dante_, Oxford, 1897, the
 reading is _faro_.]
 
-[cq] {321}----_wholly overthrew_.--[MS.]
+[cq] {321} ----_wholly overthrew_.--[MS.]
 
 [cr] _When we read the desired-for smile of her_. [MS, Alternative
 reading.]
@@ -13462,7 +13456,7 @@ line 31: We read one day for pleasure--
             Who sought the kiss of such devoted lover;
             He who from me can be divided ne'er
           Kissed my mouth, trembling to that kiss all over!
-            Accursed was that book and he who wrote--
+            Accurséd was that book and he who wrote--
             That day we did no further page uncover."
           While thus--etc.
 
@@ -13584,7 +13578,7 @@ within his cognizance were inaccurate and misleading. He makes no
 mention of the huge collection of Venetian archives which had recently
 been deposited in the Convent of the Frari, or of Doria's transcript of
 Sanudo's Diaries, bequeathed in 1816 to the Library of St. Mark; but he
-quotes as his authorities the _Vitae Ducum Venetorum_, of Marin Sanudo
+quotes as his authorities the _Vitæ Ducum Venetorum_, of Marin Sanudo
 (1466-1535), the _Storia, etc._, of Andrea Navagero (1483-1529), and the
 _Principj di Storia, etc._, of Vettor Sandi, which belongs to the latter
 half of the eighteenth century. Byron's chroniclers were ancient, but
@@ -13685,7 +13679,7 @@ Byron was the first to perceive that the story of Marino Faliero was a
 drama "ready to hand;" but he has had many followers, if not imitators
 or rivals.
 
-"_Marino Faliero_, tragedie en cinq actes," by Casimir Jean Francois
+"_Marino Faliero_, tragédie en cinq actes," by Casimir Jean François
 Delavigne, was played for the first time at the Theatre of Porte Saint
 Martin, May 31, 1829.
 
@@ -13723,7 +13717,7 @@ find him commander-in-chief of the land forces at the siege of
 Zara,[359] where he beat the King of Hungary and his army of eighty
 thousand men, killing eight thousand men, and keeping the besieged at
 the same time in check; an exploit to which I know none similar in
-history, except that of Caesar at Alesia,[360] and of Prince Eugene at
+history, except that of Cæsar at Alesia,[360] and of Prince Eugene at
 Belgrade. He was afterwards commander of the fleet in the same war. He
 took Capo d'Istria. He was ambassador at Genoa and Rome,--at which last
 he received the news of his election to the dukedom; his absence being a
@@ -13743,7 +13737,7 @@ authorities are Sanuto, Vettor Sandi,[363] Andrea Navagero,[364] and the
 account of the siege of Zara, first published by the indefatigable Abate
 Morelli, in his _Monumenti Veneziani di varia Letteratura_, printed in
 1796,[365] all of which I have looked over in the original language. The
-moderns, Daru, Sismondi, and Laugier, nearly agree with the ancient
+moderns, Darù, Sismondi, and Laugier, nearly agree with the ancient
 chroniclers. Sismondi attributes the conspiracy to his _jealousy_; but I
 find this nowhere asserted by the national historians. Vettor Sandi,
 indeed, says that "Altri scrissero che....dalla gelosa suspizion di esso
@@ -13778,7 +13772,7 @@ fault with a window, and wished to give him another occupation--that
 Helen lost Troy--that Lucretia expelled the Tarquins from Rome--and that
 Cava brought the Moors to Spain--that an insulted husband led the Gauls
 to Clusium, and thence to Rome--that a single verse of Frederick
-II.[369] of Prussia on the Abbe de Bernis, and a jest on Madame de
+II.[369] of Prussia on the Abbé de Bernis, and a jest on Madame de
 Pompadour, led to the battle of Rosbach--that the elopement of
 Dearbhorgil[370] with Mac Murchad conducted the English to the slavery
 of Ireland that a personal pique between Maria Antoinette and the Duke
@@ -13802,17 +13796,17 @@ Faliero is little to the purpose, unless to favour it--
     "Young men soon give and soon forget affronts,
     Old age is slow at both."
 
-Laugier's reflections are more philosophical:--"Tale fu il fine
-ignominioso di un' uomo, che la sua nascita, la sua eta, il suo
+Laugier's reflections are more philosophical:--"Tale fù il fine
+ignominioso di un' uomo, che la sua nascità, la sua età, il suo
 carattere dovevano tener lontano dalle passioni produttrici di grandi
 delitti. I suoi _talenti_ per lungo tempo esercitati ne' maggiori
-impieghi, la sua capacita sperimentata ne' governi e nelle ambasciate,
+impieghi, la sua capacità sperimentata ne' governi e nelle ambasciate,
 gli avevano acquistato la stima e la fiducia de' cittadini, ed avevano
 uniti i suffragj per collocarlo alla testa della repubblica. Innalzato
 ad un grado che terminava gloriosamente la sua vita, il risentimento di
-un' ingiuria leggiera insinuo nel suo cuore tal veleno che basto a
-corrompere le antiche sue qualita, e a condurlo al termine dei
-scellerati; serio esempio, che prova _non esservi eta, in cui la
+un' ingiuria leggiera insinuò nel suo cuore tal veleno che bastò a
+corrompere le antiche sue qualità, e a condurlo al termine dei
+scellerati; serio esempio, che prova _non esservi età, in cui la
 prudenza umana sia sicura, e che nell' uomo restano sempre passioni
 capaci a disonorarlo, quando non invigili sopra se stesso_."[371]
 
@@ -13888,7 +13882,7 @@ committee of one of the theatres, I never made the attempt, and never
 will[377]. But I wish that others would, for surely there is dramatic
 power somewhere, where Joanna Baillie, and Milman, and John Wilson
 exist. The _City of the Plague_[1816] and the _Fall of Jerusalem_ [1820]
-are full of the best "_materiel_" for tragedy that has been seen since
+are full of the best "_matériel_" for tragedy that has been seen since
 Horace Walpole, except passages of _Ethwald_[1802] and _De
 Montfort_[1798]. It is the fashion to underrate Horace Walpole; firstly,
 because he was a nobleman, and secondly, because he was a gentleman;
@@ -13914,7 +13908,7 @@ conspirators, instead of monotonously placing him always in dialogue
 with the same individuals. For the real facts, I refer to the
 Appendix.[379]
 
-                             DRAMATIS PERSONAE.
+                             DRAMATIS PERSONÆ.
 
                                     MEN.
 
@@ -13923,10 +13917,10 @@ Appendix.[379]
      Lioni, _a Patrician and Senator_.
      Benintende, _Chief of the Council of Ten_.
      Michel Steno, _One of the three Capi of the Forty_.
-     Israel Bertuccio, _Chief of the Arsenal_,      }
-     Philip Calendaro,                              } _Conspirators_.
-     Dagolino,                                      }
-     Bertram,                                       }
+     Israel Bertuccio, _Chief of the Arsenal_,   }
+     Philip Calendaro,                           } _Conspirators_.
+     Dagolino,                                   }
+     Bertram,                                    }
 
      _Signor of the Night_, "_Signore di Notte," one of
                                  the Officers belonging to the Republic_.
@@ -13934,9 +13928,9 @@ Appendix.[379]
      _Second Citizen_.
      _Third Citizen_.
 
-     Vincenzo,            }
-     Pietro,              } _Officers belonging to the Ducal Palace_.
-     Battista,            }
+     Vincenzo,   }
+     Pietro,     } _Officers belonging to the Ducal Palace_.
+     Battista,   }
 
      _Secretary of the Council of Ten_.
 
@@ -14265,14 +14259,14 @@ Appendix.[379]
     And so did all men.
 
     _Doge_.             Nephew, the high Roman
-    Said, "Caesar's wife must not even be suspected,"[387]
+    Said, "Cæsar's wife must not even be suspected,"[387]
     And put her from him.
 
     _Ber. F._             True--but in those days----                  170
 
     _Doge_. What is it that a Roman would not suffer,
     That a Venetian Prince must bear? old Dandolo[dc]
-    Refused the diadem of all the Caesars,[388]
+    Refused the diadem of all the Cæsars,[388]
     And wore the ducal cap _I_ trample on--
     Because 'tis now degraded.
 
@@ -14310,7 +14304,7 @@ Appendix.[379]
     Had stabbed him on the instant.
 
     _Ber. F._                      Do not doubt it,
-f    He shall not live till sunset--leave to me
+    He shall not live till sunset--leave to me
     The means, and calm yourself.
 
     _Doge_.                       Hold, nephew: this
@@ -14880,7 +14874,7 @@ f    He shall not live till sunset--leave to me
     And freedom to the rest, or leave it black
     To all the growing calumnies of Time,
     Which never spare the fame of him who fails,
-    But try the Caesar, or the Catiline,
+    But try the Cæsar, or the Catiline,
     By the true touchstone of desert--Success.[401]
 
 
@@ -15325,7 +15319,7 @@ f    He shall not live till sunset--leave to me
 
     _Doge_.                               Thus,
     'Twas not a foolish dotard's vile caprice,                         310
-    Nor the false edge of aged appetite,
+    Nor the false edge of agéd appetite,
     Which made me covetous of girlish beauty,
     And a young bride: for in my fieriest youth
     I swayed such passions; nor was this my age
@@ -15547,7 +15541,7 @@ f    He shall not live till sunset--leave to me
     _Doge_.                                      I cannot--
     I must not, if I could; for never was
     Such reason to be watchful: yet a few--
-    Yet a few days and dream-perturbed nights,
+    Yet a few days and dream-perturbéd nights,
     And I shall slumber well--but where?--no matter.
     Adieu, my Angiolina.
 
@@ -16235,7 +16229,7 @@ f    He shall not live till sunset--leave to me
     Nor kingdom, which hath neither prince nor people,
     But all the sins of the old Spartan state[dr]
     Without its virtues--temperance and valour.
-    The Lords of Lacedaemon were true soldiers,[ds]
+    The Lords of Lacedæmon were true soldiers,[ds]
     But ours are Sybarites, while we are Helots,                       160
     Of whom I am the lowest, most enslaved;
     Although dressed out to head a pageant, as
@@ -16453,7 +16447,7 @@ f    He shall not live till sunset--leave to me
     Which once were one and many, still retain
     A breath to sigh for them, a tongue to speak
     Of deeds that else were silent, save on marble----                 340
-    _Oime Oime!_[428]--and must I do this deed?
+    _Oimé Oimé!_[428]--and must I do this deed?
 
     _I. Ber_. My Lord, you are much moved: it is not now
     That such things must be dwelt upon.
@@ -16569,7 +16563,7 @@ f    He shall not live till sunset--leave to me
     Now thou'rt indeed a Sovereign, and wilt make
     A name immortal greater than the greatest:
     Free citizens have struck at Kings ere now;
-    Caesars have fallen, and even patrician hands
+    Cæsars have fallen, and even patrician hands
     Have crushed dictators, as the popular steel
     Has reached patricians: but, until this hour,
     What Prince has plotted for his people's freedom?
@@ -16992,7 +16986,7 @@ f    He shall not live till sunset--leave to me
     To waste thee.
 
     _Ber_.         Rather Shame and Sorrow light
-    On the accursed tyranny which rides[eo]
+    On the accurséd tyranny which rides[eo]
     The very air in Venice, and makes men
     Madden as in the last hours of the plague
     Which sweeps the soul deliriously from life!                       240
@@ -18403,7 +18397,7 @@ f    He shall not live till sunset--leave to me
     Shall crown to leave thee headless; honours shall
     But prove to thee the heralds of Destruction,
     And hoary hairs of Shame, and both of Death,
-    But not such death as fits an aged man."40
+    But not such death as fits an agéd man."40
     Thus saying, he passed on.--That Hour is come.
 
     _Ang_. And with this warning couldst thou not have striven
@@ -18666,7 +18660,7 @@ f    He shall not live till sunset--leave to me
     Streams on the wind like foam upon the wave!
     Now--now--he kneels--and now they form a circle
     Round him, and all is hidden--but I see
-    The lifted sword in air----Ah! hark! it falls!                     20
+    The lifted sword in air----Ah! hark! it falls!                      20
 
                                                      [_The people murmur._
 
@@ -18702,11 +18696,11 @@ FOOTNOTES:
 siege of Zara in 1346. According to contemporary documents, he held a
 naval command under Civran, who was in charge of the fleet. Byron was
 misled by an error in Morelli's Italian version of the _Chronica
-iadratina seu historia obsidionis Jaderae_, p. xi. (See _Marino faliero
+iadratina seu historia obsidionis Jaderæ_, p. xi. (See _Marino faliero
 avanti il Dogado_, by Vittorio Lazzarino, published in _Nuovo Archivio
 Veneto_, 1893, vol. v. pt. i. p. 132, note 4.)]
 
-[360] [For the siege of Alesia (Alise in Cote d'Or), which resulted in
+[360] [For the siege of Alesia (Alise in Côte d'Or), which resulted in
 the defeat of the Gauls and the surrender of Vercingetorix, see _De
 Bella Gallico_, vii. 68-90. Belgrade fell to Prince Eugene, August 18,
 1717.]
@@ -18759,7 +18753,7 @@ ball, and she complained bitterly ... to her husband. The old Doge, who
 had all the desire imaginable to please his wife, determined, in this
 matter, at least, to give her ample satisfaction."]
 
-[369] {334}[For Frederick's verse, "Evitez de Bernis la sterile
+[369] {334}[For Frederick's verse, "Evitez de Bernis la stérile
 abondance," see _La Bibliographie Universelle_, art. "Bernis"; and for
 his jest, "Je ne la connais pas," see _History of Frederick the Great_,
 by Thomas Carlyle, 1898, vi. 14.]
@@ -18774,7 +18768,7 @@ Laugier, Tradotta del Francese. Venice, 1778, iv. 30.]
 [372] {336}[The marble staircase on which Faliero took the ducal oath,
 and on which he was afterwards beheaded, led into the courtyard of the
 palace. It was erected by a decree of the Senate in 1340, and was pulled
-down to make room for Rizzo's facade, which was erected in 1484. The
+down to make room for Rizzo's façade, which was erected in 1484. The
 "Scala dei Giganti" (built by Antonio Rizzo, circ. 1483) does not occupy
 the site of the older staircase.]
 
@@ -18841,7 +18835,7 @@ May 9, 1816. (See _Detached Thoughts_ (1821), _Letters_, 1899, iii. 233,
 and letter to Murray, October 12, 1817, _Letters_, 1900, iv. 171.)]
 
 [C] [Elizabeth O'Neill (1791-1872), afterwards Lady Becher, made her
-_debut_ in 1814, and retired from the stage in 1819. Sarah Siddons
+_début_ in 1814, and retired from the stage in 1819. Sarah Siddons
 (1755-1831) made her final appearance on the stage June 9, 1818, and her
 brother John Philip Kemble (1757-1823) appeared for the last time in
 _Coriolanus_, June 23, 1817. Of the other actors mentioned in this note,
@@ -18850,11 +18844,11 @@ George Frederick Cooke (1756-1812) had long been dead; Edmund Kean
 States; and Robert William Elliston (1774-1831) (_vide ante_, p. 328)
 had, not long before (1819), become lessee of Drury Lane Theatre.]
 
-[D]["Le comte de Montross, Ecossais et chef de la maison de Graham, le
-seul homme du monde qui m'ait jamais rappele l'idee de certains heros
+[D]["Le comte de Montross, Écossais et chef de la maison de Graham, le
+seul homme du monde qui m'ait jamais rappelé l'idée de certains héros
 que l'on ne voit plus que dans les vies de Plutarque, avail soutenu le
-parti du roi d'Angleterre dans son pays, avec une grandeur d'ame qui
-rien avait point de pareille en ce siecle."--_Memoires du Cardinal de
+parti du roi d'Angleterre dans son pays, avec une grandeur d'àme qui
+rien avait point de pareille en ce siècle."--_Mémoires du Cardinal de
 Retz_, 1820, ii. 88.]
 
 [378] {339}[This appreciation of the _Mysterious Mother_, which he seems
@@ -18964,7 +18958,7 @@ the MS., is reprinted from _Letters_, 1901, v. 100-104--
      _contempt_ for life.' But I rather suspect that by one single work
      of _prose_, _you_ yourself have excited a greater contempt for life
      than all the English volumes of poesy that ever were written.
-     Madame de Staeel says, that 'Werther has occasioned more suicides
+     Madame de Stäel says, that 'Werther has occasioned more suicides
      than the most beautiful woman;' and I really believe that he has
      put more individuals out of this world than Napoleon
      himself,--except in the way of his profession. Perhaps, Illustrious
@@ -19097,10 +19091,10 @@ reproach that they preferred to send the case to appeal because Steno
 was a member of the "Quarantia," is based on an error of Sanudo's (_vide
 ante_, p. 333).]
 
-[da] {348} ----_Marin! Falierae_ [sic].--[MS. M.]
+[da] {348} ----_Marin! Falieræ_ [sic].--[MS. M.]
 
 [383] ["Marin Faliero, dalla bella moglie--altri la gode, ed egli la
-mantien."--Marino Samuto, _Vitae Ducum Venetorum, apud_ Muratori, _Rerum
+mantien."--Marino Samuto, _Vitæ Ducum Venetorum, apud_ Muratori, _Rerum
 Italicurum Scriptores_, 1733, xxii. 628-638]. Navagero, in his _Storia
 della Repubblica Veneriana_, _ibid_., xxiii. 1040, gives a coarser
 rendering of Steno's Lampoon.--"Becco Marino Fallier dalla belta
@@ -19133,12 +19127,12 @@ unwritten custom.--_La Congiura_, p. 60.]
 [db] {352}_Who threw his sting into a poisonous rhyme_.--[Alternative
 reading. MS. M.]
 
-[387] [For the story of Caesar, Pompeia, and Clodius, see Plutarch's
-_Lives_, "Caesar," Langhorne's translation, 1838, p. 498.]
+[387] [For the story of Cæsar, Pompeia, and Clodius, see Plutarch's
+_Lives_, "Cæsar," Langhorne's translation, 1838, p. 498.]
 
 [dc]----_Enrico_.--[Alternative reading. MS. M.]
 
-[388] [According to Sanudo (_Vitae Ducum Venetorum, apud_ Muratori,
+[388] [According to Sanudo (_Vitæ Ducum Venetorum, apud_ Muratori,
 _Rerum Ital. Script_., 1733, xxii. 529), it was Ser Pantaleone Barbo who
 intervened, when (A.D. 1204) the election to the Empire of
 Constantinople lay between the Doge "Arrigo Dandolo" and "Conte
@@ -19160,14 +19154,14 @@ Girello, which has been substituted for that of Israel Bertuccio, is a
 corruption of Isarello.--_La Congiura_, p. 74.]
 
 [390] [The island of Sapienza lies about nine miles to the north-west of
-Capo Gallo, in the Morea. The battle in which the Venetians under Nicolo
+Capo Gallo, in the Morea. The battle in which the Venetians under Nicolò
 Pisani were defeated by the Genoese under Paganino Doria was fought
 November 4, 1354. (See _Venice, an Historical Sketch_, by Horatio F.
 Brown, 1893, p. 201.)]
 
 [391] An historical fact. See Marin Sanuto's _Lives of the Doges_.
 ["Sanuto says that Heaven took away his senses for this buffet, and
-induced him to conspire:--'Pero fu permesso che il Faliero perdesse
+induced him to conspire:--'Però fu permesso che il Faliero perdesse
 l'intelletto.'"--_B. Letters_ (_Works, etc._, 1832, xii. 82. note 1).
 
 [392] {358}["The number of their constant Workmen is 1200; and all these
@@ -19222,13 +19216,13 @@ for tolling the bells of San Marco." (See, too, _Sketches from Venetian
 History, 1831, i. 266, note._)]
 
 [397] ["Le Conseil des Dix avail ses prisons speciales dites
-_camerotti_; celles non officiellement appelees les _pozzi_ et les
-_piombi_, les puits et les plombs, etaient de son redoubtable domaine.
-Les _Camerotti di sotto_ (les puits) etaient obscurs mais non
-accessibles a l'eau du canal, comme on l'a fait croire en des recits
-dignes d'Anne Radcliffe; les _camerotti di sopra_ (les plombs) etaient
-des cellules fortement doublees de bois mais non privees de
-lumiere."--_Les Archives de Venise_, par Armand Baschet, 1870, p. 535.
+_camerotti_; celles non officiellement appelées les _pozzi_ et les
+_piombi_, les puits et les plombs, étaient de son redoubtable domaine.
+Les _Camerotti di sotto_ (les puits) étaient obscurs mais non
+accessibles à l'eau du canal, comme on l'a fait croire en des récits
+dignes d'Anne Radcliffe; les _camerotti di soprà_ (les plombs) étaient
+des cellules fortement doublées de bois mais non privées de
+lumière."--_Les Archives de Venise_, par Armand Baschet, 1870, p. 535.
 For the _pozzi_ and the "Bridge of Sighs" see note by Hobhouse,
 _Poetical Works_, 1899, ii. 465; and compare _Childe Harold_, Canto IV.
 stanza i. line 1 (and _The Two Foscari_, act iv. sc. 1), _Poetical
@@ -19310,9 +19304,9 @@ assigned is 1280-1285 A.D.]
 [de] {369} ----_has he been doomed?_--[Alternative reading. MS. M.]
 
 [404] {370}[According to Dio Cassius, the last words of Brutus were,
-[Greek: O~) tle~mon a)rete/, lo/gos a)/r e~)sth a)/llos],
-[Greek: e)go\ de\ o(s e(/rgon e(/skoun' sy\ d'a)r' e)dou/leues ty/che|]--
-_Hist. Rom._, lib. xlvii. c. 49, ed. v., P. Boissevain, 1898, ii. 246.]
+Ὦ τλῆμον ἀρετή, λόγος ἄρ᾽ ἦσθ᾽ [ἄλλως], ἐγὼ δὲ ὡς ἕργων ἥσκουν' σὺ δ᾽ ἀρ᾽
+ἐδούλευες τύχῃ
+--_Hist. Rom._, lib. xlvii. c. 49, ed. v., P. Boissevain, 1898, ii. 246.]
 
 [df] {375}
 
@@ -19330,7 +19324,7 @@ _Hist. Rom._, lib. xlvii. c. 49, ed. v., P. Boissevain, 1898, ii. 246.]
                                   _'Tis Pity she's a Whore_, by John Ford.
                                    Lamb's _Dramatic Poets_, 1835, i. 265.]
 
-[407] {378}[The Dogaressa Aluica was the daughter of Nicolo Gradenigo.
+[407] {378}[The Dogaressa Aluica was the daughter of Nicolò Gradenigo.
 It was the Doge who inherited the "blood of Loredano" through his mother
 Beriola.]
 
@@ -19410,7 +19404,7 @@ reproach = "uomo de maligna intenzione," a knave.]
 366. The monument of the Doge Vitale Falier (d. 1096) "was at the right
 side of the principal entrance into the Vestibule." According to G.
 Meschinello (La Chiesa Ducale, 1753), Ordelafo Falier was buried in the
-Atrio of St. Mark's. See, too, _Venetia citta nobilissima ... descritta
+Atrio of St. Mark's. See, too, _Venetia città nobilissima ... descritta
 da F. Sansovino_, 1663, pp. 96, 556.]
 
 [dk] _We thought to make our peers and not our masters_.--[Alternative
@@ -19509,8 +19503,8 @@ pt. i. p. 144.]
     _Bear witness with me! ye who hear and know,_
     _And feel our mutual mass of many wrongs._--[MS. M. erased.]
 
-[428] {404}[The Italian Oime recalls the Latin _Hei mihi_ and the Greek
-[Greek: Oi~moi] ]
+[428] {404}[The Italian Oimé recalls the Latin _Hei mihi_ and the Greek
+Οῖμοι [Greek: Oi~moi] ]
 
 [429] [Compare--
 
@@ -19580,7 +19574,7 @@ Letter to Moore, February 28, 1817, _Letters_, 1900, iv. 59.]
 
 [ed] {412}_Suggesting dreams or unseen Symmetry_.--[MS. M. erased.]
 
-[ee] _Which give their glitter lack, and the vast AEther_.--[MS. M.
+[ee] _Which give their glitter lack, and the vast Æther_.--[MS. M.
 erased.]
 
 [ef] ----_seaborn palaces_.--[Alternative reading. MS. M.]
@@ -19596,7 +19590,7 @@ by Anne Radcliffe, 1882, p. 195. Compare, too, _Beppo_, stanza xv. lines
 cradles ... At night the darkness reveals the tiny lanterns which guide
 these boats, and they look like shadows passing by, lit by stars.
 Everything in this region is mystery--government, custom,
-love."--_Corinne or Italy_, by Madame de Stael, 1888, pp. 279, 280.
+love."--_Corinne or Italy_, by Madame de Staël, 1888, pp. 279, 280.
 Compare, too--
 
     "In Venice Tasso's echoes are no more,
@@ -19820,7 +19814,7 @@ derivation from the Saxon _eghe_, an egg. _N. Eng. Dict._, art.
 
 [fj] _Of his high aiery_----.--[Alternative reading. MS. M.]
 
-[460] [_Vide_ Suetonius, _De XII. Caesaribus_, lib. iv. cap. 56, ed.
+[460] [_Vide_ Suetonius, _De XII. Cæsaribus_, lib. iv. cap. 56, ed.
 1691, p. 427. Angiolina might surely have omitted this particular
 instance of the avenging vigilance of "Great Nemesis."]
 
@@ -19871,7 +19865,7 @@ lines.]
 
 [465] {448}[The Council of Ten decided that the possessions of Faliero
 should be confiscated; but the "Signoria," as an act of grace, and _ob
-ducatus reverentiam_, allowed him to dispose of 2000 "lire dei grossi"
+ducatûs reverentiam_, allowed him to dispose of 2000 "lire dei grossi"
 of his own. The same day, April 17, the Doge dictated his will to the
 notary Piero de Compostelli, leaving the 2000 lire to his wife
 Aluica.--_La Congiura_, p. 105.]
@@ -19942,7 +19936,7 @@ pieces."--Scott's _Life of Napoleon Bonaparte_, 1828, p. 230. Compare,
 too, _Childe Harold_, Canto IV. stanza xc. lines 1, 2--
 
     "The fool of false dominion--and a kind
-       Of bastard Caesar," etc.]
+       Of bastard Cæsar," etc.]
 
 [472] Should the dramatic picture seem harsh, let the reader look to the
 historical of the period prophesied, or rather of the few years
@@ -19975,13 +19969,13 @@ there nothing else, there is the immortality of Canova. Cicognara,
 Mustoxithi, Bucati, etc., etc., I do not reckon, because the one is a
 Greek, and the others were born at least a hundred miles off, which,
 throughout Italy, constitutes, if not a _foreigner_, at least a
-_stranger_ (_forestiere_).
+_stranger_ (_forestiére_).
 
 [This note is not in the MS. The first eight lines were included among
 the notes, and the remainder formed part of the Appendix in all editions
 1821-1831.
 
-Nicolo Pasqualigo (1770-1821) received the command of a ship in the
+Nicolò Pasqualigo (1770-1821) received the command of a ship in the
 Austrian Navy in 1800, and in 1805 was appointed Director of the Arsenal
 of Venice. He took part in both the Lissa expeditions, and was made
 prisoner after a prolonged resistance, March 13, 1811. (See _Personaggi
@@ -20046,7 +20040,7 @@ not to enter the city of Venice. The whole commerce is in the hands of
 the Jews and Greeks, and the Huns form the garrison.
 
 [474] {458}[Napoleon was crowned King of Italy, May 3, 1805. Venice was
-ceded by Austria, December 26, 1805, and shortly after, Eugene
+ceded by Austria, December 26, 1805, and shortly after, Eugène
 Beauharnais was appointed Viceroy of Italy, with the title of Prince of
 Venice. It is certain that the "Vice-gerent" stands for Beauharnais, but
 it is less evident why Byron, doubtless quoting from _Hamlet_, calls
@@ -20082,13 +20076,13 @@ event. You will, therefore, note as very remarkable the three lines of
 Alamanni addressed to Venice; which, however, no one has pointed out:--
 
     "'Se non cangi pensier, l'un secol solo
-      Non contera sopra 'l millesimo anno
-      Tua liberta, che va fuggendo a volo.'
+      Non conterà sopra 'l millesimo anno
+      Tua libertà, che va fuggendo a volo.'
 
                                             _Sat_., xii. ed. 1531, p. 413.
 
 Many prophecies have passed for such, and many men have been called
-prophets for much less."--P. L. Ginguene, _Hist. Lit. d'Italie_, ix. 144
+prophets for much less."--P. L. Ginguené, _Hist. Lit. d'Italie_, ix. 144
 [Paris Edition, 1819].
 
 [478] Of the first fifty Doges, _five_ abdicated--_five_ were banished
@@ -20122,7 +20116,7 @@ December 31, 1819, _Letters_, 1900, iv. 255, 393.]
                                             [Alternative readings. MS. M.]
 
 [481] [A picture in oils of the execution of Marino Faliero, by
-Ferdinand Victor Eugene Delacroix (1798-1863), which was exhibited in
+Ferdinand Victor Eugène Delacroix (1798-1863), which was exhibited in
 the Salon in 1827, is now in the Wallace Collection (_Provisional
 Catalogue_, 1900, p. 28).]
 
@@ -20140,7 +20134,7 @@ weather--_thermometer 90 in the shade_--and my domestic duties.
 
 The motto is--
 
-    "Dux inquietae turbidus Adrirae."
+    "Dux inquietæ turbidus Adriræ."
 
                                                                   Horace.]
 
@@ -20246,7 +20240,7 @@ gentleman struck him with his fist just above the eye; and as he
 happened to have a ring on his finger, the ring cut the Admiral and drew
 blood. The Admiral, all bruised and bloody, ran straight to the Duke to
 complain, and with the intent of praying him to inflict some heavy
-punishment upon the gentleman of Ca Barbaro.--"What wouldst thou have me
+punishment upon the gentleman of Cà Barbaro.--"What wouldst thou have me
 do for thee?" answered the Duke: "think upon the shameful gibe which
 hath been written concerning me; and think on the manner in which they
 have punished that ribald Michele Steno, who wrote it; and see how the
@@ -20343,7 +20337,7 @@ Lombardo, and Ser Nicoletto Trivisano, of Sant' Angelo.
 Late in the night, just before the dawning, they chose a junta of
 twenty noblemen of Venice from amongst the wisest, and the worthiest,
 and the oldest. They were to give counsel, but not to ballot. And they
-would not admit any one of Ca Faliero. And Niccolo Faliero, and another
+would not admit any one of Cà Faliero. And Niccolo Faliero, and another
 Niccolo Faliero, of San Tomaso, were expelled from the Council, because
 they belonged to the family of the Doge. And this resolution of creating
 the junta of twenty was much praised throughout the state. The following
@@ -20438,10 +20432,10 @@ ought to have been, you see these words:--"_Hic est locus Marini
 Faletro, decapitati pro criminibus._"--And it is thought that his house
 was granted to the church of Sant' Apostolo; it was that great one near
 the bridge. Yet this could not be the case, or else the family bought it
-back from the church; for it still belongs to Ca Faliero. I must not
+back from the church; for it still belongs to Cà Faliero. I must not
 refrain from noting, that some wished to write the following words in
 the place where his portrait ought to have been, as
-aforesaid:--"_Marinus Faletro Dux, temeritas me cepit. Paenas lui,
+aforesaid:--"_Marinus Faletro Dux, temeritas me cepit. Pænas lui,
 decapitatus pro criminibus._"--Others, also, indited a couplet, worthy
 of being inscribed upon his tomb.
 
@@ -20454,52 +20448,52 @@ Petrarch on the Conspiracy of Marino Faliero.[485]
 
 "Al giovane doge Andrea Dandolo succedette un vecchio, il quale tardi si
 pose al timone della repubblica, ma sempre prima di quel, che facea d'
-uopo a lui ed alia patria: egli e Marino Faliero, personaggio a me noto
-per antica dimestichezza. Falsa era l' opinione intorno a lui, giacche
-egli si mostro fornito piu di coraggio, che di senno. Non pago della
-prima dignita, entro con sinistro piede nel pubblico Palazzo:
-imperciocche questo doge dei Veneti, magistrato sacro in tutti i secoli,
-che dagli antichi fu sempre venerato qual nume in quella citta, l'
+uopo a lui ed alia patria: egli è Marino Faliero, personaggio a me noto
+per antica dimestichezza. Falsa era l' opinione intorno a lui, giacchè
+egli si mostrò fornito più di coraggio, che di senno. Non pago della
+prima dignità, entrò con sinistro piede nel pubblico Palazzo:
+imperciocchè questo doge dei Veneti, magistrato sacro in tutti i secoli,
+che dagli antichi fu sempre venerato qual nume in quella città, l'
 altr'jeri fu decollato nel vestibolo dell' istesso Palazzo. Discorrerei
 fin dal principio le cause di un tale evento, se cosi vario, ed ambiguo
-non ne fosse il grido: nessuno pero lo scusa, tutti affermano, che egli
+non ne fosse il grido: nessuno però lo scusa, tutti affermano, che egli
 abbia voluto cangiar qualche cosa nell' ordine della repubblica a lui
-tramandato dai maggiori. Che desiderava egli di piu? Io son d' avviso,
-che egli abbia ottenuto cio, che non si concedette a nessun altro:
+tramandato dai maggiori. Che desiderava egli di più? Io son d' avviso,
+che egli abbia ottenuto ciò, che non si concedette a nessun altro:
 mentre adempiva gli uffici di legato presso il Pontefice, e sulle rive
 del Rodano trattava la pace, che io prima di lui avevo indarno tentato
-di conchiudere, gli fu conferito l' onore del ducato, che ne chiedeva,
-ne s' aspettava. Tornato in patria, penso a quello, cui nessuno non pose
-mente giammai, e soffri quello, che a niuno accadde mai di soffrire:
-giacche in quel luogo celeberrimo, e chiarissimo, e bellissimo infra
+di conchiudere, gli fu conferito l' onore del ducato, che nè chiedeva,
+nè s' aspettava. Tornato in patria, pensò a quello, cui nessuno non pose
+mente giammai, e soffrì quello, che a niuno accadde mai di soffrire:
+giacchè in quel luogo celeberrimo, e chiarissimo, e bellissimo infra
 tutti quelli, che io vidi, ove i suoi antenati avevano ricevuti
 grandissimi onori in mezzo alle pompe trionfali, ivi egli fu trascinato
 in modo servile, e spogliato delle insegne ducali, perdette la testa, e
-macchio col proprio sangue le soglie del tempio, l' atrio del Palazzo, e
+macchiò col proprio sangue le soglie del tempio, l' atrio del Palazzo, e
 le scale marmoree endute spesse volte illustri o dalle solenni
-festivita, o dalle ostili spoglie. Ho notato il luogo, ora noto il
-tempo: e l' anno del Natale di Cristo, 1355, fu il giorno diciotto
-aprile si alto e il grido sparso, che se alcuno esaminera la disciplina,
-e le costumanze di quella citta, e quanto mutamento di cose venga
+festività, o dalle ostili spoglie. Ho notato il luogo, ora noto il
+tempo: è l' anno del Natale di Cristo, 1355, fu il giorno diciotto
+aprile si alto è il grido sparso, che se alcuno esaminerà la disciplina,
+e le costumanze di quella città, e quanto mutamento di cose venga
 minacciato dalla morte di un solo uomo (quantunque molti altri, come
 narrano, essendo complici, o subirono l' istesso supplicio, o lo
-aspettano) si accorgera, che nulla di piu grande avvenne ai nostri tempi
+aspettano) si accorgerà, che nulla di più grande avvenne ai nostri tempi
 nella Italia. Tu forse qui attendi il mio giudizio: assolvo il popolo,
-se credere si dee alia fama, benche abbia potuto e castigate piu
+se credere si dee alia fama, benchè abbia potuto e castigate più
 mitemente, e con maggior dolcezza vendicare il suo dolore: ma non cosi
 facilmente, si modera un' ira giusta insieme, e grande in un numeroso
 popolo principalmente, nel quale il precipitoso, ed instabile volgo
 aguzza gli stimoli dell' iracondia con rapidi, e sconsigliati clamori.
 Compatisco, e nell' istesso tempo mi adiro con quell' infelice uomo, il
 quale adorno di un' insolito onore, non so, che cosa si volesse negli
-estremi anni della sua vita: la calamita di lui diviene sempre piu
-grave, perche dalla sentenza contra di esso promulgata apparira, che
+estremi anni della sua vita: la calamità di lui diviene sempre più
+grave, perchè dalla sentenza contra di esso promulgata apparirà, che
 egli fu non solo misero, ma insano, e demente, e che con vane arti si
-usurpo per tanti anni una falsa fama di sapienza. Ammonisco i dogi, i
+usurpò per tanti anni una falsa fama di sapienza. Ammonisco i dogi, i
 quali gli succederanno, che questo e un' esempio posto innanzi ai loro
 occhi, quale specchio, nel quale veggano d' essere non signori, ma duci,
 anzi nemmeno duci, ma onorati servi della Repubblica. Tu sta sano; e
-giacche fluttuano le pubbliche cose, sforziamoci di governar
+giacchè fluttuano le pubbliche cose, sforziamoci di governar
 modestissimamente i privati nostri affari."--_Viaggi di Francesco
 Petrarca_, descritti dal Professore Ambrogio Levati, Milano, 1820, iv.
 323-325.
@@ -20507,16 +20501,16 @@ Petrarca_, descritti dal Professore Ambrogio Levati, Milano, 1820, iv.
 The above Italian translation from the Latin epistles of Petrarch
 proves--1stly, That Marino Faliero was a personal friend of Petrarch's;
 "antica dimestichezza," old intimacy, is the phrase of the poet. 2dly,
-That Petrarch thought that he had more courage than conduct, "piu di
+That Petrarch thought that he had more courage than conduct, "più di
 _coraggio_ che di senno." 3dly, That there was some jealousy on the part
 of Petrarch; for he says that Marino Faliero was treating of the peace
 which he himself had "vainly attempted to conclude." 4thly, That the
 honour of the Dukedom was conferred upon him, which he neither sought
-nor expected, "che ne chiedeva, ne aspettava," and which had never been
-granted to any other in like circumstances, "cio che non si concedette a
+nor expected, "che nè chiedeva, nè aspettava," and which had never been
+granted to any other in like circumstances, "ciò che non si concedette a
 nessun altro," a proof of the high esteem in which he must have been
 held. 5thly, That he had a reputation for _wisdom_, _only_ forfeited by
-the last enterprise of his life, "si usurpo per tanti anni una falsa
+the last enterprise of his life, "si usurpò per tanti anni una falsa
 fama di sapienza."--"He had usurped for so many years a false fame of
 wisdom," rather a difficult task, I should think. People are generally
 found out before eighty years of age, at least in a republic.--From
@@ -20605,8 +20599,8 @@ of hope, and that without uttering a single word.
 the wives whom they abandoned found compensation in the liberty they
 enjoyed. The corruption of morals had deprived them of their empire. We
 have just reviewed the whole history of Venice, and we have not once
-seen them exercise the slightest influence."--Daru, _Hist. de la Repub.
-de Venise_, Paris, 1821, v. 328-332.
+seen them exercise the slightest influence."--Daru, _Hist. de la Répub.
+de Vénise_, Paris, 1821, v. 328-332.
 
        *       *       *       *       *
 
@@ -20691,7 +20685,7 @@ with reference to the conspiracy of the Doge Marino Faliero, containing
 the poet's opinion of the matter."--_Diary_, February 11, 1821,
 _Letters_, 1901, v. 201.]
 
-[486] {470}Correspondence of M. Schlick, French charge d'affaires.
+[486] {470}Correspondence of M. Schlick, French chargé d'affaires.
 Despatch of 24th August, 1782.
 
 [487] _Ibid_. Despatch, 31st August.
@@ -20964,7 +20958,7 @@ Theological Library (see "Diary," 1869, ii. 437):--
 
      "I read to him the _Vision of Judgment_. He enjoyed it like a
      child; but his criticisms went little beyond the exclamatory 'Toll!
-     Ganz grob! himmlisch! unuebertrefflich!' etc., etc.
+     Ganz grob! himmlisch! unübertrefflich!' etc., etc.
 
      "In general, the more strongly peppered passages pleased him the
      best. Stanza 9 he praised for the clear distinct painting; 10 he
@@ -20974,7 +20968,7 @@ Theological Library (see "Diary," 1869, ii. 437):--
      The characteristic speeches of Wilkes and Junius he thought most
      admirable.
 
-     "Byron 'hat selbst viel uebertroffen;' and the introduction of
+     "Byron 'hat selbst viel übertroffen;' and the introduction of
      Southey made him laugh heartily.
 
      "August 16.
@@ -21101,7 +21095,7 @@ mind. The following is his portrait of our late gracious sovereign:--
 
      (Prince Gebir having descended into the infernal regions, the
      shades of his royal ancestors are, at his request, called up to his
-     view; and he exclaims to his ghostly guide)--
+     view; and he exclaims to his ghostly  guide)--
 
     "'Aroar, what wretch that nearest us? what wretch
     Is that with eyebrows white and slanting brow?
@@ -21348,7 +21342,7 @@ lessons" are apt to be found in strange company.
     "And then he set up such a headless howl,
       That all the Saints came out and took him in;
     And there he sits by Saint Paul, cheek by jowl;[gn]
-      That fellow Paul--the parvenu! The skin[511]
+      That fellow Paul--the parvenù! The skin[511]
     Of Saint Bartholomew, which makes his cowl
       In heaven, and upon earth redeemed his sin,
     So as to make a martyr, never sped
@@ -21616,7 +21610,7 @@ lessons" are apt to be found in strange company.
     So let him be consumed. From out the past
       Of ages, since mankind have known the rule
     Of monarchs--from the bloody rolls amassed
-      Of Sin and Slaughter--from the Caesars' school,
+      Of Sin and Slaughter--from the Cæsars' school,
     Take the worst pupil; and produce a reign
     More drenched with gore, more cumbered with the slain.
 
@@ -21723,7 +21717,7 @@ lessons" are apt to be found in strange company.
 
     They are proud of this--as very well they may,
       It being a sort of knighthood, or gilt key
-    Stuck in their loins;[525] or like to an "entre"[gx]
+    Stuck in their loins;[525] or like to an "entré"[gx]
       Up the back stairs, or such free-masonry.
     I borrow my comparisons from clay,
       Being clay myself. Let not those spirits be
@@ -21757,9 +21751,9 @@ lessons" are apt to be found in strange company.
     Upon the verge of space, about the size
       Of half-a-crown, a little speck appeared
     (I've seen a something like it in the skies
-      In the AEgean, ere a squall); it neared,
+      In the Ægean, ere a squall); it neared,
     And, growing bigger, took another guise;
-      Like an aerial ship it tacked, and steered,[528]
+      Like an aërial ship it tacked, and steered,[528]
     Or _was_ steered (I am doubtful of the grammar
     Of the last phrase, which makes the stanza stammer;
 
@@ -21944,7 +21938,7 @@ lessons" are apt to be found in strange company.
     "Call Junius!" From the crowd a shadow stalked[538].
       And at the name there was a general squeeze,
     So that the very ghosts no longer walked
-      In comfort, at their own aerial ease,
+      In comfort, at their own aërial ease,
     But were all rammed, and jammed (but to be balked,
       As we shall see), and jostled hands and knees,
     Like wind compressed and pent within a bladder,
@@ -22350,7 +22344,7 @@ and burlesqued by a Person of Quality:" _Visions, being a Satire on the
 corruptions and vices of all degrees of Mankind_. Translated from the
 original Spanish by Mr. Nunez, London, 1745, etc.
 
-The Suenos or Visions of Francisco Gomez de Quevedo of Villegas are six
+The Sueños or Visions of Francisco Gomez de Quevedo of Villegas are six
 in number. They were published separately in 1635. For an account of the
 "_Visita de los Chistes_," "A Visit in Jest to the Empire of Death," and
 for a translation of part of the "Dream of Skulls," or "Dream of the
@@ -22369,12 +22363,12 @@ ii. 339-344.]
 [498] [Walter Savage Landor (1775-1864) had recently published a volume
 of Latin poems (_Idyllia Heroica Decem. Librum Phaleuciorum Unum_.
 Partim jam primum Partim iterum atque tertio edit Savagius Landor.
-Accedit Quaestiuncula cur Poetae Latini Recentiores minus leguntur, Pisis,
+Accedit Quæstiuncula cur Poetæ Latini Recentiores minus leguntur, Pisis,
 1820, 410). In his Preface to the _Vision of Judgement_, Southey
 illustrates his denunciation of "Men of diseased hearts," etc. (_vide
-ante_, p. 476), by a quotation from the Latin essay: "Summi poetae in
-omni poetarum saeculo viri fuerunt probi: in nostris id vidimus et
-videmus; neque alius est error a veritate longius quam magna ingenia
+ante_, p. 476), by a quotation from the Latin essay: "Summi poetæ in
+omni poetarum sæculo viri fuerunt probi: in nostris id vidimus et
+videmus; neque alius est error a veritate longiùs quàm magna ingenia
 magnis necessario corrumpi vitiis," etc. (_Idyllia_, p. 197). It was a
 cardinal maxim of the Lake School "that there can be no great poet who
 is not a good man.... His heart must be pure" (see Table Talk, by S. T.
@@ -22831,12 +22825,12 @@ will never die without the disclosure" (_Letters_, 1893, ii. 334); but
 an article (by Brougham) in the _Edinburgh Review_, vol. xxix. p. 94, on
 _The Identity of Junius with a Distinguished Living Character
 established_ (see _Letters_, 1900, iv. 210), seems to have almost
-persuaded him that "Francis is Junius." (For a _resume_ of the arguments
+persuaded him that "Francis is Junius." (For a _résumé_ of the arguments
 in favour of the identity of Junius with Francis, see Mr. Leslie
 Stephen's article in the _Dict. of Nat. Biography_, art. "Francis." See,
 too, _History of England in the Eighteenth Century_, by W. E. H. Lecky,
 1887, iii. 233-255. For a series of articles (by W. Fraser Rae) against
-this theory, see _Athenaeum_, 1888, ii. 192, 258, 319. The question is
+this theory, see _Athenæum_, 1888, ii. 192, 258, 319. The question is
 still being debated. See _The Francis Letters_, with a note on the
 Junius Controversy, by C. F. Keary, 1901.)]
 
@@ -22848,7 +22842,7 @@ Junius Controversy, by C. F. Keary, 1901.)]
 Black Velvet Mask," has been identified with Count Ercole Antonio
 Mattioli, Secretary of State at the Court of Ferdinando Carlo Gonzaga,
 Duke of Mantua. Mattioli was convicted of high treason, and at the
-instance of Louis XIV. was seized by the Marechal Catinat, May 2, 1679,
+instance of Louis XIV. was seized by the Maréchal Catinat, May 2, 1679,
 and confined at Pinerolo. He was deported to the Iles Sainte-Marguerite,
 March 19, 1694, and afterwards transferred to the Bastille, September
 18, 1698. He died November 19, 1703. Baron Heiss was the first to solve
@@ -22947,7 +22941,7 @@ Magazine_, 1783, vol. xii. cap. vii. p. 17.]
 [552]
 
           [" ... Mediocribus esse poetis
-    Non homines, non di, non concessere columnae."
+    Non homines, non dî, non concessere columnæ."
 
                                    Horace, _Ars Poetica_, lines 372, 373.]
 
@@ -22958,7 +22952,7 @@ Magazine_, 1783, vol. xii. cap. vii. p. 17.]
     What? what? I'm told that you're a limb
     Of Pym, the famous fellow Pym:
     What, Whitbread, is it true what people say?
-    Son of a Roundhead are you? hae? hae? hae?
+    Son of a Roundhead are you? hæ? hæ? hæ?
            *       *       *       *       *
     Thirtieth of January don't you _feed_?
     Yes, yes, you eat Calf's head, you eat Calf's head."
@@ -23045,7 +23039,7 @@ encouragement to the Jewish rabbis." Under his patronage Judah de Toledo
 translated the works of Avicenna, and improved them by a new division of
 the stars. Moreover, "he sent for about 50 learned men from Gascony,
 Paris, and other places, to translate the tables of Ptolemy, and to
-compile a more correct set of them (i.e. the famous _Tabulae Alphonsinae_)
+compile a more correct set of them (i.e. the famous _Tabulæ Alphonsinæ_)
 ... The king himself presided over the assembly."--_Mod. Univ. Hist._,
 xiii. 304, 305, note(U).
 
@@ -23055,7 +23049,7 @@ more fit," says Mariana (_Hist._, lib. xiii. c. 20), "for letters than
 for the government of his subjects; he studied the heavens and watched
 the stars, but forgot the earth and lost his kingdom." Nevertheless his
 works do follow him. "He is to be remembered for his poetry
-(_'Cantigas'_, chants in honour of the Virgin, and _'Tesoro'_ a treatise
+(_'Cántigas'_, chants in honour of the Virgin, and _'Tesoro'_ a treatise
 on the philosopher's stone), for his astronomical tables, which all the
 progress of science have not deprived of their value, and for his great
 work on legislation, which is at this moment an authority in both
@@ -23065,11 +23059,11 @@ Byron got the quip about Alfonso and "the absurdities of creation" from
 Bayle (_Dict_., 1735, art. "Castile"), who devotes a long note (H) to a
 somewhat mischievous apology for the king's apparent profanity. Bayle's
 immediate authority is Le Bovier de Fontenelle, in his _Entretiens sur
-la Pluralite des Mondes_, 1686, p. 38, "L'embaras de tous ces cercles
-estoit si grand, que dans un temps ou l'on ne connoissoit encore rien de
+la Pluralité des Mondes_, 1686, p. 38, "L'embaras de tous ces cercles
+estoit si grand, que dans un temps où l'on ne connoissoit encore rien de
 meilleur, un roy d'Aragon (_sic_) grand mathematicien mais apparemment
-peu devot, disoit que si Dieu l'eust appelle a son conseil quand il fit
-le Monde, il luy eust donne de bons avis."]
+peu devot, disoit que si Dieu l'eust appellé à son conseil quand il fit
+le Monde, il luy eust donné de bons avis."]
 
 [563] {524}[See Aubrey's account (_Miscellanies upon Various Subjects_,
 by John Aubrey, F.R.S., 1857, p. 81) of the apparition which disappeared
@@ -23329,7 +23323,7 @@ _Which, in the Arabic language, is to the following purport_[570]
 
     Di due vaghe donzelle, oneste, accorte
         Lieti e miseri padri il ciel ne feo,
-        Il ciel, die degne di piu nobil sorte
+        Il ciel, die degne di più nobil sorte
         L' una e l' altra veggendo, ambe chiedeo.
 
     La mia fu tolta da veloce morte
@@ -23382,7 +23376,7 @@ _Which, in the Arabic language, is to the following purport_[570]
 
                    ON THE BUST OF HELEN BY CANOVA.[576]
 
-    In this beloved marble view
+    In this belovéd marble view
       Above the works and thoughts of Man,
     What Nature _could_ but _would not_ do,
       And Beauty and Canova _can!_
@@ -23407,7 +23401,7 @@ _Which, in the Arabic language, is to the following purport_[570]
     The holy building's massy door,
     Glittering with their collars of gold,
     The goodly work of the days of old--
-    And the winged Lion stern and solemn
+    And the wingéd Lion stern and solemn
     Frowns from the height of his hoary column,
     Facing the palace in which doth lodge
     The ocean-city's dreaded Doge.
@@ -23435,7 +23429,7 @@ _Which, in the Arabic language, is to the following purport_[570]
     And Cupola and minaret;
     More like the mosque of orient lands,
     Than the fanes wherein we pray,
-    And Mary's blessed likeness stands.--
+    And Mary's blesséd likeness stands.--
 
                                                Venice, _December_ 6, 1816.
 
@@ -23781,7 +23775,7 @@ _Which, in the Arabic language, is to the following purport_[570]
       Dismiss thy guard, and trust thee to such traits,
     For who would lift a hand, except to bless?[ii]
       Were it not easy, Sir, and is't not sweet
-      To make thyself beloved? and to be
+      To make thyself belovéd? and to be
     Omnipotent by Mercy's means? for thus
       Thy Sovereignty would grow but more complete,
     A despot thou, and yet thy people free,[ij]
@@ -23901,7 +23895,7 @@ _Which, in the Arabic language, is to the following purport_[570]
           Beat 'gainst their prison?
         Time can but cloy love,
         And use destroy love:
-        The winged boy, Love,
+        The wingéd boy, Love,
           Is but for boys--
         You'll find it torture
         Though sharper, shorter,
@@ -23923,7 +23917,7 @@ Motto.
 
      _On peut trouver des femmes qui n'ont jamais eu de galanterie, mais
      il est rare d'en trouver qui n'en aient jamais eu
-     qu'une_.--[_Reflexions_ ... du Duc de la Rochefoucauld, No.
+     qu'une_.--[_Réflexions_ ... du Duc de la Rochefoucauld, No.
      lxxiii.]
 
                         1.
@@ -24144,7 +24138,7 @@ paltry rider."--[_Life of Curran_, ii. 336.]
     Each brute hath its nature; a King's is to _reign_,--
       To _reign!_ in that word see, ye ages, comprised
     The cause of the curses all annals contain,
-      From Caesar the dreaded to George the despised!
+      From Cæsar the dreaded to George the despised!
 
                         17.
 
@@ -24412,7 +24406,6 @@ note.]
 
                             ARISTOMENES.[608]
 
-
                                Canto First.
 
                         1.
@@ -24444,7 +24437,7 @@ chap-book which chanced to come into his possession, and that he made
 his translation without troubling himself about the origin or
 composition of the ballad. As it stands, the "Romance" is a cento of
 three or more ballads which are included in the _Guerras Civiles de
-Granada_ of Gines Perez de Hita, published at Saragossa in 1595 (see ed.
+Granada_ of Ginès Perez de Hita, published at Saragossa in 1595 (see ed.
 "En Alcala de Henares," 1601, pp. 249-252). Stanzas 1-11, "Passeavase el
 Rey Moro," etc., follow the text which De Hita gives as a translation
 from the Arabic; stanzas 12-14 are additional, and do not correspond
@@ -24452,7 +24445,7 @@ with any of the Spanish originals; stanzas 15-21, with numerous
 deviations and omissions, follow the text of a second ballad, "Moro
 Alcayde, Moro Alcayde," described by De Hita as "antiguo Romance," and
 portions of stanzas 21-23 are imbedded in a ballad entitled "Muerte dada
-a Los Abencerrajes" (Duran's _Romancero General_, 1851, ii. 89).
+á Los Abencerrajes" (Duran's _Romancero General_, 1851, ii. 89).
 
 The ballad as a whole was not known to students of Spanish literature
 previous to the publication of Byron's translation (1818), (see _Ancient
@@ -24485,7 +24478,7 @@ pain of death, within Granada. ["This ballad was so dolorous in the
 original Arabic language, that every time it was sung it acted as an
 incitement to grief and despair, and for this reason it was at length
 finally prohibited in Granada."--_Historia ... de las Guerras Civiles_,
-translated from the Arabic of Abenhamim, by Gines Perez de Hita, and
+translated from the Arabic of Abenhamim, by Ginès Perez de Hita, and
 from the Spanish by Thomas Rodd, 1803, p. 334. According to Ticknor
 (_Hist. of Spanish Literature_, 1888, iii. 139), the "Arabic origin" of
 De Hita's work is not at all probable. "He may have obtained Arabic
@@ -24573,7 +24566,7 @@ outside, secretly incited his bull-dog, "Faithful Moretto," to bark and
 show his teeth; and, when Medwin had convoyed the terror-stricken bard
 into his presence, greeted him with effusion, but contrived that he
 should sit down on the very sofa which hid from view the MS. of
-"Question and Answer." _Longa est injuria, longae ambages_; but the story
+"Question and Answer." _Longa est injuria, longæ ambages_; but the story
 rests on the evidence of independent witnesses.
 
 By far the best comment on satire and satirist is to be found in the
@@ -24965,7 +24958,7 @@ Spartan foe, and thrice he offered the Hekatomphonia on Mount Ithome.
 His name was held in honour long after "the rowers on their benches"
 heard the wail, "Pan, Pan is dead!" At the close of the second century
 of the Christian era, Pausanias (iv. 16. 4) made a note of Messenian
-maidens hymning his victory over the Lacedaemonians--
+maidens hymning his victory over the Lacedæmonians--
 
     "From the heart of the plain he drove them,
       And he drove them back to the hill:
@@ -24973,7 +24966,7 @@ maidens hymning his victory over the Lacedaemonians--
       As he followed them, followed them still!"
 
 Byron was familiar with Thomas Taylor's translation of the _Periegesis
-Graeciae_ (_vide ante_, p. 109, and "Observations," etc., _Letters_, v.
+Græciæ_ (_vide ante_, p. 109, and "Observations," etc., _Letters_, v.
 Appendix III. p. 574), and with Mitford's _Greece_ (_Don Juan_, Canto
 XII. stanza xix. line 7). Hence his knowledge of Aristomenes. The
 thought expressed in lines 5-11 was, possibly, suggested by Coleridge's
@@ -25022,7 +25015,7 @@ persons of his eclogue not from life, but from memory.
 
 In the Diary of 1813, 1814, there is more than one mention of the
 "Blues." For instance, November 27, 1813, he writes, "Sotheby is a
-_Litterateur_, the oracle of the Coteries of the * *'s, Lydia White
+_Littérateur_, the oracle of the Coteries of the * *'s, Lydia White
 (Sydney Smith's 'Tory Virgin'), Mrs. Wilmot (she, at least, is a swan,
 and might frequent a purer stream), Lady Beaumont and all the Blues,
 with Lady Charlemont at their head." Again on December 1, "To-morrow
@@ -25044,9 +25037,9 @@ that "Lord and Lady Byron persuaded me to go with them to Miss [Lydia]
 White (_vide post_, p. 587). Never have I seen a more imposing
 convocation of ladies arranged in a circle than when we entered ... Lord
 Byron brought me home. He stayed to supper." If he did not affect "your
-blue-bottles," he was on intimate terms with Madame de Stael, "the
+blue-bottles," he was on intimate terms with Madame de Staël, "the
 _Begum_ of Literature," as Moore called her; with the Contessa
-d'Albrizzi (the De Stael of Italy); with Mrs. Wilmot, the inspirer of
+d'Albrizzi (the De Staël of Italy); with Mrs. Wilmot, the inspirer of
 "She walks in beauty like the night;" with Mrs. Shelley; with Lady
 Blessington. Moreover, to say nothing of his "mathematical wife," who
 was as "blue as ether," the Countess Guiccioli could not only read and
@@ -25056,7 +25049,7 @@ inspirer of her lover's poetry.
 
 If it is difficult to assign a reason or occasion for the composition of
 _The Blues_, it is a harder, perhaps an impossible, task to identify all
-the _dramatis personae_. Botherby, Lady Bluemount, and Miss Diddle are,
+the _dramatis personæ_. Botherby, Lady Bluemount, and Miss Diddle are,
 obviously, Sotheby, Lady Beaumont, and Lydia White. Scamp the Lecturer
 may be Hazlitt, who had incurred Byron's displeasure by commenting on
 his various and varying estimates of Napoleon (see _Lectures on the
@@ -25229,7 +25222,7 @@ profitless and ill-omened _Liberal_.
 
     _Ink_. Humph! I can't say I know any happy alliance
     Which has lately sprung up from a wedlock with science.
-    She's so learned in all things, and fond of concerning
+    She's so learnéd in all things, and fond of concerning
     Herself in all matters connected with learning,
     That----
 
@@ -25372,7 +25365,7 @@ profitless and ill-omened _Liberal_.
     Or else we'll be kept here an hour at their levee,
     On the rack of cross questions, by all the blue bevy.
     Hark! Zounds, they'll be on us; I know by the drone
-    Of old Botherby's spouting ex-cathedra tone.[619]                  150
+    Of old Botherby's spouting ex-cathedrâ tone.[619]                  150
     Aye! there he is at it. Poor Scamp! better join
     Your friends, or he'll pay you back in your own coin.
 
@@ -25437,7 +25430,7 @@ profitless and ill-omened _Liberal_.
     If friends, they're the first.
 
     _Lady Blueb_.                 But the luncheon attends.
-    I pray ye be seated, "_sans ceremonie_."
+    I pray ye be seated, "_sans cérémonie_."
     Mr. Scamp, you're fatigued; take your chair there, next me.
                                                           [_They all sit._
 
@@ -25787,10 +25780,10 @@ the Fourth Canto of _Childe Harold_, which appeared in the _British
 Review_, January, 1818, or to a more recent and, naturally, most hostile
 notice of _Don Juan_ (No. xviii. 1819).]
 
-[617] [_The Journal de Trevoux_, published under the title of _Memoires
-de Trevoux_ (1701-1775, 265 vols. 12º), edited by members of the Society
+[617] [_The Journal de Trévoux_, published under the title of _Mémoires
+de Trévoux_ (1701-1775, 265 vols. 12º), edited by members of the Society
 of Jesus, was an imitation of the _Journal des Savants_. The original
-matter, the Memoires, contain a mine of information for the student of
+matter, the Mémoires, contain a mine of information for the student of
 the history of French Literature; but the reviews, critical notices,
 etc., to which Byron refers, were of a highly polemical and partisan
 character, and were the subject of attack on the part of Protestant and
@@ -25803,7 +25796,7 @@ illustration in letter and poem is curious and noteworthy.]
 1825.]
 
 [619] [For "Botherby," _vide ante_, _Beppo_, stanza lxxii. line 7, p.
-182, note 1; and with the "ex-cathedra tone" compare "that awful note of
+182, note 1; and with the "ex-cathedrâ tone" compare "that awful note of
 woe," _Vision of Judgment_, stanza xc. line 4, _ante_, p. 518.]
 
 [620] {580}["Sotheby is a good man, rhymes well (if not wisely), but is
@@ -25884,7 +25877,7 @@ baronet January 18, 1819.]
 [633] {587}[Compare "We have been for many years at a great distance
 from each other; we are now separated. You have combined arsenic with
 your gold, Sir Humphry! You are brittle, and I will rather dine with
-Duke Humphry than with you."--_Anima Poetae_, by S. T. Coleridge, 1895,
+Duke Humphry than with you."--_Anima Poetæ_, by S. T. Coleridge, 1895,
 p. 218.]
 
 [634] ["Lydia White," writes Lady Morgan (_Memoirs_, 1862, ii. 236),
@@ -25914,12 +25907,6 @@ share," etc.--an Ambrosian night, indeed!--_Life_, p. 254.]
 
                              END OF VOL. IV.
 
-
-
-
-
-
-End of Project Gutenberg's The Works of Lord Byron, Volume 4, by Lord Byron
 
 
 

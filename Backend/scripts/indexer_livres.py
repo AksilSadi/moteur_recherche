@@ -8,11 +8,11 @@ from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 from pymongo import UpdateOne
 
-# === Accès à la base locale ===
+# Accès à la base locale
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from database import get_db, close_db
 
-# === Initialisation NLTK ===
+# Initialisation NLTK
 import nltk
 try:
     nltk.data.find("corpora/wordnet")
@@ -84,25 +84,26 @@ def worker(livres):
 
 
 # 4- Fusion globale + filtre DF (doc frequency) 
-def fusionner_resultats(all_results, df_min=2):
+def fusionner_resultats(all_results, tf_global_min=0.001):
     mot_index = {}
-    doc_freq = defaultdict(int)
+    tf_global = defaultdict(float)
 
+    # Construire les fréquences globales
     for book_id, freqs in all_results:
         for mot, tf in freqs.items():
             mot_index.setdefault(mot, {})
-            if str(book_id) not in mot_index[mot]:
-                doc_freq[mot] += 1
             mot_index[mot][str(book_id)] = tf
+            tf_global[mot] += tf
 
-    # Ne garder que les mots apparaissant dans au moins df_min livres
+    # Filtrage basé sur TF global
     mot_index_filtre = {
         mot: livres for mot, livres in mot_index.items()
-        if doc_freq[mot] >= df_min
+        if tf_global[mot] >= tf_global_min
     }
 
-    print(f"📊 Filtrage DF : {len(mot_index)} → {len(mot_index_filtre)} mots conservés")
+    print(f"📊 Filtrage TF-global : {len(mot_index)} → {len(mot_index_filtre)} mots conservés")
     return mot_index_filtre
+
 
 
 # 5- Insertion MongoDB rapide 
@@ -126,7 +127,7 @@ def main():
 
     # Nettoyage de l'ancien index
     index_col.delete_many({})
-    index_col.create_index("mot", unique=True)
+    #index_col.create_index("mot", unique=True)
 
     livres = list(livres_col.find())
     print(f"📚 {len(livres)} livres trouvés.\n")
