@@ -119,7 +119,7 @@ def inserer_batch(index_col, mot_index):
 
 
 # 6- Fonction principale 
-def main():
+def main(nb_livres=None):
     print("🚀 Démarrage de l'indexation parallèle stricte...")
     db = get_db()
     livres_col = db["livres"]
@@ -127,25 +127,30 @@ def main():
 
     # Nettoyage de l'ancien index
     index_col.delete_many({})
-    #index_col.create_index("mot", unique=True)
 
+    # Récupération des livres
     livres = list(livres_col.find())
-    print(f"📚 {len(livres)} livres trouvés.\n")
+
+    # Si un nombre est fourni → on limite
+    if nb_livres is not None:
+        livres = livres[:nb_livres]
+
+    print(f"📚 {len(livres)} livres utilisés pour ce benchmark.\n")
 
     nb_process = min(8, mp.cpu_count())
-    chunk_size = len(livres) // nb_process
+    chunk_size = max(1, len(livres) // nb_process)
     chunks = [livres[i:i + chunk_size] for i in range(0, len(livres), chunk_size)]
 
-    # --- Étape 1 : calcul parallèle ---
+    # Étape 1 : calcul parallèle
     all_results = []
     with mp.Pool(processes=nb_process) as pool:
         for res in tqdm(pool.imap(worker, chunks), total=len(chunks), desc="🧠 Traitement parallèle"):
             all_results.extend(res)
 
-    # --- Étape 2 : fusion globale avec DF ---
+    # Étape 2 : fusion globale avec DF 
     mot_index = fusionner_resultats(all_results)
 
-    # --- Étape 3 : insertion MongoDB par batch ---
+    # Étape 3 : insertion MongoDB par batch
     mots = list(mot_index.items())
     BATCH_SIZE = 5000
     for i in range(0, len(mots), BATCH_SIZE):
@@ -153,6 +158,7 @@ def main():
 
     print(f"✅ Indexation terminée ! {index_col.count_documents({})} mots indexés.")
     close_db()
+
 
 
 # === Lancement ===
