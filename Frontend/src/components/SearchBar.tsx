@@ -20,11 +20,10 @@ function SearchBar({
   const [suggestions, setSuggestions] = useState<string[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(true);
 
-  // Autocompletion
+  // Autocomplétion
   useEffect(() => {
     const type = detectSearchType(searchTerm);
 
-    // Désactiver l'autocomplete en mode regex
     if (searchTerm.length < 1 || type === "regex") {
       setSuggestions([]);
       return;
@@ -62,19 +61,34 @@ function SearchBar({
   };
 
   return (
-    <div className="relative w-full flex justify-center mt-4">
+    <div className="relative w-full flex justify-center mt-4 px-4">
+      {/* FORMULAIRE RESPONSIVE */}
       <form
         onSubmit={handleSubmit}
-        className="search h-10 flex items-center bg-gray-600 px-6 py-5 w-[480px] rounded-md"
+        className="
+          search
+          flex items-center
+          bg-gray-600
+          h-10
+          px-4 py-5
+          rounded-md
+          w-full 
+          max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl
+        "
       >
         <input
           type="text"
           placeholder="Rechercher un livre… (mot-clé ou regex)"
-          className="text-white w-[400px] bg-transparent outline-none"
+          className="
+            text-white 
+            bg-transparent 
+            outline-none 
+            w-full
+            text-sm sm:text-base
+          "
           value={searchTerm}
           onChange={(e) => {
             const value = e.target.value;
-
             setSearchTerm(value);
             setShowSuggestions(true);
 
@@ -84,14 +98,28 @@ function SearchBar({
             }
           }}
         />
+
         <button type="submit" className="text-black ml-2">
           <FontAwesomeIcon icon={faMagnifyingGlass} />
         </button>
       </form>
 
-      {/* Suggestions */}
+      {/* LISTE DES SUGGESTIONS RESPONSIVE */}
       {showSuggestions && suggestions.length > 0 && (
-        <ul className="absolute top-14 w-[480px] bg-gray-800 rounded-md shadow-xl max-h-60 overflow-y-auto z-50">
+        <ul
+          className="
+            absolute 
+            top-14 
+            bg-gray-800 
+            rounded-md 
+            shadow-xl 
+            max-h-60 
+            overflow-y-auto 
+            z-50 
+            w-full
+            max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl
+          "
+        >
           {suggestions.map((word) => (
             <li
               key={word}
